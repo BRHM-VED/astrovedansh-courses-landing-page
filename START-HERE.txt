@@ -1,0 +1,8 @@
+AstroVedansh Basic Vedic Astrology Course
+
+Open dist/index.html for Hindi or dist/english.html for English.
+To host: upload the contents of dist to your hosting public folder.
+Keep assets and styles.css alongside the HTML pages.
+Internet is required for Google Fonts, YouTube and payment links.
+
+Source: translations/en.json and scripts/sync-language-pages.py maintain the English translation.
