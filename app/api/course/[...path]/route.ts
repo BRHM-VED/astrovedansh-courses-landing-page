@@ -1,5 +1,4 @@
-import { env } from 'cloudflare:workers';
-import { handleEmailCourse } from '../../../../lib/email-course.mjs';
 export const dynamic='force-dynamic';
-export async function GET(request:Request){return handleEmailCourse(request,env);}
-export async function POST(request:Request){return handleEmailCourse(request,env);}
+const retired=()=>Response.json({error:'paid_enrolment_retired',course:'/numerology.html#course-coupon'},{status:410,headers:{'Cache-Control':'no-store'}});
+export async function GET(){return retired();}
+export async function POST(){return retired();}

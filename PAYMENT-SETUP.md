@@ -51,3 +51,9 @@ YouTube is not DRM: authorised viewers can extract/share video URLs or record th
 The new suite covers readiness, webhook signatures, merchant/course/amount matching, one-time tokens, expiry, secure cookies, unauthorised lessons, refunds, request throttling and email retry. Actual Razorpay events, sender delivery and all 24 videos still require live verification before activation.
 
 Public files live in `public/`. Account and payment APIs run on Sites. GitHub/Vercel is a static mirror pointing course buttons to the Sites account URL; do not deploy the server there without adapting the runtime and storage.
+
+## Superseded: free coupon access (15 October 2026)
+
+The owner cancelled paid enrolment and email access. The active course flow now displays INR 999 and applies the public NUMEROPRO coupon for a full INR 999 discount, total INR 0. It requires no payment, authentication or email delivery. `/account` redirects to the coupon section; `/api/course/*` returns 410 and performs no payments or email operations. Prior backend modules remain archived source only and are not routed.
+
+The public player uses the owner's originally supplied playlist `PLN80wspGZ5mw`. Playback and all 24 video IDs remain unverified; supply the complete playlist URL to repair unavailable playback. The coupon is a public promotion, not a security boundary. No new expiry date has been assigned.
