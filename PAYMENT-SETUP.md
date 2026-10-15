@@ -57,3 +57,7 @@ Public files live in `public/`. Account and payment APIs run on Sites. GitHub/Ve
 The owner cancelled paid enrolment and email access. The active course flow now displays INR 999 and applies the public NUMEROPRO coupon for a full INR 999 discount, total INR 0. It requires no payment, authentication or email delivery. `/account` redirects to the coupon section; `/api/course/*` returns 410 and performs no payments or email operations. Prior backend modules remain archived source only and are not routed.
 
 The public player uses the owner's originally supplied playlist `PLN80wspGZ5mw`. Playback and all 24 video IDs remain unverified; supply the complete playlist URL to repair unavailable playback. The coupon is a public promotion, not a security boundary. No new expiry date has been assigned.
+
+## Corrected video mapping (15 October 2026)
+
+The original playlist IS valid: direct retrieval confirmed 26 uploads, ordered differently from class numbers. The earlier assumption that its short identifier was incomplete was incorrect. The player now uses a verified list of 24 individual video IDs in `public/numerology-videos.json`, matched to the published syllabus. It does not use playlist indexes. Intro (Class 0) and the additional relationship video are outside this 24-class syllabus. Mahadasha and Health uploads both carry Class 17 in their YouTube titles; website Class 17 maps to Mahadasha and Class 18 to Health, matching the existing syllabus. Update these explicit mappings if uploads are replaced.

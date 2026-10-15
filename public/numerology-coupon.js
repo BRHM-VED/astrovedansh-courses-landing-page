@@ -1,6 +1,9 @@
 (()=>{
  const form=document.getElementById('coupon-form');if(!form)return;
  const en=document.documentElement.lang==='en',message=document.getElementById('coupon-feedback'),input=document.getElementById('coupon-input');
+ // Explicit video mapping follows the published syllabus, not YouTube playlist positions.
+ // Health is Class 18 here; its source upload is also labelled Class 17.
+ const videos=["2I2SFqUP1Ig", "Ot4lgRQetIQ", "h7DTJ9ZbSbg", "5ubfNaI5vLo", "Vm_O_N1SaxU", "9lvEsIwL_II", "COKkhr-1u3I", "xfNzri2XM7Q", "3oekuHtHFJM", "rKxULbZ_vuc", "ky8t7oleLNg", "_9ek5mo0tO0", "V075di3zG6M", "eIdG5cuZmOA", "3thhHLmlu9w", "B3o8-TC5liw", "a8DY2PBesDc", "FuTXczeMcqI", "hQD1Wta5mRY", "pfxAnK-7i64", "-19A4HhgKn0", "knFCwFWsrqc", "o37KsoItgtE", "1L92z3PQZFU"];
  let unlocked=false,active=0,player=null,playerReady=false;
  const titles=[...document.querySelectorAll('.lesson-title')];
  const lessonButtons=titles.map((heading,i)=>{const b=document.createElement('button');b.type='button';b.className='series-lesson-button';b.textContent=heading.textContent;b.dataset.index=i;b.addEventListener('click',()=>choose(i,true));heading.replaceChildren(b);return b;});
@@ -9,22 +12,30 @@
  const nav=document.createElement('div');nav.className='series-navigation';
  const prev=document.createElement('button'),next=document.createElement('button');prev.type=next.type='button';prev.textContent=en?'← Previous class':'← पिछली कक्षा';next.textContent=en?'Next class →':'अगली कक्षा →';prev.onclick=()=>choose(active-1,true);next.onclick=()=>choose(active+1,true);nav.append(prev,next);area.querySelector('.coupon-video').after(nav);
  const playback=document.createElement('p');playback.className='compact-note';playback.setAttribute('role','status');nav.after(playback);
- function mark(i){active=i;current.textContent=(en?'Class ':'कक्षा ')+(i+1)+(en?' of 24 · ':' / 24 · ')+lessonButtons[i].textContent;prev.disabled=i===0;next.disabled=i===23;lessonButtons.forEach((b,j)=>b.setAttribute('aria-pressed',String(j===i)));}
+ function mark(i){active=i;current.textContent=lessonButtons[i].textContent+' · '+(i+1)+'/24';prev.disabled=i===0;next.disabled=i===23;lessonButtons.forEach((b,j)=>b.setAttribute('aria-pressed',String(j===i)));}
  function choose(i,play){
   if(i<0||i>=24)return;
   if(!unlocked){message.textContent=en?'Apply NUMEROPRO first to open your classes.':'कक्षाएँ खोलने के लिए पहले NUMEROPRO कूपन लगाएँ।';input.focus();form.scrollIntoView({behavior:'smooth',block:'center'});return;}
   mark(i);
-  if(playerReady){player.loadPlaylist({listType:'playlist',list:'PLN80wspGZ5mw',index:i,startSeconds:0});player.setShuffle(false);player.setLoop(false);}
+  if(playerReady){playback.textContent='';player.loadVideoById({videoId:videos[i],startSeconds:0});}
   else playback.textContent=en?'Loading the selected class…':'चुनी गई कक्षा लोड हो रही है…';
   if(play)area.scrollIntoView({behavior:'smooth',block:'start'});
  }
  function initialisePlayer(){
   if(player)return;
-  player=new YT.Player('free-course-frame',{events:{onReady:e=>{playerReady=true;e.target.cuePlaylist({listType:'playlist',list:'PLN80wspGZ5mw',index:active,startSeconds:0});e.target.setShuffle(false);e.target.setLoop(false);},onStateChange:e=>{if(e.data===1||e.data===5){const i=e.target.getPlaylistIndex();if(Number.isInteger(i)&&i>=0&&i<24)mark(i);playback.textContent='';}if(e.data===0&&active===23){e.target.stopVideo();playback.textContent=en?'You have reached the end of the course.':'आप पाठ्यक्रम की अंतिम कक्षा तक पहुँच गए हैं।';}},onError:()=>{playback.textContent=en?'This class is not available in the supplied playlist yet.':'दी गई प्लेलिस्ट में यह कक्षा अभी उपलब्ध नहीं है।';}}});
+  player=new YT.Player('free-course-frame',{events:{
+   onReady:e=>{playerReady=true;e.target.cueVideoById({videoId:videos[active],startSeconds:0});},
+   onStateChange:e=>{
+    if(e.target.getVideoData().video_id!==videos[active])return;
+    if(e.data===1||e.data===5)playback.textContent='';
+    if(e.data===0){if(active<23)choose(active+1,false);else playback.textContent=en?'You have reached the end of the course.':'आप पाठ्यक्रम की अंतिम कक्षा तक पहुँच गए हैं।';}
+   },
+   onError:()=>{playback.textContent=en?'This video could not play. Please retry this class.':'यह वीडियो नहीं चल पाया। कृपया इस कक्षा को दोबारा खोलें।';}
+  }});
  }
  function loadPlayer(){
   const frame=document.getElementById('free-course-frame');
-  if(!frame.src)frame.src='https://www.youtube-nocookie.com/embed/videoseries?list=PLN80wspGZ5mw&enablejsapi=1&playsinline=1&rel=0&origin='+encodeURIComponent(location.origin);
+  if(!frame.src)frame.src='https://www.youtube-nocookie.com/embed/'+videos[active]+'?enablejsapi=1&playsinline=1&rel=0&origin='+encodeURIComponent(location.origin);
   if(window.YT?.Player){initialisePlayer();return;}
   if(document.getElementById('course-youtube-api'))return;
   const prior=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{if(prior)prior();initialisePlayer();};
