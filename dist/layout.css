@@ -125,3 +125,32 @@ html[lang] #intro-video-title{grid-column:1;grid-row:2;font-size:clamp(1.8rem,3v
 .footer-socials a:hover{background:#682e23;border-color:#682e23;color:#fffaf1}
 .footer-contact-grid>nav>a:hover,.footer-contact-grid address a:hover{color:#8e4d21;text-decoration:underline;text-underline-offset:4px}
 .footer-contact-grid a:focus-visible{outline-color:#87382c}
+
+/* Free numerology course, separate from upcoming paid masterclasses. */
+.free-numerology-section{background:#fffaf0}
+.free-course-card{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;padding:40px;border:1px solid #cfb485;border-top:4px solid #95612e;border-radius:8px;background:#fbf4e6;align-items:center}
+.free-course-card>div{min-width:0}
+.free-course-badge{display:inline-block;padding:5px 12px;background:#e7eddf;color:#345244;border:1px solid #a6b497;border-radius:4px;font-size:.75rem;letter-spacing:.06em;font-weight:800;margin:4px 0 18px}
+.free-course-card h2{font-size:clamp(1.7rem,2.8vw,2.2rem);line-height:1.45;color:#512d23}
+.free-course-card h2 strong{color:#87382c;font-weight:800}
+.free-course-card .section-copy{font-size:1rem}
+.free-course-points{list-style:none;padding:0;margin-top:22px;display:grid;gap:10px;font-size:.9rem;font-weight:700;color:#514335}
+.free-course-points li{position:relative;padding-left:24px}
+.free-course-points li:before{content:'✓';position:absolute;left:0;color:#356058}
+.free-course-invite{font-size:.9rem;line-height:1.85;color:#736355;margin-top:22px;max-width:520px}
+.free-course-actions{display:flex;gap:14px 24px;flex-wrap:wrap;margin-top:20px}
+.free-course-actions .text-link{font-size:.875rem;min-height:44px;color:#713b28}
+.numerology-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:290px;padding:28px 20px;border:1px solid #bda06a;border-radius:6px;background:radial-gradient(circle at center,#774333,#401e1b);color:#efd49e;text-align:center}
+.numerology-art>span{font-size:1.7rem;letter-spacing:.25em;line-height:1.3;color:#d7b681}
+.numerology-art>strong{font-size:clamp(1rem,2vw,1.45rem);letter-spacing:.1em}
+.numerology-art>p{font-size:.75rem;letter-spacing:.15em;color:#f9ebd3}
+.free-course-player{margin-top:18px}
+.free-course-player>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;min-height:54px;padding:15px 20px;background:#682e23;color:#fff6e8;font-weight:800;font-size:.95rem;border-radius:5px}
+.free-course-player>summary::-webkit-details-marker{display:none}
+.free-course-player>summary:hover{background:#813d2c}
+.free-course-embed{position:relative;aspect-ratio:16/9;margin-top:16px;background:#251713;border-radius:5px;overflow:hidden}
+.free-course-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.free-course-access,.player-help{font-size:.8rem;line-height:1.8;color:#736355;margin-top:12px}
+.free-course-access{text-align:center}
+@media(max-width:900px){.free-course-card{gap:28px;padding:28px}}
+@media(max-width:680px){.free-course-card{grid-template-columns:1fr;padding:24px;gap:28px}.numerology-art{min-height:240px}.free-course-actions{gap:12px 20px}.free-course-card h2{font-size:1.7rem}}
