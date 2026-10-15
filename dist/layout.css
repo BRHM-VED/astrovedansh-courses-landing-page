@@ -176,3 +176,125 @@ html[lang] #intro-video-title{grid-column:1;grid-row:2;font-size:clamp(1.8rem,3v
 .lesson-row summary{cursor:pointer;padding:12px 0;color:#735235;font-size:.875rem}
 .lesson-row details p{font-size:.9rem;line-height:1.9;color:#665443;padding-bottom:12px}
 @media(max-width:680px){.lesson-row{grid-template-columns:1fr;gap:4px;padding:16px}.lesson-module>h4{padding:16px}.lesson-player-panel{padding:16px}.numerology-classroom>h3{font-size:1.4rem}}
+
+/* Clear type hierarchy and shared editorial grid. */
+:root{--page-width:1160px;--section-space:88px;--muted:#665748}
+body{font-size:18px;line-height:1.8;background-image:none}
+h1,h2,h3,h4{font-weight:800}
+.section h2,.compact-fit h2,html[lang] #intro-video-title{font-size:clamp(2rem,3.3vw,2.9rem);line-height:1.45;letter-spacing:-.025em}
+.section .eyebrow{font-size:.875rem;font-weight:800;letter-spacing:.07em;margin-bottom:16px}
+.section-copy,.about-copy .section-copy,.hero-description,.free-course-card .section-copy{font-size:1.125rem;line-height:1.9}
+.scope-grid p,.learning-summary p,.promise-grid p,.included-resources li,.faq-answer,.free-course-invite,.lesson-row details p{font-size:1.0625rem;line-height:1.85}
+.scope-grid h3,.learning-summary h3,.promise-grid h3{font-size:1.3rem;font-weight:800;line-height:1.6}
+.compact-note,.compact-scope .scope-path,.payment-note,.free-course-points,.free-course-actions .text-link,.video-caption p>span,.fact p{font-size:1rem;line-height:1.8}
+.text-link,.button,.course-open-button{font-size:1.0625rem;font-weight:800}
+.button,.course-open-button{min-height:58px;border-radius:8px}
+.site-header{border-top-width:3px}
+.header-inner{height:auto;min-height:94px;gap:24px;padding-block:14px}
+.desktop-nav{display:none}
+.brand{font-size:1.65rem}.brand small{font-size:.7rem;letter-spacing:.06em}
+html[lang] .hero-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);grid-template-areas:'copy art' 'offer offer';gap:42px 64px;padding-block:64px}
+.hero h1{font-size:clamp(2.8rem,4.6vw,4.25rem);font-weight:900;line-height:1.35;margin-bottom:24px}
+.hero-intro{font-size:1.35rem;line-height:1.7;font-weight:800;margin-bottom:16px;max-width:600px}
+.hero-description{max-width:620px}.hero-eyebrow{font-size:.875rem}
+.heritage-art{max-height:490px;aspect-ratio:4/5;width:100%;align-self:center;outline-offset:7px}
+.hero-tags{gap:12px;margin-top:24px;align-items:stretch}
+.hero-tags>span{color:#f0d4a4!important;font-size:.875rem;border:1px solid #a57d5155;border-radius:5px;padding:6px 12px!important}
+.hero-enrol-panel{grid-area:offer;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:32px;padding:28px 32px;background:#fff8eb;border:1px solid #d7b67e;border-radius:12px;color:#512c21;box-shadow:0 15px 40px #170a0820}
+.hero-enrol-panel>div,.hero-enrol-panel>a{min-width:0}
+.hero-enrol-panel .batch-start{margin:0;padding:0;width:100%;background:none;border:0;gap:4px;display:flex;flex-direction:column;align-items:flex-start}
+.hero-enrol-panel .batch-start>span{color:#796044;font-size:.875rem}
+.hero-enrol-panel .batch-start>strong{color:#632d22;font-size:1.2rem}
+.hero-enrol-panel .hero-price{margin:12px 0 0;gap:8px 14px}
+.hero-enrol-panel .hero-price>strong{color:#632d22;font-size:2.5rem;line-height:1.2;order:-1}
+.hero-enrol-panel .price-original{color:#826e5b;font-size:1rem}
+.hero-enrol-panel .saving-pill{font-size:.75rem;color:#456143;border-color:#b7c5a4;background:#edf1e5;padding:4px 8px}
+.hero-enrol-panel .hero-actions{margin:0;display:grid;grid-template-columns:1fr;gap:12px}
+.hero-enrol-panel .button-gold{background:#6c3025;border-color:#6c3025;color:#fff7e8;box-shadow:none;padding:16px}
+.hero-enrol-panel .button-gold:hover{background:#85402f}
+.hero-enrol-panel .light-link{color:#6c3025;justify-self:center;font-size:.95rem;border-color:#cdb38b}
+.hero-enrol-panel .payment-note{font-size:.8rem;line-height:1.6;color:#796044;margin-top:14px;align-items:flex-start}
+.hero-enrol-panel .hero-bonus{margin:0;padding:16px 0 16px 28px;border:0;border-left:1px solid #dfcba8;border-radius:0;background:none;max-width:none}
+.hero-enrol-panel .hero-bonus strong{color:#526345;font-size:1.05rem;line-height:1.7}
+.hero-enrol-panel .hero-bonus>span>span{color:#796044;font-size:.9rem}
+.hero-enrol-panel .bonus-jump{color:#8b6132}
+.facts-grid{padding-block:32px}.fact strong{font-size:2.65rem;font-weight:900}.fact strong span{font-size:1.2rem}
+.teacher-video-section .hero-video{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:20px 48px}
+.video-introduction{grid-column:1;grid-row:1/3;align-self:center}
+.teacher-video-section .intro-video-frame{grid-column:2;grid-row:1}
+.teacher-video-section .video-caption{grid-column:2;grid-row:2;margin-top:0}
+html[lang] #intro-video-title{margin:0}.intro-video-frame{outline:none;border:1px solid #cbb28c;border-radius:10px}
+.scope-grid,.learning-summary,.promise-grid,.featured-masterclasses .masterclasses-grid{gap:24px;margin-top:36px}
+.scope-grid article,.learning-summary article,.promise-grid article{padding:28px}
+.scope-grid article{grid-template-columns:32px minmax(0,1fr);border-radius:10px}
+.learning-summary{border:0;border-radius:0;background:none;overflow:visible}
+.learning-summary article{border:1px solid #d7bd94;border-top:3px solid #a56535;border-radius:10px;background:#fffdf6}
+.learning-summary article:last-child{border-right:1px solid #d7bd94}
+.learning-summary h3{margin-top:16px}.learning-summary article>span{font-size:.9rem;font-weight:800}
+.audience-chips li{font-size:1rem;padding:18px;border-radius:8px}
+.about-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
+.about-portrait{max-width:none;max-height:560px;aspect-ratio:4/5}
+.about-role,.about-credentials dt{font-size:1rem}.about-credentials dd{font-size:1.125rem}
+.academy-stats strong{font-size:3.2rem;font-weight:900}.academy-stats span{font-size:1rem}
+.academy-stats>div+div{border-left:1px solid #d9bd91;padding-left:24px}
+.software-bonus-card,.enrol-card,.free-course-card{border-radius:12px;padding:40px}
+.enrol-grid{gap:64px}.enrol-card{border-color:#b99760}.enrol-card h3{font-size:2.4rem;font-weight:800}
+.enrol-specs>div{font-size:1rem}.enrol-price>div>strong{font-size:3.5rem}
+.faq-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
+.faq summary{font-size:1.125rem;font-weight:700;padding-block:24px}
+.featured-masterclasses .masterclass-card{padding:32px;border-radius:10px;min-height:320px}
+.featured-masterclasses .masterclass-card h3{font-size:1.6rem;font-weight:800;min-height:4.65em}
+.featured-masterclasses .masterclass-card>.coming-soon{font-size:.875rem}
+.masterclass-format{font-size:1rem}.masterclass-label{font-size:.85rem}
+.promise-grid article{border-radius:10px}.promise-grid h3{min-height:3.2em}
+.free-course-card{gap:48px}.free-course-card h2{font-size:clamp(2rem,3.3vw,2.8rem)}
+.free-course-badge{font-size:.875rem;padding:6px 14px}.numerology-art{min-height:340px;border-radius:10px;gap:20px}
+.free-course-access{font-size:.9rem}.numerology-grid{width:222px}.numerology-grid>span{font-size:2rem}
+.numerology-classroom{margin-top:56px;padding-top:40px}
+.numerology-classroom>h3{font-size:2.2rem;font-weight:800;line-height:1.5}
+.classroom-workspace{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;align-items:start}
+.lesson-player-panel{margin:0;padding:24px;border-radius:10px;position:sticky;top:118px}
+.lesson-player-panel h4{font-size:1.35rem;line-height:1.6}
+.classroom-lessons{max-height:760px;overflow-y:auto;padding-right:8px;scrollbar-color:#b58e58 #f4ead8;scrollbar-width:thin}
+.lesson-module{margin-top:18px;border-radius:8px}.lesson-module:first-child{margin-top:0}
+.lesson-module>h4{font-size:1.125rem;font-weight:800;padding:20px;line-height:1.6}
+.lesson-row{grid-template-columns:1fr;gap:4px;padding:18px 20px}
+.lesson-row button{font-size:1rem;padding:14px 16px;font-weight:700}
+.lesson-row summary{font-size:.95rem}#lesson-status{font-size:.95rem;line-height:1.8}
+.site-footer .footer-contact-grid{padding-block:56px 40px;gap:48px}
+.footer-contact-grid h3{font-size:1.15rem;font-weight:800}
+.footer-intro>p,.footer-contact-grid address,.footer-contact-grid>nav>a{font-size:1rem}
+.footer-socials a{font-size:.875rem}.footer-bottom,.footer-policies a{font-size:.875rem}
+@media(max-width:1000px){
+ html[lang] .hero-grid{grid-template-columns:1fr;grid-template-areas:'copy' 'offer';gap:32px;padding-block:48px}.heritage-art{display:none}
+ .hero-copy{max-width:760px;margin:0}.hero h1{max-width:760px}.hero-description{max-width:720px}
+ .hero-enrol-panel{grid-template-columns:1fr 1fr;gap:24px}.hero-enrol-panel .hero-bonus{grid-column:1/-1;border-left:0;border-top:1px solid #dfcba8;padding:20px 0 0}
+ .about-grid,.enrol-grid,.faq-grid{gap:36px}.software-bonus-card,.free-course-card,.enrol-card{padding:32px}
+ .classroom-workspace{grid-template-columns:1fr}.lesson-player-panel{position:static}.classroom-lessons{max-height:none;overflow:visible;padding:0}
+ .lesson-row{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media(max-width:680px){
+ :root{--section-space:56px}body{font-size:17px}.container{width:calc(100% - 40px)}
+ .section h2,.compact-fit h2,html[lang] #intro-video-title,.free-course-card h2{font-size:2rem;line-height:1.5}
+ html[lang] .hero h1{font-size:clamp(2.4rem,9vw,3.2rem);line-height:1.4}
+ .hero-intro{font-size:1.2rem}.section-copy,.about-copy .section-copy,.hero-description,.free-course-card .section-copy{font-size:1.0625rem;line-height:1.9}
+ .header-inner{min-height:78px;gap:12px}.brand{font-size:1.35rem}.brand small{font-size:.55rem}
+ .hero-enrol-panel{grid-template-columns:1fr;padding:24px;gap:24px}.hero-enrol-panel .hero-bonus{grid-column:auto;padding-top:20px}
+ .hero-enrol-panel .hero-offer-pricing{padding-bottom:22px;border-bottom:1px solid #dfcba8}
+ .hero-enrol-panel .batch-start{flex-direction:row;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+ .hero-enrol-panel .hero-price{margin-top:16px}.hero-enrol-panel .hero-price>strong{font-size:2.6rem}
+ .hero-enrol-panel .payment-note{justify-content:center}.hero-tags>span{font-size:.8rem}
+ .facts-grid{gap:24px 0}.fact strong{font-size:2.1rem}.fact strong span{font-size:1rem}.fact p{font-size:.9rem}
+ .teacher-video-section .hero-video{display:block}.video-introduction{margin-bottom:24px}.teacher-video-section .video-caption{margin-top:18px}
+ .about-grid,.enrol-grid,.faq-grid{grid-template-columns:1fr;gap:32px}
+ .about-portrait{max-width:360px}.about-copy{width:100%}
+ .scope-grid article,.learning-summary article,.promise-grid article{padding:24px}
+ .scope-grid h3,.learning-summary h3,.promise-grid h3{font-size:1.25rem}
+ .scope-grid p,.learning-summary p,.promise-grid p,.included-resources li,.faq-answer{font-size:1rem}
+ .software-bonus-card,.enrol-card,.free-course-card{padding:24px}
+ .featured-masterclasses .masterclass-card{padding:26px;min-height:0}
+ .featured-masterclasses .masterclass-card h3{font-size:1.5rem;min-height:0}.promise-grid h3{min-height:0}
+ .free-course-card{gap:32px}.numerology-art{min-height:320px}.numerology-classroom>h3{font-size:1.8rem}
+ .lesson-row{grid-template-columns:1fr;gap:4px}.lesson-player-panel{padding:20px}.lesson-player-panel h4{font-size:1.2rem}
+ .site-footer .footer-contact-grid{gap:32px;padding-block:44px 32px}.academy-stats strong{font-size:2.8rem}
+}
