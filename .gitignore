@@ -1,2 +1,13 @@
-.DS_Store
-.vercel
+.sites-runtime/
+.env
+.env.*
+node_modules/
+
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+.sites-runtime/
+.env*
+!.env.example

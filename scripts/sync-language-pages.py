@@ -34,7 +34,7 @@ def inside_language_switch(element):
 
 
 for source_name, target_name in [('index.html', 'english.html'), ('numerology.html', 'numerology-english.html')]:
-    doc = html.document_fromstring((ROOT / ('dist/' + source_name)).read_text())
+    doc = html.document_fromstring((ROOT / ('public/' + source_name)).read_text())
     doc.set('lang', 'en')
     language_options = doc.xpath('//nav[@class="language-switch"]/a')
     for link in language_options:
@@ -58,6 +58,8 @@ for source_name, target_name in [('index.html', 'english.html'), ('numerology.ht
         if inside_language_switch(link):
             continue
         href = link.get('href')
+        if href.endswith('.chatgpt.site/account'):
+            link.set('href', href + '?lang=en')
         if href == 'numerology.html' or href.startswith('numerology.html#'):
             link.set('href', href.replace('numerology.html', 'numerology-english.html', 1))
         elif href == 'index.html' or href.startswith('index.html#'):
@@ -72,5 +74,5 @@ for source_name, target_name in [('index.html', 'english.html'), ('numerology.ht
         raise ValueError(f'Untranslated English content: {remaining}')
 
     output = '<!doctype html>\n' + html.tostring(doc, encoding='unicode', method='html') + '\n'
-    (ROOT / ('dist/' + target_name)).write_text(output)
+    (ROOT / ('public/' + target_name)).write_text(output)
     print(f'English page generated. {len(ENGLISH)} translations; no Hindi content outside the language selector.')
