@@ -311,3 +311,20 @@ html[lang] #intro-video-title{margin:0}.intro-video-frame{outline:none;border:1p
 .paid-access-note{margin:24px 0 16px;color:#665443}
 .paid-course-panel>.text-link{font-size:.95rem;line-height:1.7}
 .lesson-title{margin:0;padding:12px 0;font-size:1.0625rem;line-height:1.7;color:#542b22;font-weight:800}
+
+/* Golden-yellow numerology highlight, shared by both language versions. */
+.free-numerology-section .free-course-card{background:#ffe180;border:2px solid #d5a026;border-top:6px solid #bc7a0e;box-shadow:0 16px 40px rgba(128,83,15,.13)}
+.free-course-card h2,.free-course-card h2 strong{color:#492310}
+.free-course-card .eyebrow{color:#754019}
+.free-course-card .section-copy,.free-course-card .free-course-points,.free-course-card .free-course-invite,.free-course-card .free-course-access{color:#513717}
+.free-course-card .free-course-badge{background:#fff5ca;color:#63350f;border-color:#be8c27}
+.free-course-card .free-course-points li:before{color:#684514}
+.free-course-card .numerology-art{background:#ffd358;border-color:#b77c1e;color:#542b12}
+.free-course-card .numerology-art>p{color:#654217}
+.free-course-card .numerology-grid{border-color:#a96f17}
+.free-course-card .numerology-grid span{color:#542b12;border-color:#a96f17;background:rgba(255,250,225,.35)}
+.free-course-card .numerology-price strong{color:#492310}
+.free-course-card .coupon-hint strong{background:#fff8da;border-color:#966213;color:#542b12}
+.free-course-card .course-open-button{background:#682e23;color:#fffaf0;border-color:#682e23}
+.free-course-card .course-open-button:hover{background:#4c2019}
+.free-course-card .text-link{color:#63300f}
