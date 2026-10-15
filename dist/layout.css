@@ -154,3 +154,7 @@ html[lang] #intro-video-title{grid-column:1;grid-row:2;font-size:clamp(1.8rem,3v
 .free-course-access{text-align:center}
 @media(max-width:900px){.free-course-card{gap:28px;padding:28px}}
 @media(max-width:680px){.free-course-card{grid-template-columns:1fr;padding:24px;gap:28px}.numerology-art{min-height:240px}.free-course-actions{gap:12px 20px}.free-course-card h2{font-size:1.7rem}}
+
+/* Vedic numerology grid, in the academy's teaching order. */
+.numerology-grid{display:grid;grid-template-columns:repeat(3,1fr);width:min(100%,204px);border-top:1px solid #b99760;border-left:1px solid #b99760}
+.numerology-grid>span{display:grid;place-items:center;aspect-ratio:1;font-size:1.65rem;line-height:1;font-weight:700;letter-spacing:0;color:#f1d7a5;border-right:1px solid #b99760;border-bottom:1px solid #b99760;background:#ffffff04}
