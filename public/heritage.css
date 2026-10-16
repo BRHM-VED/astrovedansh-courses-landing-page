@@ -47,3 +47,9 @@ html[lang=en] .hero h1{font-size:clamp(3.4rem,5.3vw,5rem);line-height:1.04;font-
 .site-footer .footer-bottom,.site-footer .footer-policies a{color:#d2c3a6}
 .site-footer .footer-contact-grid a:hover,.site-footer .footer-policies a:hover{color:#fff1d4}
 .site-footer a:focus-visible{outline-color:#f0ce8d}
+
+/* Promise content uses ink colors on the light parchment surface. */
+.promise-section{color:#514535}
+.promise-section .promise-grid h3{color:#48291e}
+.promise-section .promise-grid p{color:#514535}
+.promise-section .promise-grid article>span{color:#866235}
