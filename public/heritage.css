@@ -99,3 +99,7 @@ html[lang=en] .hero h1{font-size:clamp(3.4rem,5.3vw,5rem);line-height:1.04;font-
 :root body .series-lesson-button:active{transform:translateY(2px);box-shadow:0 1px 0 #b69c72}
 @media(max-width:680px){:root body .mobile-enrol .button{font-size:.78rem;min-height:46px;padding:10px 13px;margin-bottom:4px}:root body .course-open-button{font-size:.95rem;min-height:54px}:root body .series-navigation button{font-size:.8rem;padding:12px;min-height:48px}}
 @media(prefers-reduced-motion:reduce){:root body :is(.button,.course-open-button,.series-navigation button,.series-lesson-button,.footer-socials a){transition:none!important}}
+
+/* Keep the header focused on the brand and language selection. */
+:root body .site-header .button-header{display:none}
+@media(max-width:680px){.site-header .header-inner{flex-wrap:nowrap;justify-content:space-between;gap:10px}.site-header .header-actions{width:auto;margin-left:auto;flex-shrink:0}.site-header .brand{min-width:0;font-size:clamp(1rem,4.6vw,1.22rem);gap:8px}.site-header .brand-logo{width:32px;height:32px}.site-header .language-option{padding:6px 7px;font-size:.7rem}}
