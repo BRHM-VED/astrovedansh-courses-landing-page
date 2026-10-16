@@ -103,3 +103,10 @@ html[lang=en] .hero h1{font-size:clamp(3.4rem,5.3vw,5rem);line-height:1.04;font-
 /* Keep the header focused on the brand and language selection. */
 :root body .site-header .button-header{display:none}
 @media(max-width:680px){.site-header .header-inner{flex-wrap:nowrap;justify-content:space-between;gap:10px}.site-header .header-actions{width:auto;margin-left:auto;flex-shrink:0}.site-header .brand{min-width:0;font-size:clamp(1rem,4.6vw,1.22rem);gap:8px}.site-header .brand-logo{width:32px;height:32px}.site-header .language-option{padding:6px 7px;font-size:.7rem}}
+
+/* Give the syllabus disclosure a consistent inset and a stable icon column. */
+.compact-curriculum .full-syllabus{border:0}
+.compact-curriculum .full-syllabus>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px;line-height:1.6;text-align:left}
+.compact-curriculum .full-syllabus>summary>span{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;line-height:1;font-size:1.35rem}
+.compact-curriculum .full-syllabus>summary:focus-visible{outline:3px solid #b78a43;outline-offset:4px}
+@media(max-width:680px){.compact-curriculum .learning-result{padding:20px}.compact-curriculum .full-syllabus>summary{padding:20px;gap:16px;font-size:.95rem}.compact-curriculum .full-syllabus>summary>span{flex-basis:24px;width:24px;height:24px}}
