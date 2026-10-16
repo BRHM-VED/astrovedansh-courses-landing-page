@@ -19,6 +19,10 @@
   if (dial) new IntersectionObserver(entries => {
     entries.forEach(entry => { dial.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused'; });
   }).observe(dial);
+  const motion = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.target.classList.toggle('motion-active', entry.isIntersecting));
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.intro-play, .numerology-art, .masterclass-card, .software-bonus-art').forEach(el => motion.observe(el));
   const reveals = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {

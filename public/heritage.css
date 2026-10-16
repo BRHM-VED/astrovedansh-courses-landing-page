@@ -53,3 +53,16 @@ html[lang=en] .hero h1{font-size:clamp(3.4rem,5.3vw,5rem);line-height:1.04;font-
 .promise-section .promise-grid h3{color:#48291e}
 .promise-section .promise-grid p{color:#514535}
 .promise-section .promise-grid article>span{color:#866235}
+
+/* Keep the oversized dial concentric: the global image width cap must not shrink it. */
+.heritage-art .celestial-engraving{max-width:none;inset:-6%;width:112%;height:112%;transform-origin:50% 50%}
+.heritage-art img:not(.celestial-engraving){left:50%;transform:translateX(-50%)}
+/* Decorative movement is paused outside the viewport. Text remains still. */
+.intro-play:before{animation:celestial-turn 150s linear infinite;animation-play-state:paused}
+.numerology-art{position:relative;overflow:hidden;isolation:isolate}
+.numerology-art:before{content:'';position:absolute;inset:-30%;background:url('assets/celestial-engraving.svg') center/contain no-repeat;opacity:.13;z-index:-1;animation:celestial-turn 110s linear infinite reverse;animation-play-state:paused;pointer-events:none}
+.masterclass-symbol{display:inline-block;transform-origin:center;animation:celestial-turn 40s linear infinite;animation-play-state:paused}
+.software-bonus-art img{animation:manuscript-float 7s ease-in-out infinite;animation-play-state:paused}
+.motion-active.intro-play:before,.motion-active.numerology-art:before,.motion-active .masterclass-symbol,.motion-active.software-bonus-art img{animation-play-state:running}
+@keyframes manuscript-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){.intro-play:before,.numerology-art:before,.masterclass-symbol,.software-bonus-art img{animation:none!important}}
