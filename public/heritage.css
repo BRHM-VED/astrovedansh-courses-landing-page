@@ -66,3 +66,13 @@ html[lang=en] .hero h1{font-size:clamp(3.4rem,5.3vw,5rem);line-height:1.04;font-
 .motion-active.intro-play:before,.motion-active.numerology-art:before,.motion-active .masterclass-symbol,.motion-active.software-bonus-art img{animation-play-state:running}
 @keyframes manuscript-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @media(prefers-reduced-motion:reduce){.intro-play:before,.numerology-art:before,.masterclass-symbol,.software-bonus-art img{animation:none!important}}
+
+/* Restrained 3D depth and scroll-linked movement. */
+.site-header:after{content:'';position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:#b48947;transform:scaleX(var(--reading-progress,0));transform-origin:left;pointer-events:none}
+.depth-surface{transform:perspective(1000px) translateY(var(--scroll-depth,0px)) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transform-style:preserve-3d;transition:transform .18s ease-out}
+.heritage-art.depth-surface img:not(.celestial-engraving){transform:translateX(-50%) translateZ(22px)}
+.heritage-art.depth-surface figcaption{transform:translateZ(30px)}
+.about-portrait.scroll-portrait{transform:translateY(var(--scroll-depth,0px));animation:none}
+.featured-masterclasses .scroll-depth-card{transform:perspective(1100px) translateY(var(--card-rise,0px)) rotateX(var(--card-angle,0deg));transform-origin:center bottom;animation:none;transition:border-color .25s ease,box-shadow .25s ease}
+@media(hover:hover) and (pointer:fine){.featured-masterclasses .scroll-depth-card:hover{box-shadow:inset 0 0 0 5px #33251a,inset 0 0 0 6px #96754940,0 14px 30px #10090355;border-color:#d0ad68}}
+@media(prefers-reduced-motion:reduce){.depth-surface,.about-portrait.scroll-portrait,.featured-masterclasses .scroll-depth-card{transform:none!important;transition:none!important}.heritage-art.depth-surface img:not(.celestial-engraving){transform:translateX(-50%)}.heritage-art.depth-surface figcaption{transform:none}.site-header:after{display:none}}
