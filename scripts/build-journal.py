@@ -78,11 +78,11 @@ for lang in ['hi','en']:
  body=f'<main id="main" class="j-reader"><h1>{title}</h1><article class="j-prose">'+''.join('<p>'+esc(p)+'</p>' for p in paras)+'</article><h2>'+('अध्ययन संदर्भ' if hi else 'Study references')+'</h2><p><a href="https://www.icasindia.org/ICAS/JyotishPraveena.html">ICAS · Jyotisha Praveena</a> · <a href="https://www.astrosage.com/magazine/learn/astrology-tutorial-houses.asp">AstroSage · Chart and house conventions</a></p><p>'+('ये संदर्भ विषय और परंपरागत शब्दावली के लिए हैं; किसी संस्था की साझेदारी या समर्थन का दावा नहीं।' if hi else 'These references support educational context and terminology, not a claim of institutional partnership or endorsement.')+'</p></main>'
  (P/url).write_text(page(title,title,body,url,lang,alternate))
 
-paths=['index.html','english.html','numerology.html','numerology-english.html','journal.html','journal-english.html','editorial.html','editorial-english.html']+[r['url'] for r in allrows]
+paths=['free-tools.html','free-tools-english.html','index.html','english.html','numerology.html','numerology-english.html','journal.html','journal-english.html','editorial.html','editorial-english.html']+[r['url'] for r in allrows]
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';root=Element('urlset',xmlns=ns)
 for path in paths:
  u=SubElement(root,'url');SubElement(u,'loc').text=absurl(path)
- if path not in paths[:4]:SubElement(u,'lastmod').text=DATE
+ if path not in ['index.html','english.html','numerology.html','numerology-english.html']:SubElement(u,'lastmod').text=DATE
 ElementTree(root).write(P/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 (P/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /account\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
 (ROOT/'content/journal-manifest.json').write_text(json.dumps([{k:r[k] for k in ['number','title','category','url','lang','words','image']} for r in allrows],ensure_ascii=False,indent=2)+'\n')

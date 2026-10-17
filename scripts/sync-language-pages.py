@@ -60,6 +60,8 @@ for source_name, target_name in [('index.html', 'english.html'), ('numerology.ht
         href = link.get('href')
         if href.endswith('.chatgpt.site/account'):
             link.set('href', href + '?lang=en')
+        if href == 'free-tools.html':
+            link.set('href', 'free-tools-english.html')
         if href == 'journal.html':
             link.set('href', 'journal-english.html')
         elif href.startswith('journal/'):
