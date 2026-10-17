@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "slug": "mulank-day-only",
+    "hi": {
+      "title": "मूलांक निकालते समय महीना क्यों नहीं जोड़ते?",
+      "brief": "मूलांक और भाग्यांक की गणना अलग रखकर सीखें। मूलांक में जन्म के दिन को घटाकर एक अंक बनाया जाता है। महीने और वर्ष को यहाँ जोड़ने से प्रश्न ही बदल जाता है। पहले गणना पहचानें, उसके बाद परंपरागत अर्थ पढ़ें।",
+      "example": "23 सितंबर 1996: मूलांक 2 + 3 = 5।",
+      "misconception": "पूरी जन्मतिथि जोड़ना मूलांक नहीं है।"
+    },
+    "en": {
+      "title": "Why the birth number uses only the day",
+      "brief": "Learn the birth number and the full-date number as separate calculations. In this Indian convention, the birth number reduces the day of birth. Adding the month and year answers a different question. Establish the calculation before considering its traditional interpretation.",
+      "example": "23 September 1996: birth number 2 + 3 = 5.",
+      "misconception": "The sum of the entire birth date is not the day-based birth number."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 2,
+    "slug": "bhagyank-full-date",
+    "hi": {
+      "title": "भाग्यांक में जन्मवर्ष पूरा क्यों जोड़ना चाहिए?",
+      "brief": "भाग्यांक का अभ्यास पूरी जन्मतिथि के अंकों से करें। दिन, महीना और चार अंकों वाला वर्ष अलग पंक्तियों में लिखने से छूटे हुए अंक पकड़ में आते हैं। अंतिम जोड़ और उसका एक अंक में रूपांतरण दोनों दिखाएँ, ताकि दूसरा विद्यार्थी जाँच सके।",
+      "example": "23-09-1996: 2+3+0+9+1+9+9+6 = 39 → 12 → 3।",
+      "misconception": "जन्मवर्ष से 19 हटाने का ग्रिड नियम भाग्यांक पर लागू नहीं है।"
+    },
+    "en": {
+      "title": "Why Bhagyank uses the complete birth year",
+      "brief": "Calculate Bhagyank from every digit in the complete birth date. Writing the day, month and four-digit year on separate lines makes omissions easier to notice. Show both the total and its reduction so another learner can independently check the arithmetic.",
+      "example": "23-09-1996: 2+3+0+9+1+9+9+6 = 39 → 12 → 3.",
+      "misconception": "The grid convention excluding the century must not be applied to Bhagyank."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 3,
+    "slug": "compound-birthday",
+    "hi": {
+      "title": "14 और 23 का मूलांक समान, फिर क्या बचाकर लिखें?",
+      "brief": "दो जन्मदिन एक ही मूलांक दे सकते हैं, फिर भी मूल दिनांक मिटाना आवश्यक नहीं है। अध्ययन में संयुक्त दिनांक और घटा हुआ अंक दोनों दर्ज करें। इससे बाद में किसी परंपरा के संयुक्त अंक संबंधी नियम पढ़ते समय मूल जानकारी उपलब्ध रहती है।",
+      "example": "14 → 1+4=5; 23 → 2+3=5। अभिलेख: 14/5 और 23/5।",
+      "misconception": "समान मूलांक से समान जीवन या व्यक्तित्व प्रमाणित नहीं होता।"
+    },
+    "en": {
+      "title": "Same reduced birth number, different compound days",
+      "brief": "Two birthdays can reduce to the same birth number without becoming identical dates. Record both the compound day and its reduced value. Preserving the original number lets you examine compound-number teachings later without pretending the reduction retains every piece of information.",
+      "example": "14 → 1+4=5; 23 → 2+3=5. Keep records as 14/5 and 23/5.",
+      "misconception": "An identical reduced number does not establish identical lives or personalities."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 4,
+    "slug": "reduction-audit",
+    "hi": {
+      "title": "अंकों का जोड़ सही है या केवल उत्तर याद है?",
+      "brief": "अंक ज्योतिष सीखते समय सबसे उपयोगी आदत जोड़ की जाँच है। लंबे जोड़ को समूहों में बाँटकर फिर स्वतंत्र रूप से जाँचें। कोई सुंदर व्याख्या गलत गणना को सही नहीं बनाती। अभ्यास में उत्तर से पहले सभी बीच के चरण स्पष्ट लिखना बेहतर है।",
+      "example": "18-04-2001: (1+8)+4+(2+0+0+1)=16 → 7।",
+      "misconception": "अलग तरीके से समूह बनाने पर अंतिम योग बदलना नहीं चाहिए।"
+    },
+    "en": {
+      "title": "Audit the arithmetic instead of memorising an answer",
+      "brief": "One useful learning habit is checking the arithmetic before interpreting a result. Split a long sum into smaller groups, then verify it independently. An appealing interpretation cannot repair a calculation error. Keep the intermediate totals visible instead of showing only the final digit.",
+      "example": "18-04-2001: (1+8)+4+(2+0+0+1)=16 → 7.",
+      "misconception": "Changing the grouping of addition must not change the total."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 5,
+    "slug": "master-number-rule",
+    "hi": {
+      "title": "11 को रोकना है या 2 बनाना है?",
+      "brief": "मास्टर अंक संबंधी नियम पढ़ते समय पहले पद्धति का नाम पूछें। कुछ विधियाँ 11 जैसे अंकों को अलग रखती हैं, जबकि एकल अंक वाली विधि उन्हें आगे जोड़ती है। सही अभ्यास यह है कि चुना नियम शुरुआत में लिखें और बीच में उसे न बदलें।",
+      "example": "29 → 2+9=11; एकल अंक विधि में 1+1=2।",
+      "misconception": "11 और 2 देखकर तुरंत किसी गणना को गलत घोषित न करें; नियम जाँचें।"
+    },
+    "en": {
+      "title": "Should 11 remain 11 or reduce to 2?",
+      "brief": "Before applying a master-number convention, identify the method being taught. Some systems retain numbers such as 11, while a single-digit method reduces them further. State the chosen rule at the beginning and apply it consistently rather than changing it to obtain a preferred interpretation.",
+      "example": "29 → 2+9=11; under a single-digit convention, 1+1=2.",
+      "misconception": "Do not call 11 or 2 incorrect before checking the stated convention."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 6,
+    "slug": "destiny-terminology",
+    "hi": {
+      "title": "भाग्यांक और नामांक को एक नाम देने की उलझन",
+      "brief": "अंग्रेज़ी में पढ़ते समय केवल शब्द देखकर गणना न चुनें। भारतीय शिक्षण में भाग्यांक के लिए प्रयुक्त शब्द दूसरी पद्धति में नाम से निकले अंक का संकेत हो सकता है। प्रत्येक लेख में स्पष्ट करें कि संख्या जन्मतिथि से आई है या अक्षरों से।",
+      "example": "23-09-1996 का पूर्ण जन्मतिथि योग 39 → 3 है; नाम का योग अलग गणना है।",
+      "misconception": "हर पुस्तक में Destiny का अर्थ पूर्ण जन्मतिथि होना आवश्यक नहीं है।"
+    },
+    "en": {
+      "title": "The ambiguity of the term Destiny Number",
+      "brief": "Do not select a calculation from its English label alone. Destiny Number can refer to different calculations across numerology traditions. Explain whether the value comes from the full birth date or from name letters. Clear definitions prevent students from combining incompatible instructions.",
+      "example": "The full-date total for 23-09-1996 is 39 → 3; a name total is a separate calculation.",
+      "misconception": "Destiny does not necessarily mean the full birth-date total in every book."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 7,
+    "slug": "grid-layout",
+    "hi": {
+      "title": "एक ही अंक, अलग ग्रिड: गलती कहाँ होती है?",
+      "brief": "अंक भरने से पहले खाली ग्रिड का क्रम जाँचें। इस पाठ्यक्रम में ऊपर 3, 1, 9; बीच में 6, 7, 5; नीचे 2, 8, 4 रखा जाता है। दूसरे चित्र का क्रम अपनाकर इसी विधि की पंक्तियों की व्याख्या करना सीखने में भ्रम बढ़ाता है।",
+      "example": "5 बीच की पंक्ति के दाएँ खाने में जाएगा; 7 केंद्र में होगा।",
+      "misconception": "यह घोषित पाठ्यक्रम ग्रिड है; सभी अंक पद्धतियों का सार्वभौमिक क्रम नहीं।"
+    },
+    "en": {
+      "title": "Why the grid layout must be declared first",
+      "brief": "Check the empty grid before entering a birth date. This course uses 3, 1, 9 across the top; 6, 7, 5 in the middle; and 2, 8, 4 at the bottom. Interpretations belonging to another layout should not be silently transferred to these rows.",
+      "example": "Place 5 in the middle-right cell and 7 in the centre.",
+      "misconception": "This is the declared course grid, not a universal layout for all numerology."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 8,
+    "slug": "grid-century-scope",
+    "hi": {
+      "title": "ग्रिड से 19 हटता है, भाग्यांक से क्यों नहीं?",
+      "brief": "एक जन्मतिथि पर दो गणनाएँ करते समय उनके नियम अलग रखें। इस पाठ्यक्रम के जन्मांक ग्रिड में शताब्दी के 19 और शून्य छोड़ने का नियम बताया गया है। भाग्यांक निकालते समय फिर पूरी जन्मतिथि लें। दोनों परिणामों का अलग उद्देश्य है।",
+      "example": "23-09-1996 का कच्चा ग्रिड: 2,3,9,9,6; भाग्यांक: 39 → 3।",
+      "misconception": "कच्चे ग्रिड का जोड़ 29 है; उसे पूर्ण जन्मतिथि का योग न कहें।"
+    },
+    "en": {
+      "title": "A grid omission rule is not a date-sum rule",
+      "brief": "Keep the rules separate when constructing a grid and calculating a full-date number. The supplied course method omits the century digits 19 and zeros from the raw birth grid. For Bhagyank, return to the complete date. A rule for one representation does not automatically apply to another.",
+      "example": "23-09-1996 raw grid: 2,3,9,9,6; full-date total: 39 → 3.",
+      "misconception": "The raw-grid sum is 29; it is not the complete date total."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 9,
+    "slug": "grid-zero",
+    "hi": {
+      "title": "शून्य का खाना नहीं होने का अर्थ क्या है?",
+      "brief": "शून्य को जोड़ में रखना और ग्रिड में अलग खाना देना दो अलग बातें हैं। इस ग्रिड में केवल 1 से 9 तक खाने हैं, इसलिए शून्य दर्ज नहीं होता। फिर भी जन्मतिथि मूल रूप में सुरक्षित रखें, जिससे तारीख और गणना का संदर्भ न खोए।",
+      "example": "09 का अंकयोग 0+9=9 है; ग्रिड में 9 दर्ज होगा।",
+      "misconception": "शून्य छोड़ना पूरी जन्मतिथि बदलने की अनुमति नहीं है।"
+    },
+    "en": {
+      "title": "What it means when a grid has no zero cell",
+      "brief": "Including zero in a written date and assigning it a grid cell are different choices. This course grid contains cells for 1 through 9, so zero is not entered. Preserve the complete original date nevertheless, so its meaning and the calculation record remain clear.",
+      "example": "The digit sum of 09 is 0+9=9; enter 9 in the grid.",
+      "misconception": "Omitting zero from the grid does not permit changing the original birth date."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 10,
+    "slug": "repeated-digits",
+    "hi": {
+      "title": "दो 9 आए तो पहले क्या गिनें?",
+      "brief": "दोहराए गए अंकों का अभ्यास पहले गिनती से शुरू करें। तारीख से लिए गए प्रत्येक अंक के सामने एक निशान बनाएँ, फिर ग्रिड में उतनी प्रतियाँ भरें। मूलांक या भाग्यांक बाद में जोड़ने हों तो उन्हें अलग चिह्न दें, ताकि जन्मतिथि की आवृत्ति न बदले।",
+      "example": "23-09-1996 के बताए कच्चे ग्रिड में 9 दो बार और 3 एक बार है।",
+      "misconception": "दो प्रतियों को अपने आप दोगुना फल या दोगुनी शक्ति न मानें।"
+    },
+    "en": {
+      "title": "Count repeated digits before interpreting them",
+      "brief": "Begin repeated-number analysis with an accurate count. Mark every occurrence taken from the raw date, then transfer that count to the grid. If reduced numbers are added later under a declared method, distinguish them so they are not mistaken for additional raw birth-date digits.",
+      "example": "In the stated raw grid for 23-09-1996, 9 occurs twice and 3 once.",
+      "misconception": "Two occurrences do not establish twice the outcome or twice the ability."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 11,
+    "slug": "missing-digits",
+    "hi": {
+      "title": "ग्रिड में अंक नहीं है तो क्या क्षमता भी नहीं है?",
+      "brief": "ग्रिड में अनुपस्थित अंक का पहला अर्थ केवल इतना है कि चुनी गणना में वह अंक नहीं आया। उसके आधार पर किसी व्यक्ति की क्षमता, चरित्र या भविष्य तय करना बड़ा निष्कर्ष होगा। विद्यार्थी पहले अनुपस्थिति दर्ज करें, फिर पद्धति की सीमाओं सहित व्याख्या अलग लिखें।",
+      "example": "कच्ची सूची 2,3,9,9,6 में 1,4,5,7,8 नहीं आते।",
+      "misconception": "गायब 5 का अर्थ व्यक्ति संवाद करना नहीं जानता, यह निष्कर्ष उचित नहीं।"
+    },
+    "en": {
+      "title": "Does a missing grid number mean a missing ability?",
+      "brief": "A missing number first means only that the chosen construction did not produce that digit. Turning this into a definite claim about someone’s ability, character or future is a much larger step. Record the observation separately from any traditional interpretation and keep its limits explicit.",
+      "example": "The raw list 2,3,9,9,6 does not contain 1,4,5,7 or 8.",
+      "misconception": "An absent 5 does not prove that a person cannot communicate."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 12,
+    "slug": "raw-derived-layers",
+    "hi": {
+      "title": "जन्मतिथि और निकाले गए अंक एक साथ क्यों न मिलाएँ?",
+      "brief": "ग्रिड बनाते समय मूल जानकारी और उससे निकाले परिणाम अलग रंग या सूची में रखें। ऐसा करने पर पता रहता है कि कोई अंक जन्मतिथि में था या बाद की गणना से आया। यह विशेष रूप से दोहराव गिनते समय जरूरी है, क्योंकि जोड़ने से आवृत्ति बदलती है।",
+      "example": "कच्ची सूची में एक 3 है; भाग्यांक 3 जोड़ने वाली परत में दो 3 दिखेंगे।",
+      "misconception": "व्युत्पन्न अंक को जन्मतिथि में मौजूद अतिरिक्त अंक न बताएँ।"
+    },
+    "en": {
+      "title": "Separate raw digits from derived numbers",
+      "brief": "Keep raw date digits and derived values in separate lists or visual layers. This shows whether a number was present in the original date or introduced by a later calculation. The distinction matters when counting repetitions, because adding a derived value changes the displayed frequency.",
+      "example": "The raw list has one 3; a separate layer adding Bhagyank 3 would display two.",
+      "misconception": "Do not describe a derived number as an extra digit present in the birth date."
+    },
+    "evidence": {
+      "basis": "user-provided course convention and independently checked arithmetic",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 13,
+    "slug": "date-format",
+    "hi": {
+      "title": "04-05 को अप्रैल समझें या मई?",
+      "brief": "अंक जोड़ने से पहले तारीख का प्रारूप स्पष्ट करें। दिन और महीने की अदला-बदली पूर्ण योग में कभी छिप जाती है, लेकिन मूलांक बदल सकता है। अभिलेख में महीने का नाम लिखना आसान समाधान है। गणना की शुद्धता सही जानकारी से शुरू होती है।",
+      "example": "4 मई: मूलांक 4; 5 अप्रैल: मूलांक 5। दोनों के दिन-महीने का योग 9 है।",
+      "misconception": "समान भाग्यांक मिलने से तारीख का प्रारूप सही सिद्ध नहीं होता।"
+    },
+    "en": {
+      "title": "Resolve ambiguous dates before calculating",
+      "brief": "Clarify the date format before adding any digits. Swapping day and month may leave the complete sum unchanged while changing the birth number. Writing the month in words resolves this easily. Reliable arithmetic begins with an unambiguous record, not with an impressive interpretation.",
+      "example": "4 May gives birth number 4; 5 April gives 5. Both day-month sums equal 9.",
+      "misconception": "Matching full-date totals do not prove that the date format was correct."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 14,
+    "slug": "same-total-different-dates",
+    "hi": {
+      "title": "एक भाग्यांक में कितनी अलग जन्मतिथियाँ आ सकती हैं?",
+      "brief": "घटाकर एक अंक बनाने की प्रक्रिया कई अलग तारीखों को समान परिणाम दे सकती है। इस कारण भाग्यांक को पूरी जीवनी का विकल्प न मानें। अभ्यास में समान परिणाम वाले दो उदाहरण साथ रखें और देखें कि गणना ने कौन सी जानकारी संक्षिप्त कर दी है।",
+      "example": "01-01-2000: योग 4; 02-01-2008: योग 13 → 4।",
+      "misconception": "समान भाग्यांक का अर्थ समान पेशा, विवाह या आय नहीं है।"
+    },
+    "en": {
+      "title": "Different dates can share the same full-date number",
+      "brief": "Reducing a date to one digit maps many different dates to the same result. A full-date number therefore cannot stand in for an entire biography. Compare two examples with the same reduction and ask which details were compressed or discarded by the calculation itself.",
+      "example": "01-01-2000 totals 4; 02-01-2008 totals 13 → 4.",
+      "misconception": "The same Bhagyank does not establish the same career, marriage or income."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 15,
+    "slug": "name-mapping",
+    "hi": {
+      "title": "नामांक में अक्षर बदलने से पहले तालिका चुनें",
+      "brief": "नामांक निकालने का पहला कदम अक्षरों को अंक देने वाली तालिका तय करना है। यहाँ अभ्यास के लिए ए से आई तक 1 से 9, फिर वही क्रम दोहराएँ। इसे दूसरी पद्धति की तालिका समझकर न चलें। पहले प्रत्येक अक्षर का मूल्य लिखें, फिर योग करें।",
+      "example": "ANITA: A1 + N5 + I9 + T2 + A1 = 18 → 9।",
+      "misconception": "अलग अक्षर तालिकाओं के परिणाम सीधे मिलाना पद्धति बदल देता है।"
+    },
+    "en": {
+      "title": "Choose the letter table before calculating a name number",
+      "brief": "The first step in name calculation is declaring the letter-to-number table. For this exercise, assign A through I to 1 through 9 and repeat that sequence. Do not treat this as every system’s mapping. Write each letter’s value before adding the total.",
+      "example": "ANITA: A1 + N5 + I9 + T2 + A1 = 18 → 9.",
+      "misconception": "Mixing results from different letter tables changes the method."
+    },
+    "evidence": {
+      "basis": "declared repeating Latin A–I=1–9 illustrative mapping; arithmetic, no outcome claims",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 16,
+    "slug": "name-spelling",
+    "hi": {
+      "title": "एक अतिरिक्त अक्षर गणना बदलता है, क्या जीवन भी?",
+      "brief": "नाम की वर्तनी बदलने पर अंकयोग बदल सकता है; यह गणित का सीधा परिणाम है। उस बदलाव से धन, नौकरी या संबंध निश्चित बदलेंगे, यह अलग दावा है। सीखते समय पहले और बाद की गणना दिखाएँ और गणितीय परिवर्तन को जीवन परिणाम से अलग रखें।",
+      "example": "दोहराती 1–9 तालिका में ANITA=18→9; ANITAA=19→1।",
+      "misconception": "नया योग मिलना नाम परिवर्तन की सफलता का प्रमाण नहीं है।"
+    },
+    "en": {
+      "title": "A spelling change alters a sum, not proven outcomes",
+      "brief": "A spelling change can alter a letter total; that follows directly from the declared mapping. Claiming that it necessarily changes money, work or relationships is a separate assertion. Show the before-and-after arithmetic and distinguish a numerical difference from a demonstrated change in life outcomes.",
+      "example": "Under the repeating 1–9 table, ANITA=18→9; ANITAA=19→1.",
+      "misconception": "A different total is not proof that a name change succeeds."
+    },
+    "evidence": {
+      "basis": "declared repeating Latin A–I=1–9 illustrative mapping; arithmetic, no outcome claims",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 17,
+    "slug": "transliteration",
+    "hi": {
+      "title": "हिन्दी नाम की अंग्रेज़ी वर्तनी पहले तय करें",
+      "brief": "हिन्दी नाम को अंग्रेज़ी अक्षरों की तालिका से पढ़ते समय चुनी वर्तनी महत्त्व रखती है। उच्चारण समान रहते हुए लिखावट बदल सकती है। विद्यार्थी अभिलेख में वास्तविक उपयोग की वर्तनी लिखें और वैकल्पिक रूप अलग दिखाएँ, ताकि गणना की तुलना समझ में आए।",
+      "example": "दोहराती 1–9 तालिका में RAM=14→5; RAAM=15→6।",
+      "misconception": "लिप्यंतरण बदलने से आया अंतर किसी वर्तनी को अपने आप शुभ नहीं बनाता।"
+    },
+    "en": {
+      "title": "Fix the transliteration before using an English letter table",
+      "brief": "When applying an English letter table to a Hindi name, the chosen spelling matters. Similar pronunciation can be represented by different letters. Record the spelling actually used and list alternatives separately, so readers can understand why the calculations differ without assuming one is automatically superior.",
+      "example": "Under the repeating 1–9 table, RAM=14→5; RAAM=15→6.",
+      "misconception": "A transliteration-driven difference does not make one spelling inherently auspicious."
+    },
+    "evidence": {
+      "basis": "declared repeating Latin A–I=1–9 illustrative mapping; arithmetic, no outcome claims",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 18,
+    "slug": "full-name-parts",
+    "hi": {
+      "title": "पहला नाम और पूरा नाम अलग परिणाम क्यों देते हैं?",
+      "brief": "नामांक की तुलना से पहले तय करें कि किस नाम की गणना हो रही है। पहला नाम, पूरा नाम और सार्वजनिक नाम अलग अक्षर समूह हो सकते हैं। एक गणना में उपनाम शामिल करके दूसरी में हटाने से तुलना असमान हो जाती है। चुना दायरा साफ लिखें।",
+      "example": "ANITA=18→9; RAO=16→7; ANITA RAO=34→7, घोषित दोहराती तालिका में।",
+      "misconception": "पहले नाम और पूरे नाम का अंतर जोड़ की गलती होना आवश्यक नहीं।"
+    },
+    "en": {
+      "title": "Why first-name and full-name calculations differ",
+      "brief": "Define which name is being calculated before comparing results. A first name, full name and public name may contain different letters. Including a surname in one calculation but excluding it in another creates an uneven comparison. State the scope instead of presenting all totals as interchangeable.",
+      "example": "Using the declared repeating table: ANITA=18→9; RAO=16→7; ANITA RAO=34→7.",
+      "misconception": "Different first-name and full-name totals need not indicate an addition error."
+    },
+    "evidence": {
+      "basis": "declared repeating Latin A–I=1–9 illustrative mapping; arithmetic, no outcome claims",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 19,
+    "slug": "numerology-record",
+    "hi": {
+      "title": "अच्छी अभ्यास-पत्रिका में केवल भविष्यवाणी क्यों नहीं होती?",
+      "brief": "अभ्यास-पत्रिका में तारीख, चुना नियम, कच्चे अंक, मध्यवर्ती योग और अंतिम अंक साथ रखें। नाम हो तो अक्षर तालिका भी जोड़ें। इससे शिक्षक ठीक वही गणना दोहरा सकता है। केवल प्रभावशाली व्याख्या लिखने से गलती कहाँ हुई, यह ढूँढ़ना कठिन रहता है।",
+      "example": "दिन 23→5; पूर्ण तारीख 39→12→3; ग्रिड सूची 2,3,9,9,6।",
+      "misconception": "तीन अलग परिणाम विरोधाभास नहीं, यदि तीन अलग गणनाएँ घोषित हैं।"
+    },
+    "en": {
+      "title": "Keep a reproducible numerology worksheet",
+      "brief": "A useful worksheet records the date, selected convention, raw digits, intermediate totals and final number. For names, include the letter table as well. A teacher can then reproduce the calculation. An interpretation alone makes it difficult to identify where an error entered the process.",
+      "example": "Day 23→5; full date 39→12→3; raw grid list 2,3,9,9,6.",
+      "misconception": "Three different results are not contradictory when they answer three declared calculations."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  },
+  {
+    "id": 20,
+    "slug": "test-interpretations",
+    "hi": {
+      "title": "किसी अंक का अर्थ सीखें तो उलटा उदाहरण भी खोजें",
+      "brief": "किसी अंक से जुड़ी परंपरागत व्याख्या पढ़कर केवल मिलते उदाहरण न खोजें। ऐसे उदाहरण भी दर्ज करें जहाँ बात नहीं मिली। तुलना के लिए प्रश्न और मानदंड पहले लिखें। यह आदत सीखने को अधिक ईमानदार बनाती है और अस्पष्ट कथनों को निश्चित नियम समझने से बचाती है।",
+      "example": "10 लोगों में 6 उदाहरण मिलें और 4 न मिलें, तो दोनों संख्या दर्ज करें।",
+      "misconception": "चुने हुए सफल उदाहरण किसी नियम की वैज्ञानिक पुष्टि नहीं करते।"
+    },
+    "en": {
+      "title": "Look for counterexamples when studying interpretations",
+      "brief": "After reading a traditional interpretation, do not collect only examples that appear to fit. Record counterexamples too, using questions and comparison criteria written beforehand. This makes study more honest and helps prevent broad, flexible statements from being mistaken for established predictive rules.",
+      "example": "If 6 of 10 examples appear to fit and 4 do not, record both counts.",
+      "misconception": "Selected confirming examples do not scientifically validate a rule."
+    },
+    "evidence": {
+      "basis": "elementary arithmetic and explicitly stated Indian numerology learning convention",
+      "backgroundSources": [
+        {
+          "url": "https://www.innertraditions.com/books/numerology",
+          "scope": "Publisher confirms distinct psychic, destiny and name concepts; not evidence for efficacy or every formula."
+        }
+      ],
+      "caveat": "Traditional interpretations are not established scientific predictions. Worked arithmetic is illustrative."
+    }
+  }
+]

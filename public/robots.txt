@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /account
+
+Sitemap: https://courses.astrovedansh.org/sitemap.xml

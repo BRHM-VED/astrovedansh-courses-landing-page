@@ -1,4 +1,5 @@
 (() => {
+  const en = document.documentElement.lang === 'en';
   const cards = [...document.querySelectorAll('.j-card')];
   const search = document.querySelector('#journal-search');
   const category = document.querySelector('#journal-category');
@@ -18,9 +19,9 @@
     const visible = new Set(results.slice((page - 1) * size, page * size));
     cards.forEach(card => { card.hidden = !visible.has(card); });
     document.querySelector('#journal-empty').hidden = results.length > 0;
-    document.querySelector('#journal-status').textContent = results.length ? `${results.length} लेख · ${(page-1)*size+1}–${Math.min(page*size, results.length)} दिखाए गए` : '0 लेख';
+    document.querySelector('#journal-status').textContent = results.length ? `${results.length} ${en ? 'articles' : 'लेख'} · ${(page-1)*size+1}–${Math.min(page*size, results.length)} ${en ? 'shown' : 'दिखाए गए'}` : (en ? '0 articles' : '0 लेख');
     pagination.hidden = pages <= 1;
-    document.querySelector('#journal-page').textContent = `पृष्ठ ${page} / ${pages}`;
+    document.querySelector('#journal-page').textContent = `${en ? 'Page' : 'पृष्ठ'} ${page} / ${pages}`;
     previous.disabled = page === 1;
     next.disabled = page === pages;
   }

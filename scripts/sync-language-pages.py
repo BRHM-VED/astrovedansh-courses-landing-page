@@ -60,12 +60,19 @@ for source_name, target_name in [('index.html', 'english.html'), ('numerology.ht
         href = link.get('href')
         if href.endswith('.chatgpt.site/account'):
             link.set('href', href + '?lang=en')
+        if href == 'journal.html':
+            link.set('href', 'journal-english.html')
+        elif href.startswith('journal/'):
+            manifest = json.loads((ROOT / 'content/journal-manifest.json').read_text())
+            original = next((x for x in manifest if x['url'] == href), None)
+            alternate = next((x for x in manifest if original and x['number'] == original['number'] and x['lang'] == 'en'), None)
+            if alternate: link.set('href', alternate['url'])
         if href == 'numerology.html' or href.startswith('numerology.html#'):
             link.set('href', href.replace('numerology.html', 'numerology-english.html', 1))
         elif href == 'index.html' or href.startswith('index.html#'):
             link.set('href', href.replace('index.html', 'english.html', 1))
     if source_name == 'numerology.html':
-        doc.xpath('//meta[@property="og:url"]')[0].set('content', 'https://courses.astrovedansh.com/numerology-english.html')
+        doc.xpath('//meta[@property="og:url"]')[0].set('content', 'https://astrovedansh-basic-astrology.astrovedansh.chatgpt.site/numerology-english.html')
 
     remaining = [text for text in doc.xpath('//text()')
                  if DEVANAGARI.search(str(text))

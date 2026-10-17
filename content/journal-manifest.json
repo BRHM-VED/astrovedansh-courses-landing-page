@@ -1,602 +1,1352 @@
 [
   {
-    "title": "ज्योतिष सीखने का पहला सप्ताह कैसे बिताएँ?",
+    "number": 1,
+    "title": "ज्योतिष कैसे सीखें: पहले सप्ताह की सही शुरुआत",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-001.html",
-    "words": 165
+    "lang": "hi",
+    "words": 167,
+    "image": "ancient-study"
   },
   {
-    "title": "वीडियो देखने और ज्योतिष सीखने में अंतर",
+    "number": 2,
+    "title": "ज्योतिष की वीडियो देखकर भी कुंडली क्यों नहीं पढ़ पाते?",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-002.html",
-    "words": 165
+    "lang": "hi",
+    "words": 167,
+    "image": "ancient-study"
   },
   {
-    "title": "ज्योतिष के विद्यार्थी की पहली नोटबुक",
+    "number": 3,
+    "title": "ज्योतिष के नोट्स कैसे बनाएँ: नियम, शर्त और उदाहरण",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-003.html",
-    "words": 161
+    "lang": "hi",
+    "words": 162,
+    "image": "ancient-study"
   },
   {
-    "title": "रोज आधा घंटा पढ़ने की योजना",
+    "number": 4,
+    "title": "ज्योतिष सीखने के लिए रोज कितना समय दें?",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-004.html",
-    "words": 168
+    "lang": "hi",
+    "words": 166,
+    "image": "ancient-study"
   },
   {
-    "title": "अपनी कुंडली से ही शुरुआत क्यों सीमित हो सकती है?",
+    "number": 5,
+    "title": "अपनी कुंडली पढ़ना सीखें, लेकिन इस गलती से बचें",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-005.html",
-    "words": 160
+    "lang": "hi",
+    "words": 164,
+    "image": "ancient-study"
   },
   {
-    "title": "शिक्षक चुनते समय क्या पूछें?",
+    "number": 6,
+    "title": "ऑनलाइन ज्योतिष कोर्स चुनने से पहले क्या देखें?",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-006.html",
-    "words": 165
+    "lang": "hi",
+    "words": 167,
+    "image": "ancient-study"
   },
   {
-    "title": "ज्योतिष की पुस्तक कैसे पढ़ें?",
+    "number": 7,
+    "title": "ज्योतिष की किताब पढ़ने का तरीका: सूत्र से समझ तक",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-007.html",
-    "words": 163
+    "lang": "hi",
+    "words": 165,
+    "image": "ancient-study"
   },
   {
-    "title": "तकनीकी शब्दों की अपनी शब्दावली बनाएँ",
+    "number": 8,
+    "title": "ज्योतिष के कठिन शब्द आसान भाषा में कैसे समझें?",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-008.html",
-    "words": 163
+    "lang": "hi",
+    "words": 164,
+    "image": "ancient-study"
   },
   {
-    "title": "पुनरावृत्ति का अंतराल कैसे तय करें?",
+    "number": 9,
+    "title": "ज्योतिष के नियम याद रखने की अभ्यास विधि",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-009.html",
-    "words": 165
+    "lang": "hi",
+    "words": 165,
+    "image": "ancient-study"
   },
   {
-    "title": "आपका पहला अध्ययन लक्ष्य क्या हो?",
+    "number": 10,
+    "title": "ज्योतिष के शुरुआती विद्यार्थी का पहला लक्ष्य",
     "category": "अध्ययन की शुरुआत",
     "url": "journal/lesson-010.html",
-    "words": 159
+    "lang": "hi",
+    "words": 163,
+    "image": "ancient-study"
   },
   {
-    "title": "ग्रह, राशि और भाव को अलग समझें",
+    "number": 11,
+    "title": "ग्रह, राशि और भाव में अंतर: कुंडली पढ़ने का आधार",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-011.html",
-    "words": 169
+    "lang": "hi",
+    "words": 170,
+    "image": "ancient-study"
   },
   {
-    "title": "लग्न को अध्ययन का संदर्भ बिंदु कैसे बनाएँ?",
+    "number": 12,
+    "title": "लग्न क्या है और कुंडली में लग्न कैसे पहचानें?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-012.html",
-    "words": 168
+    "lang": "hi",
+    "words": 171,
+    "image": "ancient-study"
   },
   {
-    "title": "राशि और भाव संख्या में भ्रम दूर करें",
+    "number": 13,
+    "title": "कुंडली के अंक: राशि संख्या और भाव संख्या का अंतर",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-013.html",
-    "words": 174
+    "lang": "hi",
+    "words": 172,
+    "image": "ancient-study"
   },
   {
-    "title": "खाली भाव देखकर क्या सोचना चाहिए?",
+    "number": 14,
+    "title": "कुंडली में खाली भाव का क्या मतलब है?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-014.html",
-    "words": 167
+    "lang": "hi",
+    "words": 170,
+    "image": "ancient-study"
   },
   {
-    "title": "ग्रह स्थिति की तालिका क्यों बनाएँ?",
+    "number": 15,
+    "title": "कुंडली की ग्रह स्थिति तालिका कैसे बनाएँ?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-015.html",
-    "words": 166
+    "lang": "hi",
+    "words": 170,
+    "image": "ancient-study"
   },
   {
-    "title": "अंश देखकर जल्द निष्कर्ष क्यों न निकालें?",
+    "number": 16,
+    "title": "ग्रहों की डिग्री पढ़ते समय कौन सी गलती होती है?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-016.html",
-    "words": 164
+    "lang": "hi",
+    "words": 164,
+    "image": "ancient-study"
   },
   {
-    "title": "कुंडली के चित्र बदलें तो क्या करें?",
+    "number": 17,
+    "title": "उत्तर और दक्षिण भारतीय कुंडली कैसे पढ़ें?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-017.html",
-    "words": 164
+    "lang": "hi",
+    "words": 168,
+    "image": "ancient-study"
   },
   {
-    "title": "कारक और भाव स्वामी का अंतर कैसे पढ़ें?",
+    "number": 18,
+    "title": "कारक और भाव स्वामी में अंतर क्या है?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-018.html",
-    "words": 168
+    "lang": "hi",
+    "words": 171,
+    "image": "ancient-study"
   },
   {
-    "title": "अवलोकन और अनुमान को अलग लिखना",
+    "number": 19,
+    "title": "कुंडली विश्लेषण में तथ्य और अनुमान अलग कैसे करें?",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-019.html",
-    "words": 166
+    "lang": "hi",
+    "words": 166,
+    "image": "ancient-study"
   },
   {
-    "title": "पहली कुंडली पढ़ने की जाँच सूची",
+    "number": 20,
+    "title": "कुंडली कैसे पढ़ें: शुरुआती जाँच सूची",
     "category": "कुंडली की भाषा",
     "url": "journal/lesson-020.html",
-    "words": 173
+    "lang": "hi",
+    "words": 172,
+    "image": "ancient-study"
   },
   {
-    "title": "सूर्य का अध्ययन केवल अधिकार तक सीमित न करें",
+    "number": 21,
+    "title": "सूर्य का कारकत्व: केवल अधिकार नहीं, संदर्भ समझें",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-021.html",
-    "words": 171
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "चंद्रमा पढ़ते समय व्यक्ति की बात सुनें",
+    "number": 22,
+    "title": "चंद्रमा और मन: कुंडली की भाषा की सीमा",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-022.html",
-    "words": 175
+    "lang": "hi",
+    "words": 174,
+    "image": "planetary-study"
   },
   {
-    "title": "मंगल को केवल क्रोध से क्यों न जोड़ें?",
+    "number": 23,
+    "title": "मंगल का कारकत्व: ऊर्जा और क्रोध में अंतर",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-023.html",
-    "words": 167
+    "lang": "hi",
+    "words": 172,
+    "image": "planetary-study"
   },
   {
-    "title": "बुध का अध्ययन और भाषा की स्पष्टता",
+    "number": 24,
+    "title": "बुध का कारकत्व और संवाद की समझ",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-024.html",
-    "words": 174
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "गुरु के संकेतों में सामान्यीकरण से बचें",
+    "number": 25,
+    "title": "गुरु को शुभ कहने से पहले क्या देखना चाहिए?",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-025.html",
-    "words": 172
+    "lang": "hi",
+    "words": 174,
+    "image": "planetary-study"
   },
   {
-    "title": "शुक्र के अध्ययन में रूढ़ियों से दूरी",
+    "number": 26,
+    "title": "शुक्र का कारकत्व: संबंधों पर फैसला सुनाने से बचें",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-026.html",
-    "words": 165
+    "lang": "hi",
+    "words": 167,
+    "image": "planetary-study"
   },
   {
-    "title": "शनि के बारे में डर फैलाए बिना पढ़ें",
+    "number": 27,
+    "title": "शनि से डर क्यों लगता है: अध्ययन की सही भाषा",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-027.html",
-    "words": 172
+    "lang": "hi",
+    "words": 173,
+    "image": "planetary-study"
   },
   {
-    "title": "राहु और केतु के लिए अलग अध्ययन पन्ने",
+    "number": 28,
+    "title": "राहु और केतु सीखने में विरोधी नियम कैसे समझें?",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-028.html",
-    "words": 171
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "प्राकृतिक और संदर्भगत ग्रह भूमिका अलग रखें",
+    "number": 29,
+    "title": "प्राकृतिक शुभ ग्रह और भाव स्वामित्व की भूमिका",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-029.html",
-    "words": 171
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "ग्रहों की तुलनात्मक सारणी कैसे बनाएँ?",
+    "number": 30,
+    "title": "नवग्रह कैसे याद करें: तुलना से सीखने का तरीका",
     "category": "ग्रहों का अध्ययन",
     "url": "journal/lesson-030.html",
-    "words": 170
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "प्रथम भाव से पूरे व्यक्ति का फैसला न करें",
+    "number": 31,
+    "title": "पहला भाव क्या बताता है: एक संकेत की सीमा",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-031.html",
-    "words": 172
+    "lang": "hi",
+    "words": 175,
+    "image": "planetary-study"
   },
   {
-    "title": "द्वितीय भाव और धन के प्रश्न",
+    "number": 32,
+    "title": "दूसरा भाव और धन: बचत तथा आय में अंतर",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-032.html",
-    "words": 172
+    "lang": "hi",
+    "words": 172,
+    "image": "planetary-study"
   },
   {
-    "title": "तृतीय भाव पढ़ते समय प्रयास का संदर्भ",
+    "number": 33,
+    "title": "तीसरा भाव और प्रयास: कौशल का वास्तविक संदर्भ",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-033.html",
-    "words": 174
+    "lang": "hi",
+    "words": 178,
+    "image": "planetary-study"
   },
   {
-    "title": "चतुर्थ भाव के उदाहरण कैसे पढ़ें?",
+    "number": 34,
+    "title": "चौथा भाव: घर, शिक्षा और संपत्ति को अलग पढ़ें",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-034.html",
-    "words": 173
+    "lang": "hi",
+    "words": 175,
+    "image": "planetary-study"
   },
   {
-    "title": "पंचम भाव और सीखने की क्षमता पर भाषा",
+    "number": 35,
+    "title": "पाँचवाँ भाव और शिक्षा: बुद्धि का लेबल क्यों गलत है?",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-035.html",
-    "words": 169
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "छठे भाव के संवेदनशील विषय कैसे सँभालें?",
+    "number": 36,
+    "title": "छठा भाव पढ़ते समय स्वास्थ्य और विवाद की सीमा",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-036.html",
-    "words": 163
+    "lang": "hi",
+    "words": 168,
+    "image": "planetary-study"
   },
   {
-    "title": "सप्तम भाव और संबंधों में संवेदनशीलता",
+    "number": 37,
+    "title": "सातवाँ भाव: विवाह का समय और संबंध का अनुभव",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-037.html",
-    "words": 166
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "अष्टम भाव का नाम सुनकर डरना जरूरी नहीं",
+    "number": 38,
+    "title": "आठवाँ भाव देखकर डरें नहीं: संदर्भ पहले समझें",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-038.html",
-    "words": 167
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "नवम भाव में परंपरा और व्यक्तिगत विश्वास",
+    "number": 39,
+    "title": "नौवाँ भाव और आस्था: मान्यता का सम्मान",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-039.html",
-    "words": 170
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "दशम भाव से पेशा चुनने की जल्दी क्यों न करें?",
+    "number": 40,
+    "title": "दसवाँ भाव और करियर: केवल पेशे का नाम पर्याप्त नहीं",
     "category": "भाव और जीवन क्षेत्र",
     "url": "journal/lesson-040.html",
-    "words": 172
+    "lang": "hi",
+    "words": 169,
+    "image": "planetary-study"
   },
   {
-    "title": "राशियों को केवल व्यक्तित्व के लेबल न बनाएँ",
+    "number": 41,
+    "title": "राशि से व्यक्तित्व क्यों पूरी तरह तय नहीं होता?",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-041.html",
-    "words": 178
+    "lang": "hi",
+    "words": 181,
+    "image": "planetary-study"
   },
   {
-    "title": "तत्वों के वर्गीकरण को कैसे याद करें?",
+    "number": 42,
+    "title": "राशियों के तत्व याद करने का आसान अध्ययन तरीका",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-042.html",
-    "words": 164
+    "lang": "hi",
+    "words": 165,
+    "image": "planetary-study"
   },
   {
-    "title": "चर, स्थिर और द्विस्वभाव को पढ़ने का अभ्यास",
+    "number": 43,
+    "title": "चर, स्थिर, द्विस्वभाव राशियाँ: शब्द और अर्थ",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-043.html",
-    "words": 167
+    "lang": "hi",
+    "words": 168,
+    "image": "planetary-study"
   },
   {
-    "title": "राशि स्वामित्व की याद कैसे मजबूत करें?",
+    "number": 44,
+    "title": "राशि स्वामी कैसे याद करें: उलटी दिशा का अभ्यास",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-044.html",
-    "words": 169
+    "lang": "hi",
+    "words": 169,
+    "image": "planetary-study"
   },
   {
-    "title": "युति पहचानने और उसका अर्थ बताने में अंतर",
+    "number": 45,
+    "title": "ग्रहों की युति क्या है: पहचान और फलित का अंतर",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-045.html",
-    "words": 172
+    "lang": "hi",
+    "words": 171,
+    "image": "planetary-study"
   },
   {
-    "title": "दृष्टि पढ़ते समय पद्धति क्यों लिखें?",
+    "number": 46,
+    "title": "ग्रह दृष्टि सीखते समय पद्धतियाँ न मिलाएँ",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-046.html",
-    "words": 166
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "उच्च और नीच शब्दों को कैसे समझें?",
+    "number": 47,
+    "title": "उच्च और नीच ग्रह का अर्थ: अच्छा-बुरा फैसला नहीं",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-047.html",
-    "words": 167
+    "lang": "hi",
+    "words": 169,
+    "image": "planetary-study"
   },
   {
-    "title": "वक्री ग्रह पर विरोधी बातें मिलें तो क्या करें?",
+    "number": 48,
+    "title": "वक्री ग्रह के विरोधी फल क्यों पढ़ने को मिलते हैं?",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-048.html",
-    "words": 166
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "अस्त ग्रह का विषय कब पढ़ें?",
+    "number": 49,
+    "title": "अस्त ग्रह पढ़ने से पहले गणना की शर्तें समझें",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-049.html",
-    "words": 165
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "मित्रता की तालिका और वास्तविक संबंध",
+    "number": 50,
+    "title": "ग्रह मैत्री की तालिका समझने की सामान्य गलती",
     "category": "राशियाँ और संबंध",
     "url": "journal/lesson-050.html",
-    "words": 164
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "दशा पढ़ने से पहले कौन सा आधार चाहिए?",
+    "number": 51,
+    "title": "दशा क्या है: समय विश्लेषण से पहले का आधार",
     "category": "दशा और समय",
     "url": "journal/lesson-051.html",
-    "words": 167
+    "lang": "hi",
+    "words": 165,
+    "image": "planetary-study"
   },
   {
-    "title": "महादशा और अंतरदशा को अलग पढ़ें",
+    "number": 52,
+    "title": "महादशा और अंतरदशा में क्या अंतर है?",
     "category": "दशा और समय",
     "url": "journal/lesson-052.html",
-    "words": 171
+    "lang": "hi",
+    "words": 173,
+    "image": "planetary-study"
   },
   {
-    "title": "समय संबंधी भविष्यवाणी में अनिश्चितता कैसे लिखें?",
+    "number": 53,
+    "title": "शादी या नौकरी की तारीख बताते समय अनिश्चितता",
     "category": "दशा और समय",
     "url": "journal/lesson-053.html",
-    "words": 163
+    "lang": "hi",
+    "words": 165,
+    "image": "planetary-study"
   },
   {
-    "title": "गोचर की खबर और व्यक्तिगत कुंडली",
+    "number": 54,
+    "title": "गोचर और जन्म कुंडली में क्या अंतर है?",
     "category": "दशा और समय",
     "url": "journal/lesson-054.html",
-    "words": 166
+    "lang": "hi",
+    "words": 164,
+    "image": "planetary-study"
   },
   {
-    "title": "दशा और गोचर को जल्दबाजी में न मिलाएँ",
+    "number": 55,
+    "title": "दशा और गोचर को साथ कैसे पढ़ना सीखें?",
     "category": "दशा और समय",
     "url": "journal/lesson-055.html",
-    "words": 170
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "घटना की तारीख सही तरह दर्ज करें",
+    "number": 56,
+    "title": "ज्योतिष अभ्यास में घटना की तारीख कैसे लिखें?",
     "category": "दशा और समय",
     "url": "journal/lesson-056.html",
-    "words": 176
+    "lang": "hi",
+    "words": 173,
+    "image": "planetary-study"
   },
   {
-    "title": "पुरानी घटना से सीखना और बाद में कहानी बनाना",
+    "number": 57,
+    "title": "पुरानी घटनाओं से कुंडली सीखने में यह गलती न करें",
     "category": "दशा और समय",
     "url": "journal/lesson-057.html",
-    "words": 165
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "जन्म समय अस्पष्ट हो तो अध्ययन कैसे करें?",
+    "number": 58,
+    "title": "जन्म समय सही न पता हो तो कुंडली कैसे पढ़ें?",
     "category": "दशा और समय",
     "url": "journal/lesson-058.html",
-    "words": 167
+    "lang": "hi",
+    "words": 169,
+    "image": "planetary-study"
   },
   {
-    "title": "कैलेंडर और समय की सामान्य जाँच",
+    "number": 59,
+    "title": "कुंडली में तारीख और समय भरने की सामान्य गलतियाँ",
     "category": "दशा और समय",
     "url": "journal/lesson-059.html",
-    "words": 166
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "समय विश्लेषण की अभ्यास डायरी",
+    "number": 60,
+    "title": "दशा विश्लेषण की डायरी कैसे बनाएँ?",
     "category": "दशा और समय",
     "url": "journal/lesson-060.html",
-    "words": 168
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "योग का नाम याद करना पर्याप्त क्यों नहीं?",
+    "number": 61,
+    "title": "कुंडली में योग कैसे पहचानें: नाम से पहले शर्तें",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-061.html",
-    "words": 173
+    "lang": "hi",
+    "words": 175,
+    "image": "planetary-study"
   },
   {
-    "title": "राजयोग पढ़ते समय सफलता का संदर्भ",
+    "number": 62,
+    "title": "राजयोग का मतलब क्या है: पद और सफलता का संदर्भ",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-062.html",
-    "words": 174
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "धन योग और आर्थिक योजना का अंतर",
+    "number": 63,
+    "title": "धन योग देखकर निश्चित कमाई क्यों नहीं बतानी चाहिए?",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-063.html",
-    "words": 162
+    "lang": "hi",
+    "words": 162,
+    "image": "planetary-study"
   },
   {
-    "title": "एक योग मिले और दूसरा संकेत विरोध करे",
+    "number": 64,
+    "title": "कुंडली में अच्छे और कठिन संकेत साथ हों तो क्या करें?",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-064.html",
-    "words": 172
+    "lang": "hi",
+    "words": 173,
+    "image": "planetary-study"
   },
   {
-    "title": "नवांश से पहले मूल कुंडली मजबूत करें",
+    "number": 65,
+    "title": "नवांश क्या है: मूल कुंडली के बाद क्यों पढ़ें?",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-065.html",
-    "words": 168
+    "lang": "hi",
+    "words": 170,
+    "image": "planetary-study"
   },
   {
-    "title": "नवांश को केवल विवाह का छोटा उत्तर न बनाएँ",
+    "number": 66,
+    "title": "नवांश और विवाह: एक चित्र से अंतिम फैसला नहीं",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-066.html",
-    "words": 167
+    "lang": "hi",
+    "words": 167,
+    "image": "planetary-study"
   },
   {
-    "title": "दशांश सीखते समय करियर प्रश्न स्पष्ट करें",
+    "number": 67,
+    "title": "दशांश से करियर विश्लेषण सीखने का पहला कदम",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-067.html",
-    "words": 167
+    "lang": "hi",
+    "words": 165,
+    "image": "planetary-study"
   },
   {
-    "title": "वर्ग कुंडलियों का अध्ययन क्रम कैसे चुनें?",
+    "number": 68,
+    "title": "वर्ग कुंडलियाँ किस क्रम में सीखें?",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-068.html",
-    "words": 170
+    "lang": "hi",
+    "words": 174,
+    "image": "planetary-study"
   },
   {
-    "title": "योग के अपवाद को कैसे दर्ज करें?",
+    "number": 69,
+    "title": "ज्योतिष के नियम और अपवाद कैसे समझें?",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-069.html",
-    "words": 168
+    "lang": "hi",
+    "words": 169,
+    "image": "planetary-study"
   },
   {
-    "title": "उन्नत तकनीक की तैयारी कैसे जाँचें?",
+    "number": 70,
+    "title": "उन्नत ज्योतिष सीखने से पहले अपनी तैयारी जाँचें",
     "category": "योग और वर्ग कुंडलियाँ",
     "url": "journal/lesson-070.html",
-    "words": 169
+    "lang": "hi",
+    "words": 166,
+    "image": "planetary-study"
   },
   {
-    "title": "अभ्यास के लिए कुंडली कैसे चुनें?",
+    "number": 71,
+    "title": "ज्योतिष अभ्यास के लिए सही कुंडली कैसे चुनें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-071.html",
-    "words": 162
+    "lang": "hi",
+    "words": 162,
+    "image": "learning-practice"
   },
   {
-    "title": "अज्ञात परिणाम वाला अभ्यास क्यों करें?",
+    "number": 72,
+    "title": "अज्ञात परिणाम से ज्योतिष का अभ्यास कैसे करें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-072.html",
-    "words": 160
+    "lang": "hi",
+    "words": 161,
+    "image": "learning-practice"
   },
   {
-    "title": "गलतियाँ दर्ज करने की अलग डायरी",
+    "number": 73,
+    "title": "कुंडली पढ़ने की गलतियाँ पहचानने का तरीका",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-073.html",
-    "words": 165
+    "lang": "hi",
+    "words": 164,
+    "image": "learning-practice"
   },
   {
-    "title": "एक नियम पर कई उदाहरण कैसे जुटाएँ?",
+    "number": 74,
+    "title": "ज्योतिष में एक उदाहरण से नियम साबित क्यों नहीं होता?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-074.html",
-    "words": 163
+    "lang": "hi",
+    "words": 163,
+    "image": "learning-practice"
   },
   {
-    "title": "अध्ययन साथी के साथ असहमति कैसे सँभालें?",
+    "number": 75,
+    "title": "दो ज्योतिष विद्यार्थियों के अलग उत्तर क्यों आते हैं?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-075.html",
-    "words": 169
+    "lang": "hi",
+    "words": 168,
+    "image": "learning-practice"
   },
   {
-    "title": "प्रकरण अध्ययन का अच्छा प्रारूप",
+    "number": 76,
+    "title": "ज्योतिष का प्रकरण अध्ययन कैसे लिखें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-076.html",
-    "words": 158
+    "lang": "hi",
+    "words": 159,
+    "image": "learning-practice"
   },
   {
-    "title": "अपुष्ट सूत्रों की अलग सूची रखें",
+    "number": 77,
+    "title": "इंटरनेट के ज्योतिष सूत्रों की जाँच कैसे करें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-077.html",
-    "words": 167
+    "lang": "hi",
+    "words": 163,
+    "image": "learning-practice"
   },
   {
-    "title": "तुलना में एक ही प्रश्न बनाए रखें",
+    "number": 78,
+    "title": "ज्योतिष शोध में तुलना का प्रश्न साफ क्यों होना चाहिए?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-078.html",
-    "words": 163
+    "lang": "hi",
+    "words": 164,
+    "image": "learning-practice"
   },
   {
-    "title": "सीखने की प्रगति कैसे मापें?",
+    "number": 79,
+    "title": "ज्योतिष सीखने में अपनी प्रगति कैसे पहचानें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-079.html",
-    "words": 171
+    "lang": "hi",
+    "words": 167,
+    "image": "learning-practice"
   },
   {
-    "title": "अध्ययन में विराम लेना भी जरूरी है",
+    "number": 80,
+    "title": "ज्योतिष पढ़ते समय थकान और ध्यान कैसे सँभालें?",
     "category": "अभ्यास और शोध",
     "url": "journal/lesson-080.html",
-    "words": 163
+    "lang": "hi",
+    "words": 163,
+    "image": "learning-practice"
   },
   {
-    "title": "परामर्श से पहले प्रश्न स्पष्ट करें",
+    "number": 81,
+    "title": "ज्योतिष परामर्श में पहला सवाल क्या पूछें?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-081.html",
-    "words": 173
+    "lang": "hi",
+    "words": 177,
+    "image": "learning-practice"
   },
   {
-    "title": "डराने वाली भाषा को उपयोगी भाषा में बदलें",
+    "number": 82,
+    "title": "ज्योतिष की भविष्यवाणी में डराने वाली भाषा कैसे हटाएँ?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-082.html",
-    "words": 166
+    "lang": "hi",
+    "words": 167,
+    "image": "learning-practice"
   },
   {
-    "title": "जन्म विवरण की गोपनीयता कैसे रखें?",
+    "number": 83,
+    "title": "कुंडली की जानकारी साझा करने से पहले अनुमति क्यों लें?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-083.html",
-    "words": 166
+    "lang": "hi",
+    "words": 167,
+    "image": "learning-practice"
   },
   {
-    "title": "विद्यार्थी और पेशेवर की भूमिका स्पष्ट रखें",
+    "number": 84,
+    "title": "ज्योतिष सीखते समय दूसरों को क्या सलाह दे सकते हैं?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-084.html",
-    "words": 167
+    "lang": "hi",
+    "words": 167,
+    "image": "learning-practice"
   },
   {
-    "title": "जब उत्तर न पता हो तो क्या कहें?",
+    "number": 85,
+    "title": "ज्योतिष में उत्तर न मालूम हो तो क्या कहें?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-085.html",
-    "words": 171
+    "lang": "hi",
+    "words": 170,
+    "image": "learning-practice"
   },
   {
-    "title": "स्वास्थ्य के सवाल पर अपनी सीमा पहचानें",
+    "number": 86,
+    "title": "ज्योतिष और स्वास्थ्य: चिकित्सकीय सलाह का विकल्प नहीं",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-086.html",
-    "words": 170
+    "lang": "hi",
+    "words": 170,
+    "image": "learning-practice"
   },
   {
-    "title": "उपायों पर चर्चा में पारदर्शिता",
+    "number": 87,
+    "title": "ज्योतिष उपायों पर चर्चा में लागत और विकल्प स्पष्ट रखें",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-087.html",
-    "words": 172
+    "lang": "hi",
+    "words": 174,
+    "image": "learning-practice"
   },
   {
-    "title": "समीक्षा माँगने का सही तरीका",
+    "number": 88,
+    "title": "ज्योतिष कोर्स की वास्तविक समीक्षा कैसे माँगें?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-088.html",
-    "words": 170
+    "lang": "hi",
+    "words": 165,
+    "image": "learning-practice"
   },
   {
-    "title": "संवेदनशील प्रश्न पर व्यक्ति की स्वतंत्रता",
+    "number": 89,
+    "title": "ज्योतिष परामर्श में निर्णय का अधिकार किसका है?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-089.html",
-    "words": 168
+    "lang": "hi",
+    "words": 167,
+    "image": "learning-practice"
   },
   {
-    "title": "अच्छे प्रश्न पूछना कैसे सीखें?",
+    "number": 90,
+    "title": "ज्योतिष परामर्श में खुले प्रश्न कैसे पूछें?",
     "category": "जिम्मेदार संवाद",
     "url": "journal/lesson-090.html",
-    "words": 165
+    "lang": "hi",
+    "words": 168,
+    "image": "learning-practice"
   },
   {
-    "title": "ग्यारहवें भाव का अध्ययन और अपेक्षाएँ",
+    "number": 91,
+    "title": "ग्यारहवाँ भाव और लाभ: अपेक्षाओं का सही संदर्भ",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-091.html",
-    "words": 170
+    "lang": "hi",
+    "words": 169,
+    "image": "learning-practice"
   },
   {
-    "title": "द्वादश भाव को केवल नुकसान क्यों न मानें?",
+    "number": 92,
+    "title": "बारहवाँ भाव: खर्च और नुकसान को एक न समझें",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-092.html",
-    "words": 174
+    "lang": "hi",
+    "words": 171,
+    "image": "learning-practice"
   },
   {
-    "title": "ज्योतिष सीखकर सामग्री कैसे बनाएँ?",
+    "number": 93,
+    "title": "ज्योतिष ब्लॉग कैसे लिखें: उदाहरण से भरोसा बनाएँ",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-093.html",
-    "words": 172
+    "lang": "hi",
+    "words": 169,
+    "image": "learning-practice"
   },
   {
-    "title": "ऑनलाइन मंच पर काम की तैयारी",
+    "number": 94,
+    "title": "ऑनलाइन ज्योतिषी कैसे बनें: पढ़ाई से आवेदन तक",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-094.html",
-    "words": 173
+    "lang": "hi",
+    "words": 171,
+    "image": "learning-practice"
   },
   {
-    "title": "अपनी अध्ययन विशेषज्ञता कैसे चुनें?",
+    "number": 95,
+    "title": "ज्योतिष में विशेषज्ञता कैसे चुनें?",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-095.html",
-    "words": 172
+    "lang": "hi",
+    "words": 170,
+    "image": "learning-practice"
   },
   {
-    "title": "ज्योतिष और अंकज्योतिष को अलग पढ़ना",
+    "number": 96,
+    "title": "ज्योतिष और अंकज्योतिष में अंतर: अध्ययन कैसे शुरू करें?",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-096.html",
-    "words": 174
+    "lang": "hi",
+    "words": 173,
+    "image": "numerology-study"
   },
   {
-    "title": "पंचांग पढ़ने की शुरुआती आदत",
+    "number": 97,
+    "title": "पंचांग कैसे पढ़ें: शुरुआती विद्यार्थी की जाँच सूची",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-097.html",
-    "words": 166
+    "lang": "hi",
+    "words": 166,
+    "image": "learning-practice"
   },
   {
-    "title": "मुहूर्त सीखते समय व्यावहारिकता बनाए रखें",
+    "number": 98,
+    "title": "मुहूर्त सीखने से पहले कार्य का उद्देश्य समझें",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-098.html",
-    "words": 171
+    "lang": "hi",
+    "words": 172,
+    "image": "learning-practice"
   },
   {
-    "title": "पाठ्यक्रम पूरा होने के बाद क्या करें?",
+    "number": 99,
+    "title": "ज्योतिष कोर्स के बाद अभ्यास कैसे जारी रखें?",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-099.html",
-    "words": 169
+    "lang": "hi",
+    "words": 170,
+    "image": "learning-practice"
   },
   {
-    "title": "तीन महीने की जिम्मेदार अध्ययन यात्रा",
+    "number": 100,
+    "title": "तीन महीने में ज्योतिष सीखने की व्यावहारिक योजना",
     "category": "आगे की सीख और काम",
     "url": "journal/lesson-100.html",
-    "words": 176
+    "lang": "hi",
+    "words": 173,
+    "image": "learning-practice"
+  },
+  {
+    "number": 101,
+    "title": "मूलांक निकालते समय महीना क्यों नहीं जोड़ते?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/mulank-day-only.html",
+    "lang": "hi",
+    "words": 155,
+    "image": "numerology-study"
+  },
+  {
+    "number": 102,
+    "title": "भाग्यांक में जन्मवर्ष पूरा क्यों जोड़ना चाहिए?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/bhagyank-full-date.html",
+    "lang": "hi",
+    "words": 157,
+    "image": "numerology-study"
+  },
+  {
+    "number": 103,
+    "title": "14 और 23 का मूलांक समान, फिर क्या बचाकर लिखें?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/compound-birthday.html",
+    "lang": "hi",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 104,
+    "title": "अंकों का जोड़ सही है या केवल उत्तर याद है?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/reduction-audit.html",
+    "lang": "hi",
+    "words": 155,
+    "image": "numerology-study"
+  },
+  {
+    "number": 105,
+    "title": "11 को रोकना है या 2 बनाना है?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/master-number-rule.html",
+    "lang": "hi",
+    "words": 152,
+    "image": "numerology-study"
+  },
+  {
+    "number": 106,
+    "title": "भाग्यांक और नामांक को एक नाम देने की उलझन",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/destiny-terminology.html",
+    "lang": "hi",
+    "words": 155,
+    "image": "numerology-study"
+  },
+  {
+    "number": 107,
+    "title": "एक ही अंक, अलग ग्रिड: गलती कहाँ होती है?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/grid-layout.html",
+    "lang": "hi",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 108,
+    "title": "ग्रिड से 19 हटता है, भाग्यांक से क्यों नहीं?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/grid-century-scope.html",
+    "lang": "hi",
+    "words": 158,
+    "image": "numerology-study"
+  },
+  {
+    "number": 109,
+    "title": "शून्य का खाना नहीं होने का अर्थ क्या है?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/grid-zero.html",
+    "lang": "hi",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 110,
+    "title": "दो 9 आए तो पहले क्या गिनें?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/repeated-digits.html",
+    "lang": "hi",
+    "words": 154,
+    "image": "numerology-study"
+  },
+  {
+    "number": 111,
+    "title": "ग्रिड में अंक नहीं है तो क्या क्षमता भी नहीं है?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/missing-digits.html",
+    "lang": "hi",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 112,
+    "title": "जन्मतिथि और निकाले गए अंक एक साथ क्यों न मिलाएँ?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/raw-derived-layers.html",
+    "lang": "hi",
+    "words": 157,
+    "image": "numerology-study"
+  },
+  {
+    "number": 113,
+    "title": "04-05 को अप्रैल समझें या मई?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/date-format.html",
+    "lang": "hi",
+    "words": 154,
+    "image": "numerology-study"
+  },
+  {
+    "number": 114,
+    "title": "एक भाग्यांक में कितनी अलग जन्मतिथियाँ आ सकती हैं?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/same-total-different-dates.html",
+    "lang": "hi",
+    "words": 155,
+    "image": "numerology-study"
+  },
+  {
+    "number": 115,
+    "title": "नामांक में अक्षर बदलने से पहले तालिका चुनें",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/name-mapping.html",
+    "lang": "hi",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 116,
+    "title": "एक अतिरिक्त अक्षर गणना बदलता है, क्या जीवन भी?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/name-spelling.html",
+    "lang": "hi",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 117,
+    "title": "हिन्दी नाम की अंग्रेज़ी वर्तनी पहले तय करें",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/transliteration.html",
+    "lang": "hi",
+    "words": 154,
+    "image": "numerology-study"
+  },
+  {
+    "number": 118,
+    "title": "पहला नाम और पूरा नाम अलग परिणाम क्यों देते हैं?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/full-name-parts.html",
+    "lang": "hi",
+    "words": 155,
+    "image": "numerology-study"
+  },
+  {
+    "number": 119,
+    "title": "अच्छी अभ्यास-पत्रिका में केवल भविष्यवाणी क्यों नहीं होती?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/numerology-record.html",
+    "lang": "hi",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 120,
+    "title": "किसी अंक का अर्थ सीखें तो उलटा उदाहरण भी खोजें",
+    "category": "अंकज्योतिष सीखें",
+    "url": "journal/test-interpretations.html",
+    "lang": "hi",
+    "words": 160,
+    "image": "numerology-study"
+  },
+  {
+    "number": 11,
+    "title": "Planets, signs and houses: the first distinction in reading a kundli",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/planets-signs-houses-difference.html",
+    "lang": "en",
+    "words": 173,
+    "image": "ancient-study"
+  },
+  {
+    "number": 12,
+    "title": "What is Lagna? Identify the ascendant before reading houses",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/what-is-lagna-ascendant.html",
+    "lang": "en",
+    "words": 170,
+    "image": "ancient-study"
+  },
+  {
+    "number": 13,
+    "title": "Kundli numbers explained: sign numbers are not house numbers",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/kundli-sign-numbers-vs-houses.html",
+    "lang": "en",
+    "words": 175,
+    "image": "ancient-study"
+  },
+  {
+    "number": 14,
+    "title": "What do empty houses mean in Vedic astrology?",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/empty-houses-in-vedic-astrology.html",
+    "lang": "en",
+    "words": 175,
+    "image": "ancient-study"
+  },
+  {
+    "number": 18,
+    "title": "Karaka and house lord: why these are different roles",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/karaka-vs-house-lord.html",
+    "lang": "en",
+    "words": 174,
+    "image": "ancient-study"
+  },
+  {
+    "number": 20,
+    "title": "How to read a kundli: a beginner’s checklist",
+    "category": "कुंडली की भाषा",
+    "url": "en/journal/how-to-read-kundli-checklist.html",
+    "lang": "en",
+    "words": 178,
+    "image": "ancient-study"
+  },
+  {
+    "number": 52,
+    "title": "Mahadasha and Antardasha: understand the two levels",
+    "category": "दशा और समय",
+    "url": "en/journal/mahadasha-antardasha-difference.html",
+    "lang": "en",
+    "words": 178,
+    "image": "planetary-study"
+  },
+  {
+    "number": 58,
+    "title": "Can you study a birth chart when the birth time is uncertain?",
+    "category": "दशा और समय",
+    "url": "en/journal/uncertain-birth-time.html",
+    "lang": "en",
+    "words": 175,
+    "image": "planetary-study"
+  },
+  {
+    "number": 65,
+    "title": "What is Navamsa? Build your D1 foundation before D9",
+    "category": "योग और वर्ग कुंडलियाँ",
+    "url": "en/journal/what-is-navamsa-d9.html",
+    "lang": "en",
+    "words": 179,
+    "image": "planetary-study"
+  },
+  {
+    "number": 96,
+    "title": "Astrology and numerology: how their starting methods differ",
+    "category": "आगे की सीख और काम",
+    "url": "en/journal/astrology-vs-numerology.html",
+    "lang": "en",
+    "words": 178,
+    "image": "numerology-study"
+  },
+  {
+    "number": 101,
+    "title": "Why the birth number uses only the day",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/mulank-day-only.html",
+    "lang": "en",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 102,
+    "title": "Why Bhagyank uses the complete birth year",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/bhagyank-full-date.html",
+    "lang": "en",
+    "words": 151,
+    "image": "numerology-study"
+  },
+  {
+    "number": 103,
+    "title": "Same reduced birth number, different compound days",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/compound-birthday.html",
+    "lang": "en",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 104,
+    "title": "Audit the arithmetic instead of memorising an answer",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/reduction-audit.html",
+    "lang": "en",
+    "words": 152,
+    "image": "numerology-study"
+  },
+  {
+    "number": 105,
+    "title": "Should 11 remain 11 or reduce to 2?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/master-number-rule.html",
+    "lang": "en",
+    "words": 154,
+    "image": "numerology-study"
+  },
+  {
+    "number": 106,
+    "title": "The ambiguity of the term Destiny Number",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/destiny-terminology.html",
+    "lang": "en",
+    "words": 160,
+    "image": "numerology-study"
+  },
+  {
+    "number": 107,
+    "title": "Why the grid layout must be declared first",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/grid-layout.html",
+    "lang": "en",
+    "words": 157,
+    "image": "numerology-study"
+  },
+  {
+    "number": 108,
+    "title": "A grid omission rule is not a date-sum rule",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/grid-century-scope.html",
+    "lang": "en",
+    "words": 157,
+    "image": "numerology-study"
+  },
+  {
+    "number": 109,
+    "title": "What it means when a grid has no zero cell",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/grid-zero.html",
+    "lang": "en",
+    "words": 160,
+    "image": "numerology-study"
+  },
+  {
+    "number": 110,
+    "title": "Count repeated digits before interpreting them",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/repeated-digits.html",
+    "lang": "en",
+    "words": 158,
+    "image": "numerology-study"
+  },
+  {
+    "number": 111,
+    "title": "Does a missing grid number mean a missing ability?",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/missing-digits.html",
+    "lang": "en",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 112,
+    "title": "Separate raw digits from derived numbers",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/raw-derived-layers.html",
+    "lang": "en",
+    "words": 166,
+    "image": "numerology-study"
+  },
+  {
+    "number": 113,
+    "title": "Resolve ambiguous dates before calculating",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/date-format.html",
+    "lang": "en",
+    "words": 160,
+    "image": "numerology-study"
+  },
+  {
+    "number": 114,
+    "title": "Different dates can share the same full-date number",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/same-total-different-dates.html",
+    "lang": "en",
+    "words": 153,
+    "image": "numerology-study"
+  },
+  {
+    "number": 115,
+    "title": "Choose the letter table before calculating a name number",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/name-mapping.html",
+    "lang": "en",
+    "words": 152,
+    "image": "numerology-study"
+  },
+  {
+    "number": 116,
+    "title": "A spelling change alters a sum, not proven outcomes",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/name-spelling.html",
+    "lang": "en",
+    "words": 152,
+    "image": "numerology-study"
+  },
+  {
+    "number": 117,
+    "title": "Fix the transliteration before using an English letter table",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/transliteration.html",
+    "lang": "en",
+    "words": 150,
+    "image": "numerology-study"
+  },
+  {
+    "number": 118,
+    "title": "Why first-name and full-name calculations differ",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/full-name-parts.html",
+    "lang": "en",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 119,
+    "title": "Keep a reproducible numerology worksheet",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/numerology-record.html",
+    "lang": "en",
+    "words": 156,
+    "image": "numerology-study"
+  },
+  {
+    "number": 120,
+    "title": "Look for counterexamples when studying interpretations",
+    "category": "अंकज्योतिष सीखें",
+    "url": "en/journal/test-interpretations.html",
+    "lang": "en",
+    "words": 153,
+    "image": "numerology-study"
   }
 ]

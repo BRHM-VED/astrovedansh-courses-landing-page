@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-10-17",
+  "method": "OpenAI built-in image_gen",
+  "usage": "Original AI-generated conceptual editorial covers for AstroVedansh Journal. Not historical photographs or scientific diagrams. No third-party image downloaded.",
+  "encoding": "WebP quality 83, original 1536 x 1024 dimensions retained; no visual edits.",
+  "images": [
+    {
+      "file": "ancient-study.webp",
+      "prompt": "Use case: stylized-concept. Premium editorial landscape cover image for an Indian astrology learning journal. An ancient Indian astronomy study desk, aged palm-leaf manuscript closed and tied, a beautiful brass astrolabe and dividers, sandstone alcove, angled natural morning light, restrained saffron and ivory palette with dark plum shadows, tangible paper and brass textures, museum-quality editorial still life. Wide 3:2 composition. This is a conceptual illustration, not a historical photograph. No readable text, no letters, no numbers, no watermark, no logo, no people."
+    },
+    {
+      "file": "planetary-study.webp",
+      "prompt": "Use case: stylized-concept. Premium editorial landscape cover image for a planetary astrology learning journal. A sculptural brass armillary sphere on a dark plum table, small matte celestial spheres resting around it, deep midnight purple backdrop with a subtle star field, rich gold highlights, refined dramatic side lighting, beautiful realistic metal texture, art-directed editorial still life, wide 3:2 composition. Conceptual arrangement, not a scientific scale diagram. No readable text, no letters, no numbers, no watermark, no logo, no people."
+    },
+    {
+      "file": "numerology-study.webp",
+      "prompt": "Use case: stylized-concept. Premium editorial landscape cover image for a numerology learning journal. Overhead still life of an ivory notebook with a clean EMPTY three by three grid drawn on one page, several blank small square brass tiles beside the notebook, fountain pen, saffron linen and warm cream desk, elegant thoughtful composition, soft natural light and tactile materials. Wide 3:2 composition. Blank tiles and empty grid only; no numbers, no letters, no readable text, no watermark, no logo, no people."
+    },
+    {
+      "file": "learning-practice.webp",
+      "prompt": "Use case: photorealistic-natural. Premium editorial landscape cover image for a thoughtful Indian astrology education journal. A quiet sunlit Indian study room, stack of beautifully worn unlabelled books beside an open blank notebook and pen, sandstone window with soft geometric shadow across a dark wood desk, one tiny brass desk object, ivory and warm plum restrained accents, calm intentional atmosphere of serious study, realistic textured editorial photograph-style conceptual illustration. Wide 3:2 composition. No people, no readable text, no letters, no numbers, no logos, no watermark."
+    }
+  ]
+}
