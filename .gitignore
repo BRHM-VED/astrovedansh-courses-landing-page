@@ -11,3 +11,5 @@ dist/
 .sites-runtime/
 .env*
 !.env.example
+
+__pycache__/
