@@ -1,0 +1,3 @@
+.academy-course .course-art>img.card-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1}.academy-course .course-art{position:relative;isolation:isolate}.academy-course .course-art:has(.card-photo):after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#24131ad9);z-index:-1}.academy-course .card-photo{z-index:-2}.academy-course:has(.card-photo) .course-art>span,.academy-course:has(.card-photo) .course-art>small{color:white;text-shadow:0 2px 8px #000}.academy-course{transition:transform .3s,box-shadow .3s}.academy-course:hover{transform:translateY(-6px);box-shadow:0 24px 40px #38211320}
+
+@media(prefers-reduced-motion:reduce){.academy-course{transition:none}.academy-course:hover{transform:none}}
