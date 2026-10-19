@@ -35,3 +35,10 @@
 .intro-copy{font-size:17px;font-weight:500}.site-header nav{font-size:15px;font-weight:700}.media-chip{font-size:12px;font-weight:700}.gita-opening blockquote{font-weight:700}.follow-links a{font-size:15px;font-weight:700}
 html[lang=hi] .visual-grid .visual-body h2,html[lang=hi] .visual-grid .visual-body h3,html[lang=hi] #options .visual-card h3{font-size:27px;font-weight:700}
 @media(max-width:700px){.visual-grid .visual-body h2,.visual-grid .visual-body h3,.consultation-page #options .visual-card h3{font-size:25px}.home-grid .visual-body h2{font-size:31px}.visual-grid .price-block strong{font-size:25px}.home-grid .price-block strong{font-size:29px}.visual-grid .card-description,.consultation-page #options .visual-card p{font-size:14px}.visual-grid .visual-cta{font-size:14px}.visual-grid .price-block small{font-size:12px}.intro-copy{font-size:16px}.media-chip{font-size:11px}html[lang=hi] .visual-grid .visual-body h2,html[lang=hi] .visual-grid .visual-body h3,html[lang=hi] #options .visual-card h3{font-size:23px}}
+
+/* Fill square frames, with photo-specific focal points. */
+.visual-grid .visual-card .visual-media>img{object-fit:cover!important;object-position:50% 50%!important;mix-blend-mode:normal}
+.visual-grid .visual-card .visual-media>img[src*="vedansh-vallabh"]{object-position:50% 45%!important}
+.visual-grid .visual-card .visual-media>img[src*="vedansh-teaching"]{object-position:50% 35%!important}
+.visual-grid .visual-card .visual-media>img[src*="vedansh-library"]{object-position:50% 35%!important}
+.visual-grid .visual-card .visual-media>img[src*="astrotry-course-bonus"]{object-fit:contain!important;padding:14px}
