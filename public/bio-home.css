@@ -13,5 +13,5 @@ body > header::before{content:"";position:absolute;inset:0;background:#faf8f3;bo
 html{scroll-padding-top:100px}
 
 /* Quiet text actions on the two primary guidance cards. */
-.card-text-cta{display:block;color:var(--maroon);font-size:12px;font-weight:600;line-height:1.5;margin-top:9px;min-height:3em;align-content:end}
+.card-text-cta{display:block;color:var(--maroon);font-size:12px;font-weight:600;line-height:1.5;margin-top:9px;min-height:1.5em;align-content:end}
 @media(min-width:601px){.card-text-cta{font-size:13px;min-height:1.5em}}
