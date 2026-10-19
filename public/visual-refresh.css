@@ -24,3 +24,14 @@
 .visual-grid .visual-card .portrait-media>img{height:100%;width:100%}
 .report-grid .cover-media .report-cover{inset:0 auto 0 50%;height:100%;width:70.52897%;transform:translateX(-50%)}
 .home-grid .visual-body{padding:20px}.home-grid .visual-body h2{font-size:27px;margin-bottom:9px}.home-grid .card-description{min-height:0;margin-bottom:14px}.home-grid .price-block{margin-bottom:13px}.home-grid .visual-cta{padding-top:12px}
+
+/* Larger, bolder type across the landing, reports and consultation pages. */
+.visual-intro h1,html[lang=hi] .visual-intro h1{font-weight:700}
+.visual-grid .visual-body h2,.visual-grid .visual-body h3,.consultation-page #options .visual-card h3{font-size:30px;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
+.visual-grid .card-description,.consultation-page #options .visual-card p{font-size:15px;font-weight:600;line-height:1.65;color:#574953}
+.visual-grid .price-block strong{font-size:29px;font-weight:700;line-height:1.35}
+.visual-grid .price-block small{font-size:13px;font-weight:600;color:#62525c}
+.visual-grid .visual-cta{font-size:15px;font-weight:700}
+.intro-copy{font-size:17px;font-weight:500}.site-header nav{font-size:15px;font-weight:700}.media-chip{font-size:12px;font-weight:700}.gita-opening blockquote{font-weight:700}.follow-links a{font-size:15px;font-weight:700}
+html[lang=hi] .visual-grid .visual-body h2,html[lang=hi] .visual-grid .visual-body h3,html[lang=hi] #options .visual-card h3{font-size:27px;font-weight:700}
+@media(max-width:700px){.visual-grid .visual-body h2,.visual-grid .visual-body h3,.consultation-page #options .visual-card h3{font-size:25px}.home-grid .visual-body h2{font-size:31px}.visual-grid .price-block strong{font-size:25px}.home-grid .price-block strong{font-size:29px}.visual-grid .card-description,.consultation-page #options .visual-card p{font-size:14px}.visual-grid .visual-cta{font-size:14px}.visual-grid .price-block small{font-size:12px}.intro-copy{font-size:16px}.media-chip{font-size:11px}html[lang=hi] .visual-grid .visual-body h2,html[lang=hi] .visual-grid .visual-body h3,html[lang=hi] #options .visual-card h3{font-size:23px}}
