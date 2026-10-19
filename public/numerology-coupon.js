@@ -50,5 +50,8 @@
   try{sessionStorage.setItem('astro-numeropro','applied');}catch{}
  };
  form.addEventListener('submit',e=>{e.preventDefault();if(input.value.trim().toUpperCase()!=='NUMEROPRO'){input.setAttribute('aria-invalid','true');message.className='coupon-error';message.textContent=en?'Invalid coupon. Enter NUMEROPRO for the full discount.':'कूपन सही नहीं है। पूरी छूट के लिए NUMEROPRO डालें।';return;}unlock();});
- try{if(sessionStorage.getItem('astro-numeropro')==='applied')unlock();}catch{}
+ // Only the published free-course coupon can unlock via a link.
+ const linkedCoupon=new URLSearchParams(location.search).get('coupon');
+ if(linkedCoupon?.trim().toUpperCase()==='NUMEROPRO')unlock();
+ else {try{if(sessionStorage.getItem('astro-numeropro')==='applied')unlock();}catch{}}
 })();
