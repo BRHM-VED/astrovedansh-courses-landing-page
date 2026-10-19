@@ -1,0 +1,40 @@
+/* Long-form lessons extend the established journal design. */
+.j-prose.j-longform p:nth-child(3){padding:0;border:0;background:none;border-radius:0;color:#514358}
+.j-longform{overflow-wrap:anywhere}
+.j-longform h2{font-size:clamp(24px,3.3vw,30px);line-height:1.7;margin:42px 0 18px;color:#3a1b50}
+.j-longform h3{font-size:21px;line-height:1.7;margin:28px 0 14px}
+.j-longform ul,.j-longform ol{padding-left:26px;font-size:18px;line-height:2;color:#514358}
+.j-longform li{margin-bottom:10px}
+.j-longform a,.lesson-context a,.lesson-references a{text-decoration:underline;text-underline-offset:4px;color:#641f94}
+.prediction-note{margin:30px 0;padding:24px;border:1px solid #dec6ed;border-left:5px solid #7e389f;border-radius:16px;background:linear-gradient(135deg,#f6edfc,#fff8e6);break-inside:avoid}
+.j-longform .prediction-note h3{margin:0 0 12px;font-size:22px;color:#59237a}
+.j-longform .prediction-note p,.j-longform .prediction-note p:first-child{font-size:19px;line-height:1.9;margin:0;font-weight:600;color:#402551}
+.lesson-tools{padding:22px;background:#f6eff9;border:1px solid #e5d7ed;border-radius:16px;margin:24px 0}
+.lesson-tool-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.lesson-tools button,.j-saved-filter{font:inherit;min-height:46px;padding:11px 18px;border-radius:10px;border:1px solid #d8bce7;background:white;color:#63258a;font-weight:700;cursor:pointer}
+.lesson-tools button[aria-pressed=true],.j-saved-filter[aria-pressed=true]{background:#63258a;color:#fff}
+.lesson-tools p{font-size:14px;line-height:1.8;margin:12px 0 0;color:#65516e}
+.lesson-tools textarea{width:100%;min-height:230px;margin-top:12px;padding:14px;font:inherit;font-size:16px;line-height:1.8}
+.lesson-notes{padding:24px;border:1px solid #dfc9ea;border-radius:16px;background:white;margin:34px 0}
+.lesson-notes h2{font-size:24px;margin-top:0}
+.lesson-notes li{font-size:18px;line-height:1.95;margin-bottom:12px}
+.lesson-context,.lesson-references{padding:24px;background:#fff9ec;border:1px solid #f0dfbc;border-radius:14px;margin:32px 0;font-size:16px;line-height:1.9}
+.lesson-context h2,.lesson-references h2{font-size:23px;line-height:1.6;margin-top:0}
+.lesson-references small{display:block;color:#706279}
+.lesson-outline{padding:20px;border:1px solid var(--line);border-radius:12px;background:#fff;margin:24px 0}
+.lesson-outline summary{font-weight:700;cursor:pointer;min-height:30px}
+.lesson-outline ol{padding-left:24px;font-size:15px;line-height:1.9}
+.lesson-outline a:hover{text-decoration:underline}
+.j-longform .table-scroll{overflow-x:auto;margin:26px 0;border:1px solid #dfd0e8;border-radius:12px}
+.j-longform table{border-collapse:collapse;width:100%;font-size:16px;line-height:1.9}
+.j-longform th,.j-longform td{border:1px solid #e4d6eb;padding:12px;text-align:left;vertical-align:top;min-width:115px}
+.j-longform th{background:#f2e8f8;color:#522475}
+.teaching-chart{margin:28px 0}
+.teaching-chart .chart-scroll{overflow:auto;border:1px solid #e2d1eb;border-radius:16px;background:#fff}
+.teaching-chart svg{display:block;width:100%;min-width:550px;height:auto;font-family:'Noto Sans Devanagari',sans-serif}
+.teaching-chart figcaption{font-size:14px;line-height:1.85;color:#6b5774;padding-top:12px}
+.chart-placement-list{padding:16px;background:#f8f3fb;border-radius:12px;font-size:16px;line-height:1.9}
+.j-saved-tools{margin:20px 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px;color:#65516e}
+.lesson-disclosure{font-size:14px;line-height:1.85;color:#715d7c;margin:24px 0}
+@media(max-width:560px){.prediction-note,.lesson-tools,.lesson-context,.lesson-references,.lesson-notes{padding:19px}.j-longform p,.j-longform li{font-size:18px;line-height:2}.j-longform .prediction-note p{font-size:18px}.lesson-tools button{flex:1;min-width:125px}.j-longform td,.j-longform th{padding:10px}.j-longform h3{font-size:21px}}
+@media print{.j-header,.lesson-tools,.av-promotion,.j-reader-cta,.j-footer,.lesson-context{display:none}.prediction-note{break-inside:avoid}.j-reader{width:100%;max-width:none}}

@@ -6,6 +6,14 @@
   const pagination = document.querySelector('.j-pagination');
   const previous = document.querySelector('#journal-prev');
   const next = document.querySelector('#journal-next');
+  const savedOnly = document.querySelector('#journal-saved-only');
+  let showSaved = false;
+  function savedLinks() {
+    try {
+      const value = JSON.parse(localStorage.getItem('astrovedansh-saved-articles-v1') || '{}');
+      return value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+    } catch { return {}; }
+  }
   let page = 1;
   const size = 12;
   const normalize = text => text.normalize('NFC').toLocaleLowerCase('hi').trim();
@@ -13,7 +21,11 @@
   if ([...category.options].some(option => option.value === requested)) category.value = requested;
   function render() {
     const terms = normalize(search.value).split(/\s+/).filter(Boolean);
-    const results = cards.filter(card => (!category.value || card.dataset.category === category.value) && terms.every(term => normalize(card.dataset.search).includes(term)));
+    const saved = savedLinks();
+    const results = cards.filter(card => {
+      const href = card.querySelector('h2 a')?.getAttribute('href');
+      return (!showSaved || Boolean(saved[href])) && (!category.value || card.dataset.category === category.value) && terms.every(term => normalize(card.dataset.search).includes(term));
+    });
     const pages = Math.max(1, Math.ceil(results.length / size));
     page = Math.min(page, pages);
     const visible = new Set(results.slice((page - 1) * size, page * size));
@@ -29,7 +41,9 @@
   category.addEventListener('change', () => { page = 1; render(); });
   document.querySelector('.j-controls').addEventListener('submit', event => event.preventDefault());
   document.querySelector('.j-controls').addEventListener('reset', event => {
-    event.preventDefault(); search.value = ''; category.value = ''; page = 1; render(); search.focus();
+    event.preventDefault(); search.value = ''; category.value = ''; showSaved = false;
+    if (savedOnly) savedOnly.setAttribute('aria-pressed', 'false');
+    page = 1; render(); search.focus();
   });
   function turn(delta) {
     page += delta; render();
@@ -37,5 +51,11 @@
   }
   previous.addEventListener('click', () => turn(-1));
   next.addEventListener('click', () => turn(1));
+  if (savedOnly) savedOnly.addEventListener('click', () => {
+    showSaved = !showSaved; page = 1;
+    savedOnly.setAttribute('aria-pressed', String(showSaved)); render();
+  });
+  addEventListener('storage', render);
+  addEventListener('pageshow', render);
   render();
 })();

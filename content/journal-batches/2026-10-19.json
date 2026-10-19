@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Calcutta",
+  "purpose": "Idempotent publication batch; retry these same URLs, never allocate another ten.",
+  "content_state": "validated-source",
+  "source_files": [
+    "content/lessons-2026-10-19-a.json",
+    "content/lessons-2026-10-19-b.json",
+    "content/lessons-2026-10-19-c.json"
+  ],
+  "items": [
+    {
+      "number": 18,
+      "title": "भाव, भावेश और कारक: तीनों अलग संकेत दें तो भविष्यवाणी कैसे करें?",
+      "url": "journal/lesson-018.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-19",
+      "body_words": 1735,
+      "editorial_sha256": "8e12adbf4565f3e9dd6e5f245e348723ed5b11abc79ef565c14ca3c0a11ce9d4",
+      "search_intent": {
+        "queries": [
+          "bhava bhavesha karaka difference",
+          "कारक और भाव स्वामी में अंतर"
+        ],
+        "intent": "तीन स्तरों का अंतर और विरोधी संकेत मिलने पर निर्णय; मौजूदा छोटे लेख 018 का विस्तार, खोज-मात्रा का दावा नहीं।"
+      }
+    },
+    {
+      "number": 47,
+      "title": "उच्च का ग्रह भी कठिन फल क्यों देता है? ग्रह की शक्ति और भूमिका अलग पढ़ें",
+      "url": "journal/lesson-047.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-19",
+      "body_words": 1820,
+      "editorial_sha256": "6d8435538a0611fe26881dd749a915fd77d39e53fb1766b4e77c0cb652a68120",
+      "search_intent": {
+        "queries": [
+          "उच्च ग्रह अशुभ फल क्यों देता है",
+          "exalted planet bad results functional lordship"
+        ],
+        "intent": "उच्चता को अकेला शुभ परिणाम समझने की भूल और निर्णय-विधि; मौजूदा छोटे लेख 047 का विस्तार।"
+      }
+    },
+    {
+      "number": 121,
+      "title": "नीचभंग मिला तो राजयोग मान लें? सहायता, बल और समय की तीन जाँच",
+      "url": "journal/neechabhanga-conditions.html",
+      "operation": "new",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "body_words": 1938,
+      "editorial_sha256": "b692313be5e04fa2f1dd3f3a828c7b300f587e61e0a680c79c9c78c1301607d4",
+      "search_intent": {
+        "queries": [
+          "नीचभंग राजयोग की शर्तें",
+          "neechabhanga cancellation vs raja yoga"
+        ],
+        "intent": "सहायक शर्त की सही गिनती और कमजोरी में सुधार बनाम बड़े परिणाम का अंतर; नया विशिष्ट पाठ।"
+      }
+    },
+    {
+      "number": 37,
+      "title": "सप्तम भाव में शनि — विवाह में विलंब या स्थायी संबंध?",
+      "url": "journal/lesson-037.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-19",
+      "body_words": 1681,
+      "editorial_sha256": "431048d43ac586f1aa1ef8b809ae107fc0f58bcf3c6e20cdf593e027406c79f2",
+      "search_intent": "सप्तम भाव में शनि विवाह में विलंब; अपने घर का शनि और विवाह। परिणामों में एकल-ग्रह निष्कर्ष दिखने के कारण शर्तयुक्त तुलना।"
+    },
+    {
+      "number": 122,
+      "title": "दशमेश द्वादश भाव में — विदेश में सफलता या करियर में बाधा?",
+      "url": "journal/tenth-lord-twelfth-house.html",
+      "operation": "new",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "body_words": 1824,
+      "editorial_sha256": "540695b03c0c720f95830947f2db92e1787f232e728c53439e461242b596bf37",
+      "search_intent": "दशमेश बारहवें भाव में विदेश नौकरी; दशम भाव का स्वामी द्वादश। एकल स्थान से विदेश का निर्णय करने वाले आशय को राशि स्वामी की जाँच से अलग करना।"
+    },
+    {
+      "number": 63,
+      "title": "धनयोग होने के बावजूद धन क्यों नहीं टिकता?",
+      "url": "journal/lesson-063.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-19",
+      "body_words": 1905,
+      "editorial_sha256": "404e85f682de8d5d87178ed89e836eb97e8fcfffa0136906ccfd3dbcb0982cc5",
+      "search_intent": "धनयोग होने पर भी पैसा नहीं टिकता; द्वितीयेश द्वादश में। आय बनाम बचत की समस्या और उच्च ग्रह के अपवाद का विशिष्ट अध्ययन।"
+    },
+    {
+      "number": 123,
+      "title": "योगकारक ग्रह अपनी दशा में भी शुभ फल क्यों नहीं देता?",
+      "url": "journal/yogakaraka-dasha-conditions.html",
+      "operation": "new",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "body_words": 1659,
+      "editorial_sha256": "a2ba2b0c06b6dd8892242f43dc9b9d3af840fb3aa4ebb8acbcf09d829b9359ce",
+      "search_intent": "योगकारक दशा में अपेक्षित लाभ न मिलने का विशिष्ट प्रश्न; पूर्व लघु योग-परिचय से अलग, स्वामित्व-क्षमता-अंतर्दशा पृथक्करण। खोज में फलदीपिका के दशाध्याय और योगकारक संबंधी पाठ मिले; खोज संख्या का दावा नहीं।"
+    },
+    {
+      "number": 65,
+      "title": "D1 और D9 में विरोधी संकेत मिलें तो किसे मानें?",
+      "url": "journal/lesson-065.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-19",
+      "body_words": 1697,
+      "editorial_sha256": "74190ccef621d41dc6fe734e02fa1ff22ae8a38be2686566b8754bfdedaacf26",
+      "search_intent": "मौजूदा 170-शब्द नवांश परिचय को उसी URL पर D1-D9 विरोध के विशिष्ट प्रश्न में विस्तार; lesson066 के केवल विवाह-सावधानी परिचय से अलग। ऑनलाइन वर्ग-विभाजन मूलपाठ पढ़ा; किसी खोज-मात्रा का दावा नहीं।"
+    },
+    {
+      "number": 124,
+      "title": "क्या दशम भाव का मंगल हर लग्न में सफल करियर देता है?",
+      "url": "journal/mars-tenth-house-context.html",
+      "operation": "new",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "body_words": 1641,
+      "editorial_sha256": "5491cc484125dd6929968b37396c4a67d6e12f5759147f56a37b78c334a4e579",
+      "search_intent": "दशमस्थ मंगल के सफलता दावे की शर्तों का विशिष्ट प्रश्न। वर्तमान lesson023 केवल ऊर्जा/क्रोध कारकत्व का लघु परिचय है, इसलिए अलग खोज आशय। फलदीपिका16.28 के वास्तविक दशमेश-समर्थन वाक्य से जाँच।"
+    },
+    {
+      "number": 125,
+      "title": "भावात् भावम्: चौथे से चौथा सातवाँ क्यों, और उसका उपयोग कैसे करें?",
+      "url": "journal/bhavat-bhavam-counting.html",
+      "operation": "new",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "body_words": 1724,
+      "editorial_sha256": "108019f77ac42e889c6750dad240069e5de7eb07b2808e1136455814e195b654",
+      "search_intent": "भावात् भावम् की वास्तविक गिनती, चौथे से चौथे तथा समान सापेक्ष भाव में अलग प्रश्न का विशिष्ट पाठ; मौजूदा manifest में भावात् विषय नहीं मिला। फलदीपिका15.20–25 को पढ़कर सापेक्ष-अध्ययन का आधार सत्यापित; खोज-मात्रा नहीं गढ़ी।"
+    }
+  ],
+  "images": {
+    "source": "public/assets/journal/provenance.json",
+    "method": "Reuse original AI-generated covers, encode responsive WebP versions without creative changes.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  }
+}

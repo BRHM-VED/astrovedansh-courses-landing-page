@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-19",
+  "edition": "Phaladeepika, translated by Panditabhushana V. Subrahmanya Sastri, 1950",
+  "method": "Read the nine unique chapter URLs cited by the lesson records and match the specified passages. Online text contains OCR errors. Chapter/verse correspondence was checked; no assertion of a second-translation comparison or complete scan proofreading.",
+  "intent_research": {
+    "method": "Current web searches for Hindi educational questions; results establish topical intent only, not traffic, volume, ranking or predictive validity.",
+    "clusters": ["भाव भावेश कारक अंतर", "उच्च ग्रह खराब फल क्यों", "नीचभंग कब फल देता है", "सप्तम शनि विवाह विलंब स्थिरता", "दशमेश द्वादश विदेश करियर", "धनयोग पैसा क्यों नहीं टिकता", "योगकारक दशा शुभ फल नहीं", "D1 D9 विरोधी संकेत", "दशम मंगल करियर", "भावात भावम् गिनती उपयोग"]
+  },
+  "passages": {
+    "18": ["XV.17", "XV.25"],
+    "47": ["XV.13-14"],
+    "121": ["VII.26", "VII.28-29"],
+    "37": ["X.6", "X.13"],
+    "122": ["I.15-16", "V.1"],
+    "63": ["I.10", "I.15-16", "XVI.5"],
+    "123": ["XX.1", "XX.42-48"],
+    "65": ["III.1-2"],
+    "124": ["XVI.28", "IV.2"],
+    "125": ["XV.20-25"]
+  },
+  "editorial_checks": [
+    "All 41 chart placements match their stated full-sign houses.",
+    "D9 degrees in lesson 65 were independently recalculated.",
+    "Added explicit Saturn-Aries/Mars-Capricorn exchange in lesson 122 without claiming automatic cancellation of debility.",
+    "Foreign-career and D10 readings remain teaching interpretations, not attributed to the navamsha passage V.1.",
+    "Hypothetical partial teaching charts are not represented as real client histories.",
+    "Production browser preview could not be reached; visual mobile QA remains unverified."
+  ]
+}
