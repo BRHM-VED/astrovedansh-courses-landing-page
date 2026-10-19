@@ -15,3 +15,9 @@ html{scroll-padding-top:100px}
 /* Quiet text actions on the two primary guidance cards. */
 .card-text-cta{display:block;color:var(--maroon);font-size:12px;font-weight:600;line-height:1.5;margin-top:9px;min-height:1.5em;align-content:end}
 @media(min-width:601px){.card-text-cta{font-size:13px;min-height:1.5em}}
+
+/* App download is visible alongside the introduction, before product selection. */
+.app-download-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;padding:10px 12px;margin:16px auto 0;max-width:440px;border:1px solid #d8c5cb;border-radius:12px;background:#f4edef}
+.app-download-label{min-width:0}.app-download-label strong{display:block;color:var(--maroon);font-size:15px;line-height:1.4}.app-download-label small{display:block;color:var(--muted);font-size:11px;line-height:1.5;margin-top:2px}
+.app-download-action{display:flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;background:var(--maroon);color:#fff;border-radius:8px;font-size:12px;font-weight:600;line-height:1.4;flex-shrink:0}
+@media(max-width:600px){.app-download-cta{margin-top:13px;padding:8px 10px;gap:8px}.app-download-label strong{font-size:14px}.app-download-action{padding:8px 10px;font-size:11px}}
