@@ -22,6 +22,12 @@ html{scroll-padding-top:100px}
 .app-download-action{display:flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;background:var(--maroon);color:#fff;border-radius:8px;font-size:12px;font-weight:600;line-height:1.4;flex-shrink:0}
 @media(max-width:600px){.app-download-cta{margin-top:13px;padding:8px 10px;gap:8px}.app-download-label strong{font-size:14px}.app-download-action{padding:8px 10px;font-size:11px}}
 
+/* AstroTry's existing yellow, navy and logo burgundy; geometry stays unchanged. */
+.app-download-cta{background:#fbdb54;border-color:#dfbc3e}
+.app-download-label strong{color:#071b2e}
+.app-download-label small{color:#433519}
+.app-download-action{background:#69201f;color:#fff}
+
 /* Soft elevation: a close contact shadow plus a broad, blurred shadow below. */
 .service-card{box-shadow:0 2px 4px -2px rgb(54 29 38 / 12%),0 10px 20px -9px rgb(54 29 38 / 19%),0 20px 32px -18px rgb(54 29 38 / 16%)}
 .app-download-cta{box-shadow:0 2px 4px -2px rgb(54 29 38 / 10%),0 12px 24px -14px rgb(54 29 38 / 19%)}
