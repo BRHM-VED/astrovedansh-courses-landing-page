@@ -19,6 +19,12 @@ html[lang=hi] .category-refined .visual-intro h1{font-size:34px;line-height:1.4}
 .category-refined .visual-card:hover .visual-cta>span:last-child{transform:none}
 .category-refined [data-request-report=name] .price-block strong{font-size:18px;letter-spacing:0}
 @media(max-width:700px){
+ .category-refined .site-header{gap:10px;padding:14px 0}
+ .category-refined .site-header .brand{gap:6px;font-size:19px}
+ .category-refined .site-header .brand img{width:28px;height:28px}
+ .category-refined .language{padding:3px}
+ .category-refined .language button{padding:8px;min-height:38px}
+ .category-refined .site-header nav{gap:20px;padding:4px 0;font-size:13px}
  .category-refined .gita-opening{padding:10px 8px;margin-top:14px}
  .category-refined .gita-opening blockquote{font-size:13px;line-height:1.65}
  .category-refined .gita-opening .gita-label{font-size:9px;margin-bottom:3px}
