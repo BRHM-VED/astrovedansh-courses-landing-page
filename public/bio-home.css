@@ -6,3 +6,8 @@
 
 /* Keep each row aligned without reserving a blank title line. */
 @media(max-width:600px){.service-bottom h3,html[lang=hi] .service-bottom h3{min-height:0}.service-card{grid-template-rows:subgrid;grid-row:span 2;row-gap:0}.service-bottom .card-benefit{min-height:0;margin-bottom:10px}.service-bottom{padding-top:11px}.card-secondary-price{font-size:11px}}
+
+/* Keep brand, language and navigation available while scrolling. */
+body > header{position:sticky;top:0;z-index:50;isolation:isolate;background:#faf8f3}
+body > header::before{content:"";position:absolute;inset:0 calc(50% - 50vw);background:#faf8f3;z-index:-1;pointer-events:none}
+html{scroll-padding-top:100px}

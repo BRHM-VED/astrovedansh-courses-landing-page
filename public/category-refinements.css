@@ -47,3 +47,8 @@ html[lang=hi] .category-refined .visual-intro h1{font-size:34px;line-height:1.4}
  .category-refined [data-request-report=name] .price-block strong{font-size:16px}
  .category-refined .media-chip{font-size:10px;left:8px;top:8px;padding:5px 7px}
 }
+
+/* Keep brand, language and navigation available while scrolling. */
+.category-refined > .site-header{position:sticky;top:0;z-index:50;isolation:isolate;background:#faf8f3}
+.category-refined > .site-header::before{content:"";position:absolute;inset:0 calc(50% - 50vw);background:#faf8f3;z-index:-1;pointer-events:none}
+html{scroll-padding-top:160px}
