@@ -133,3 +133,11 @@
 
 /* Four concise process steps from the approved bilingual copy. */
 @media(min-width:701px){.hub-steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* Compact question-led navigation; retain the existing product grid. */
+.need-shortcuts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 22px}
+.need-shortcuts a{display:flex;flex-direction:column;justify-content:center;gap:5px;min-width:0;min-height:72px;padding:12px;border:1px solid #dfd4cb;border-radius:12px;color:#542b39;background:#fffdf9;text-decoration:none}
+.need-shortcuts strong{font-size:14px;line-height:1.5;overflow-wrap:normal;word-break:normal}
+.need-shortcuts small{font-size:12px;line-height:1.5;color:#66545c}
+.need-shortcuts a:focus-visible{outline:2px solid #542b39;outline-offset:3px}
+@media(max-width:600px){.need-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.need-shortcuts a{padding:11px;min-height:72px}}
