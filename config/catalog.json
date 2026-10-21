@@ -1,0 +1,122 @@
+{
+  "currency": "INR",
+  "products": {
+    "timing": {
+      "amount": 349,
+      "url": "https://perfect-timing.astrovedansh.com/",
+      "checkout": "external",
+      "status": "existing"
+    },
+    "career": {
+      "amount": 349,
+      "url": "https://perfect-career.astrovedansh.com/",
+      "checkout": "external",
+      "status": "price_conflict",
+      "observedExternalAmount": 449
+    },
+    "name": {
+      "amount": 501,
+      "url": "/reports.html#report-request",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved"
+    },
+    "milan": {
+      "amount": 2999,
+      "url": "/reports.html#report-request",
+      "checkout": "whatsapp_request",
+      "status": "existing"
+    },
+    "audio": {
+      "amount": 999,
+      "minutes": "10–15",
+      "url": "/consultation-audio.html",
+      "checkout": "whatsapp_request",
+      "status": "existing"
+    },
+    "expert": {
+      "amount": 1100,
+      "minutes": "20–25",
+      "url": "/consultation-expert.html",
+      "checkout": "whatsapp_request",
+      "status": "existing"
+    },
+    "personal": {
+      "amount": 2100,
+      "minutes": "30",
+      "url": "/consultation-personal.html",
+      "checkout": "whatsapp_request",
+      "status": "existing"
+    },
+    "detailed": {
+      "amount": 4200,
+      "minutes": "60",
+      "url": "/consultation-detailed.html",
+      "checkout": "whatsapp_request",
+      "status": "existing"
+    },
+    "foundation": {
+      "amount": 10000,
+      "requestedAmount": 15000,
+      "url": "/courses.html",
+      "checkout": "external",
+      "status": "price_conflict"
+    },
+    "freeCourse": {
+      "amount": 999,
+      "coupon": "NUMEROPRO",
+      "finalAmount": 0,
+      "url": "/numerology.html?coupon=NUMEROPRO#course-coupon",
+      "status": "existing"
+    }
+  },
+  "offers": {
+    "timing_two": {
+      "questions": 2,
+      "amount": 649,
+      "enabled": false,
+      "businessApproved": false,
+      "checkoutVerified": false,
+      "checkoutUrl": null,
+      "sameBirthChart": null,
+      "deliveryScope": null
+    },
+    "timing_four": {
+      "questions": 4,
+      "amount": 1047,
+      "enabled": false,
+      "businessApproved": false,
+      "checkoutVerified": false,
+      "checkoutUrl": null,
+      "sameBirthChart": null,
+      "deliveryScope": null
+    },
+    "detailed_pilot": {
+      "amount": 3799,
+      "enabled": false,
+      "businessApproved": false,
+      "checkoutVerified": false,
+      "checkoutUrl": null
+    }
+  },
+  "unavailable": [
+    {
+      "id": "astrology_report",
+      "amount": 399,
+      "reason": "No verified destination"
+    },
+    {
+      "id": "advanced_course",
+      "amount": 35000,
+      "reason": "No verified product checkout"
+    },
+    {
+      "id": "predictive_numerology",
+      "amount": 21000,
+      "reason": "No verified product checkout"
+    },
+    {
+      "id": "inbhakti",
+      "reason": "No verified app URL"
+    }
+  ]
+}
