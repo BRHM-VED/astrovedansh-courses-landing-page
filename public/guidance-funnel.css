@@ -1,0 +1,53 @@
+/* A single decision per screen, within the existing brand. */
+.funnel-page .visual-main{max-width:720px}
+.funnel-page .visual-intro{padding-bottom:18px}
+.funnel-page .visual-intro h1{max-width:650px}
+.funnel-page .visual-intro .intro-copy{max-width:600px}
+.funnel-progress{display:flex;justify-content:space-between;gap:10px;list-style:none;padding:0 0 20px;margin:0;color:#7b7075;border-bottom:1px solid #e4d9d4}
+.funnel-progress li{display:flex;align-items:center;gap:7px;font-size:12px}
+.funnel-progress li>span{display:grid;place-items:center;width:26px;height:26px;border:1px solid #d4c6cb;border-radius:50%;font-size:12px}
+.funnel-progress small{font-size:13px}
+.funnel-progress [aria-current=step]{color:#542b39;font-weight:700}
+.funnel-progress [aria-current=step]>span{background:#542b39;border-color:#542b39;color:#fff}
+.funnel-shell{padding:22px 0 0;min-width:0}
+.funnel-choices{display:grid;gap:12px}
+.funnel-choice{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px;background:#fff;color:#542b39;border:1px solid #e1d5cf;border-radius:14px;box-shadow:0 8px 20px -18px #542b3970;text-decoration:none}
+.funnel-choice:hover{border-color:#98727f;background:#fdfaf8}
+.funnel-choice:focus-visible,.funnel-back:focus-visible{outline:3px solid #a77c44;outline-offset:4px}
+.funnel-choice-copy{display:grid;gap:7px;min-width:0}
+.funnel-choice-copy strong{font-size:18px;line-height:1.5;font-weight:700}
+.funnel-choice-copy small{font-size:14px;line-height:1.6;color:#6b5d64}
+.funnel-choice-end{display:grid;gap:8px;justify-items:end;flex-shrink:0}
+.funnel-choice-end b{font-size:19px;white-space:nowrap}
+.funnel-choice-end>span{font-size:21px}
+.funnel-back{display:inline-flex;align-items:center;min-height:44px;border:0;background:transparent;color:#542b39;padding:0 0 10px;font-family:inherit;font-size:14px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.funnel-page h2{font-size:25px;line-height:1.45;margin:3px 0 18px}
+.funnel-result-card{background:#fff;border:1px solid #e0d2cc;border-radius:16px;padding:26px}
+.funnel-result-card .eyebrow{font-size:11px}
+.funnel-result-card h2{font-family:Georgia,serif;font-size:29px}
+html[lang=hi] .funnel-result-card h2{font-family:'Noto Sans Devanagari',sans-serif;font-size:26px;line-height:1.5}
+.funnel-price{display:block;font-size:32px;color:#542b39;line-height:1.4;margin:16px 0}
+.funnel-result-card .plan-cta{width:100%}
+.funnel-result-card .plan-inclusions{margin:12px 0 22px}
+.funnel-result-card .plan-saving s{color:#75646d;font-weight:400}
+.funnel-note{font-size:13px;line-height:1.7;color:#6b5d64;margin:17px 0 0}
+.funnel-footer{font-size:13px;text-align:center;color:#6b5d64;margin:28px 0 22px;line-height:1.8}
+.funnel-footer p{margin:0 0 12px}
+.funnel-footer a{display:inline-flex;align-items:center;min-height:44px;color:#542b39;text-decoration:underline;text-underline-offset:3px}
+.funnel-page:not([data-funnel-stage=start]) .visual-intro .intro-copy{display:none}
+@media(max-width:650px){
+ .funnel-page .visual-intro h1{font-size:28px;line-height:1.3}
+ html[lang=hi] .funnel-page .visual-intro h1{font-size:25px;line-height:1.45}
+ .funnel-progress{gap:6px;padding-bottom:16px}
+ .funnel-progress small{font-size:12px}
+ .funnel-progress li{gap:5px}
+ .funnel-progress li>span{width:23px;height:23px}
+ .funnel-shell{padding-top:18px}
+ .funnel-choice{padding:18px 15px;gap:12px}
+ .funnel-choice-copy strong{font-size:16px}
+ .funnel-choice-copy small{font-size:13px}
+ .funnel-choice-end b{font-size:17px}
+ .funnel-page h2{font-size:21px}
+ .funnel-result-card{padding:22px 18px}
+ .funnel-result-card h2,html[lang=hi] .funnel-result-card h2{font-size:24px}
+}

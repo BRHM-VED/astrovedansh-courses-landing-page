@@ -36,11 +36,10 @@ for key,o in offers.items():
   if key=='detailed_pilot':raise ValueError('Connect the approved pilot booking conditions and analytics before activation')
 outputs={}
 def plan_callout(group):
- combo=plans['plans']['report_combo'];price=money(combo['amount']);saving=money(combo['saving'])
- en='Choose standalone services or save with a combo.' if group=='consultation' else f'Astrology + Perfect Name Report together for {price}. Save {saving}.'
- hi='अलग सेवा चुनें या कॉम्बो के साथ बचत करें।' if group=='consultation' else f'ज्योतिष + Perfect Name रिपोर्ट एक साथ {price} में। {saving} की बचत।'
- href='/pricing.html' if group=='consultation' else '/pricing.html?guidance=written#plans'
- return '<aside class="category-plan-link">'+plan_bi('p',en,hi)+'<a class="plan-cta secondary" href="'+href+'">'+plan_bi('span','Compare Plans & Combos →','प्लान और कॉम्बो देखें →')+'</a></aside>'
+ en='Not sure which service fits? Choose one step at a time.'
+ hi='समझ नहीं आ रहा क्या चुनें? एक-एक कदम में सही विकल्प चुनें।'
+ href='/pricing.html?guidance=live' if group=='consultation' else '/pricing.html?guidance=written'
+ return '<aside class="category-plan-link">'+plan_bi('p',en,hi)+'<a class="plan-cta secondary" href="'+href+'">'+plan_bi('span','Help Me Choose →','मेरे लिए विकल्प चुनें →')+'</a></aside>'
 astrology_card='<a class="visual-card peach" href="/book-guidance.html?plan=astrology_report"><div class="visual-media"><img alt="AstroVedansh report" src="/assets/report-editorial.webp" width="720" height="480" loading="lazy"></div><div class="visual-body">'+plan_bi('h2','Astrology Report','ज्योतिष रिपोर्ट')+plan_bi('p',products['astrology_report']['description']['en'],products['astrology_report']['description']['hi'],'class="card-description"')+'<div class="price-block"><strong>'+money(products['astrology_report']['amount'])+'</strong>'+plan_bi('small','Personalized written analysis','व्यक्तिगत लिखित विश्लेषण')+'</div><div class="visual-cta">'+plan_bi('span','Get Astrology Report','ज्योतिष रिपोर्ट लें')+'<span aria-hidden="true">→</span></div></div></a>'
 for template in (ROOT/'templates/pricing').glob('*.html'):
  s=template.read_text();s=re.sub(r'\{\{price:([A-Za-z_]+)\}\}',lambda m:money((products|catalog['bundles'])[m[1]]['amount']),s).replace('{{timing_offers}}',section()).replace('{{guidance_overview}}',overview(plans)).replace('{{report_plan_callout}}',plan_callout('reports')).replace('{{consultation_plan_callout}}',plan_callout('consultation')).replace('{{astrology_report_card}}',astrology_card)

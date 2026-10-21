@@ -73,9 +73,10 @@
     upgradeBox.hidden = !p.upgrade;
     if (p.upgrade) {
       const upgrade = model.resolve(p.upgrade), extra = upgrade.amount - p.amount;
-      upgradeBox.append(node('h2', hi ? 'वैकल्पिक अपग्रेड' : 'Optional upgrade'));
-      upgradeBox.append(node('p', hi ? `${upgrade.title.hi} ${money(upgrade.amount)} में — सिर्फ ${money(extra)} अतिरिक्त। ${upgrade.description.hi}` : `${upgrade.title.en} for ${money(upgrade.amount)} — only ${money(extra)} more. ${upgrade.description.en}`));
-      const button = node('button', hi ? `${money(extra)} में अपग्रेड चुनें →` : `Choose upgrade · +${money(extra)} →`, 'plan-cta secondary');
+      const added = upgrade.lineItems.filter(item => !p.items.includes(item.id));
+      upgradeBox.append(node('h2', hi ? 'रिपोर्ट भी जोड़ना चाहेंगे?' : 'Would you like to add reports?'));
+      upgradeBox.append(node('p', added.map(item => item.title[lang()]).join(' + ') + (hi ? ` · नई कुल कीमत ${money(upgrade.amount)}` : ` · New total ${money(upgrade.amount)}`)));
+      const button = node('button', hi ? `${added.length > 1 ? 'दोनों रिपोर्ट जोड़ें' : 'रिपोर्ट जोड़ें'} · +${money(extra)} →` : `Add ${added.length > 1 ? 'both reports' : 'report'} · +${money(extra)} →`, 'plan-cta secondary');
       button.type = 'button';
       button.addEventListener('click', () => {
         selected = upgrade;
