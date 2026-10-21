@@ -130,3 +130,6 @@
  .hub-page>header .brand img,.category-refined>.site-header .brand img{width:20px;height:20px}
  .hub-page>header .language button,.category-refined>.site-header .language button{min-width:32px;padding:6px;font-size:10px}
 }
+
+/* Four concise process steps from the approved bilingual copy. */
+@media(min-width:701px){.hub-steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
