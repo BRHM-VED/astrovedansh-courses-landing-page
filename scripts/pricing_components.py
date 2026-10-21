@@ -8,7 +8,7 @@ SERVICE_IDS = ['astrology_report', 'name', 'audio', 'expert', 'personal', 'detai
 SERVICE_BADGES = {
     'astrology_report': ('Must Try', 'ज़रूर आज़माएँ', 'try'),
     'audio': ('Must Try', 'ज़रूर आज़माएँ', 'try'),
-    'personal': ('Recommended', 'हमारी सलाह', 'recommended'),
+    'detailed': ('Recommended', 'हमारी सलाह', 'recommended'),
     'complete_combo': ('Recommended', 'हमारी सलाह', 'recommended'),
 }
 
