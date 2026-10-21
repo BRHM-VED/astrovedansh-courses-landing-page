@@ -15,10 +15,25 @@
       "observedExternalAmount": 449
     },
     "name": {
-      "amount": 501,
-      "url": "/reports.html#report-request",
+      "amount": 399,
+      "url": "/book-guidance.html?plan=name",
       "checkout": "whatsapp_request",
-      "status": "owner_approved"
+      "status": "owner_approved",
+      "title": {
+        "en": "Perfect Name Report",
+        "hi": "Perfect Name रिपोर्ट"
+      },
+      "description": {
+        "en": "Numerology-based name analysis and personalized name suggestions.",
+        "hi": "नाम और जन्मतिथि के आधार पर अंकज्योतिषीय विश्लेषण और नाम-संबंधी सुझाव।"
+      },
+      "mode": "written",
+      "group": "written",
+      "active": true,
+      "format": {
+        "en": "Personalized numerology report",
+        "hi": "व्यक्तिगत अंकज्योतिष रिपोर्ट"
+      }
     },
     "milan": {
       "amount": 2999,
@@ -27,32 +42,93 @@
       "status": "existing"
     },
     "audio": {
-      "amount": 999,
+      "amount": 799,
       "minutes": "10–15",
       "url": "/consultation-audio.html",
       "checkout": "whatsapp_request",
-      "status": "existing"
+      "status": "owner_approved",
+      "title": {
+        "en": "Vedansh Audio Analysis",
+        "hi": "वेदांश ऑडियो विश्लेषण"
+      },
+      "description": {
+        "en": "A 10–15 minute recorded voice note from Astro Vedansh, delivered on WhatsApp. Not a live call.",
+        "hi": "वेदांश जी का 10–15 मिनट का रिकॉर्डेड वॉइस नोट WhatsApp पर पाएँ। यह लाइव कॉल नहीं है।"
+      },
+      "mode": "audio",
+      "group": "audio",
+      "astrologer": {
+        "en": "Astro Vedansh",
+        "hi": "वेदांश वल्लभ"
+      },
+      "active": true
     },
     "expert": {
-      "amount": 1100,
+      "amount": 999,
       "minutes": "20–25",
       "url": "/consultation-expert.html",
       "checkout": "whatsapp_request",
-      "status": "existing"
+      "status": "owner_approved",
+      "title": {
+        "en": "Expert Live Consultation",
+        "hi": "एक्सपर्ट लाइव परामर्श"
+      },
+      "description": {
+        "en": "A 20–25 minute live conversation with our team astrologer. Ask questions and follow-ups.",
+        "hi": "टीम के ज्योतिषी से 20–25 मिनट लाइव बात करें, अपनी परिस्थिति समझाएँ और फॉलो-अप सवाल पूछें।"
+      },
+      "mode": "live",
+      "group": "expert",
+      "astrologer": {
+        "en": "Team astrologer · 20 years of experience",
+        "hi": "टीम के ज्योतिषी · 20 वर्ष का अनुभव"
+      },
+      "authoritySource": "Owner-provided service specification, 2026-10-21",
+      "active": true
     },
     "personal": {
-      "amount": 2100,
+      "amount": 1799,
       "minutes": "30",
       "url": "/consultation-personal.html",
       "checkout": "whatsapp_request",
-      "status": "existing"
+      "status": "owner_approved",
+      "title": {
+        "en": "Vedansh Personal Consultation",
+        "hi": "वेदांश व्यक्तिगत परामर्श"
+      },
+      "description": {
+        "en": "A 30-minute one-to-one live consultation with Astro Vedansh.",
+        "hi": "वेदांश जी के साथ 30 मिनट का व्यक्तिगत लाइव परामर्श।"
+      },
+      "mode": "live",
+      "group": "vedansh",
+      "astrologer": {
+        "en": "Astro Vedansh",
+        "hi": "वेदांश वल्लभ"
+      },
+      "active": true
     },
     "detailed": {
-      "amount": 4200,
+      "amount": 3199,
       "minutes": "60",
       "url": "/consultation-detailed.html",
       "checkout": "whatsapp_request",
-      "status": "existing"
+      "status": "owner_approved",
+      "title": {
+        "en": "Vedansh Complete Consultation",
+        "hi": "वेदांश सम्पूर्ण परामर्श"
+      },
+      "description": {
+        "en": "A 60-minute live discussion with Astro Vedansh. Explore multiple life topics and ask follow-ups within the session.",
+        "hi": "वेदांश जी के साथ 60 मिनट का लाइव संवाद। सेशन के समय में कई विषयों और फॉलो-अप सवालों पर चर्चा करें।"
+      },
+      "mode": "live",
+      "group": "vedansh",
+      "astrologer": {
+        "en": "Astro Vedansh",
+        "hi": "वेदांश वल्लभ"
+      },
+      "active": true
     },
     "foundation": {
       "amount": 10000,
@@ -67,6 +143,27 @@
       "finalAmount": 0,
       "url": "/numerology.html?coupon=NUMEROPRO#course-coupon",
       "status": "existing"
+    },
+    "astrology_report": {
+      "amount": 299,
+      "title": {
+        "en": "Astrology Report",
+        "hi": "ज्योतिष रिपोर्ट"
+      },
+      "description": {
+        "en": "Personalized kundli-based written astrology analysis.",
+        "hi": "आपकी कुंडली पर आधारित व्यक्तिगत लिखित ज्योतिषीय विश्लेषण।"
+      },
+      "mode": "written",
+      "group": "written",
+      "url": "/book-guidance.html?plan=astrology_report",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved",
+      "active": true,
+      "format": {
+        "en": "Personalized written report",
+        "hi": "व्यक्तिगत लिखित रिपोर्ट"
+      }
     }
   },
   "offers": {
@@ -100,11 +197,6 @@
   },
   "unavailable": [
     {
-      "id": "astrology_report",
-      "amount": 399,
-      "reason": "No verified destination"
-    },
-    {
       "id": "advanced_course",
       "amount": 35000,
       "reason": "No verified product checkout"
@@ -118,5 +210,126 @@
       "id": "inbhakti",
       "reason": "No verified app URL"
     }
-  ]
+  ],
+  "bundles": {
+    "report_combo": {
+      "amount": 499,
+      "items": [
+        "astrology_report",
+        "name"
+      ],
+      "group": "written",
+      "mode": "written",
+      "title": {
+        "en": "Report Combo",
+        "hi": "रिपोर्ट कॉम्बो"
+      },
+      "description": {
+        "en": "Personalized written astrology and numerology guidance, together.",
+        "hi": "ज्योतिष और अंकज्योतिष का व्यक्तिगत लिखित मार्गदर्शन, एक साथ।"
+      },
+      "cta": {
+        "en": "Get Report Combo",
+        "hi": "रिपोर्ट कॉम्बो लें"
+      },
+      "url": "/book-guidance.html?plan=report_combo",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved",
+      "active": true
+    },
+    "audio_combo": {
+      "amount": 899,
+      "items": [
+        "audio",
+        "astrology_report"
+      ],
+      "group": "audio",
+      "mode": "audio",
+      "title": {
+        "en": "Audio Guidance Combo",
+        "hi": "ऑडियो गाइडेंस कॉम्बो"
+      },
+      "description": {
+        "en": "A recorded answer from Astro Vedansh, plus your Astrology Report. Not a live call.",
+        "hi": "वेदांश जी का रिकॉर्डेड ऑडियो और आपकी ज्योतिष रिपोर्ट। यह लाइव कॉल नहीं है।"
+      },
+      "cta": {
+        "en": "Get Audio Guidance",
+        "hi": "ऑडियो गाइडेंस लें"
+      },
+      "url": "/book-guidance.html?plan=audio_combo",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved",
+      "active": true
+    },
+    "personal_combo": {
+      "amount": 1999,
+      "items": [
+        "personal",
+        "astrology_report",
+        "name"
+      ],
+      "group": "vedansh",
+      "mode": "live",
+      "title": {
+        "en": "Personal Guidance Combo",
+        "hi": "पर्सनल गाइडेंस कॉम्बो"
+      },
+      "description": {
+        "en": "Speak personally with Astro Vedansh for 30 minutes and receive two personalized reports.",
+        "hi": "वेदांश जी से 30 मिनट व्यक्तिगत बातचीत करें और दो व्यक्तिगत रिपोर्ट पाएँ।"
+      },
+      "cta": {
+        "en": "Book Personal Guidance",
+        "hi": "पर्सनल गाइडेंस बुक करें"
+      },
+      "url": "/book-guidance.html?plan=personal_combo",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved",
+      "active": true
+    },
+    "complete_combo": {
+      "amount": 3499,
+      "items": [
+        "detailed",
+        "astrology_report",
+        "name"
+      ],
+      "group": "vedansh",
+      "mode": "live",
+      "recommended": true,
+      "title": {
+        "en": "Complete Life Guidance Combo",
+        "hi": "सम्पूर्ण जीवन मार्गदर्शन कॉम्बो"
+      },
+      "description": {
+        "en": "60 minutes with Astro Vedansh for your important life questions, plus both reports.",
+        "hi": "जीवन के महत्वपूर्ण सवालों पर वेदांश जी से 60 मिनट संवाद, साथ में दोनों रिपोर्ट।"
+      },
+      "cta": {
+        "en": "Book Complete Guidance",
+        "hi": "सम्पूर्ण मार्गदर्शन बुक करें"
+      },
+      "url": "/book-guidance.html?plan=complete_combo",
+      "checkout": "whatsapp_request",
+      "status": "owner_approved",
+      "active": true
+    }
+  },
+  "upgrades": {
+    "astrology_report": "report_combo",
+    "name": "report_combo",
+    "audio": "audio_combo",
+    "personal": "personal_combo",
+    "detailed": "complete_combo"
+  },
+  "booking": {
+    "whatsapp": "919045432034",
+    "currency": "INR",
+    "taxMode": "team_confirms_before_payment",
+    "reportDelivery": {
+      "en": "Delivery format and timing confirmed by our team before payment.",
+      "hi": "डिलीवरी का माध्यम और समय टीम भुगतान से पहले बताएगी।"
+    }
+  }
 }

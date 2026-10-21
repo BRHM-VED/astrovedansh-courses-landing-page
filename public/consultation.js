@@ -1,62 +1,125 @@
 (() => {
   'use strict';
-  const plans = {
-    audio: { name: 'Personal Audio Analysis (10–15 minute voice note)', fee: 999, route: '/consultation-audio.html' },
-    expert: { name: 'Expert Consultation (20–25 minutes)', fee: 1100, route: '/consultation-expert.html' },
-    '30': { name: 'Personal Consultation (30 minutes)', fee: 2100, route: '/consultation-personal.html' },
-    '60': { name: 'Detailed Consultation (60 minutes)', fee: 4200, route: '/consultation-detailed.html' }
-  };
+  const model = window.AVBookingModel;
+  const catalog = window.AV_BOOKING;
+  if (!model || !catalog) return;
   const form = document.querySelector('#consult-form');
+  const query = new URLSearchParams(location.search).get('plan');
   if (!form) {
-    const legacyPlan = new URLSearchParams(location.search).get('plan');
-    if (Object.hasOwn(plans, legacyPlan)) location.replace(plans[legacyPlan].route);
+    const legacy = model.resolve(query);
+    if (legacy) location.replace(legacy.url);
     return;
   }
-  const plan = document.body.dataset.bookingPlan;
-  if (!Object.hasOwn(plans, plan)) return;
-  form.elements.plan.value = plan;
-  const hi = () => document.documentElement.lang === 'hi';
-  function dates(now = new Date()) {
-    const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(now);
-    const v = Object.fromEntries(parts.map(x => [x.type, x.value]));
-    const today = `${v.year}-${v.month}-${v.day}`;
-    const d = new Date(today + 'T00:00:00Z');
-    d.setUTCDate(d.getUTCDate() + 2);
-    return { today, min: d.toISOString().slice(0, 10) };
+  const original = model.resolve(query || document.body.dataset.bookingPlan);
+  const booking = document.querySelector('#booking');
+  const summary = document.querySelector('.booking-summary');
+  if (!original) {
+    booking.hidden = true;
+    summary.hidden = true;
+    document.querySelector('#booking-error').hidden = false;
+    return;
   }
-  function refresh() {
-    const d = dates();
+  let selected = original;
+  let handingOff = false;
+  const lang = () => document.documentElement.lang === 'hi' ? 'hi' : 'en';
+  const money = amount => '₹' + amount.toLocaleString('en-IN');
+  const node = (tag, text, className) => {
+    const e = document.createElement(tag);
+    e.textContent = text;
+    if (className) e.className = className;
+    return e;
+  };
+  function field(name, visible, required = false) {
+    const input = form.elements[name];
+    if (!input) return;
+    input.closest('label').hidden = !visible;
+    input.disabled = !visible;
+    input.required = visible && required;
+  }
+  function dateNote() {
+    const d = model.dates();
     form.elements.birthDate.max = d.today;
     form.elements.sessionDate.min = d.min;
-    const formatted = new Intl.DateTimeFormat(hi() ? 'hi-IN' : 'en-IN', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(d.min + 'T00:00:00Z'));
-    document.querySelector('#date-note').textContent = hi()
-      ? `सबसे पहले ${formatted} की तारीख चुन सकते हैं। ${plan === 'audio' ? 'ऑडियो डिलीवरी की पुष्टि टीम करेगी।' : 'लाइव सेशन के समय की पुष्टि टीम करेगी।'}`
-      : `Earliest request date: ${formatted}. ${plan === 'audio' ? 'Our team will confirm audio delivery.' : 'Our team will confirm the live session time.'}`;
+    const date = new Intl.DateTimeFormat(lang() === 'hi' ? 'hi-IN' : 'en-IN', {dateStyle:'long',timeZone:'UTC'}).format(new Date(d.min + 'T00:00:00Z'));
+    document.querySelector('#date-note').textContent = lang() === 'hi'
+      ? `सबसे पहले ${date} की तारीख चुन सकते हैं। समय और डिलीवरी की पुष्टि टीम करेगी।`
+      : `Earliest request date: ${date}. Our team will confirm timing and delivery.`;
     return d;
   }
-  document.addEventListener('av-language-change', refresh);
-  refresh();
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const d = refresh();
+  function render() {
+    const hi = lang() === 'hi', p = selected;
+    form.elements.plan.value = p.id;
+    summary.replaceChildren();
+    summary.append(node('p', hi ? 'आपका चुना हुआ प्लान' : 'YOUR SELECTED PLAN', 'eyebrow'));
+    const h1 = node('h1', p.title[lang()]); h1.tabIndex = -1; summary.append(h1);
+    summary.append(node('p', p.description[lang()]));
+    const prices = node('div', '', 'plan-price');
+    prices.append(node('strong', money(p.amount)));
+    if (p.saving) {
+      const old = node('span', ''); old.append(node('s', money(p.individualTotal)), node('small', hi ? 'अलग-अलग लेने पर' : 'Bought separately'));
+      prices.append(old);
+    }
+    summary.append(prices);
+    if (p.saving) summary.append(node('p', `${money(p.saving)} ${hi ? 'की बचत' : 'saved'}`, 'plan-saving'));
+    const list = node('ul', '', 'plan-inclusions');
+    p.lineItems.forEach(item => list.append(node('li', item.title[lang()])));
+    if (p.minutes) list.append(node('li', `${p.minutes} ${hi ? 'मिनट' : 'min'} · ${p.astrologer[lang()]}`));
+    if (p.mode === 'audio') list.append(node('li', hi ? 'WhatsApp पर रिकॉर्डेड वॉइस नोट · लाइव कॉल नहीं' : 'Recorded voice note on WhatsApp · not a live call'));
+    if (p.mode === 'live') list.append(node('li', hi ? 'लाइव सेशन के समय में फॉलो-अप सवाल पूछें' : 'Follow-up questions within the live session'));
+    if (p.items.some(id => ['name','astrology_report'].includes(id))) list.append(node('li', catalog.booking.reportDelivery[lang()]));
+    summary.append(list);
+    const upgradeBox = document.querySelector('#plan-upgrade');
+    upgradeBox.replaceChildren();
+    upgradeBox.hidden = !p.upgrade;
+    if (p.upgrade) {
+      const upgrade = model.resolve(p.upgrade), extra = upgrade.amount - p.amount;
+      upgradeBox.append(node('h2', hi ? 'वैकल्पिक अपग्रेड' : 'Optional upgrade'));
+      upgradeBox.append(node('p', hi ? `${upgrade.title.hi} ${money(upgrade.amount)} में — सिर्फ ${money(extra)} अतिरिक्त। ${upgrade.description.hi}` : `${upgrade.title.en} for ${money(upgrade.amount)} — only ${money(extra)} more. ${upgrade.description.en}`));
+      const button = node('button', hi ? `${money(extra)} में अपग्रेड चुनें →` : `Choose upgrade · +${money(extra)} →`, 'plan-cta secondary');
+      button.type = 'button';
+      button.addEventListener('click', () => {
+        selected = upgrade;
+        document.dispatchEvent(new CustomEvent('astrovedansh:plan-upgrade', {detail:{from:p.id,to:upgrade.id}}));
+        render(); summary.querySelector('h1').focus({preventScroll:true});
+      });
+      upgradeBox.append(button, node('p', hi ? 'इसे चुनना ज़रूरी नहीं है। नीचे मौजूदा प्लान के साथ आगे बढ़ें।' : 'This is optional. Continue below with your current plan.', 'plans-note'));
+    }
+    if (p.id !== original.id) {
+      const undo = node('button', hi ? `${original.title.hi} — ${money(original.amount)} पर वापस जाएँ` : `Keep ${original.title.en} — ${money(original.amount)}`, 'back-to-original');
+      undo.type = 'button'; undo.addEventListener('click', () => { selected = original; render(); }); summary.append(undo);
+    }
+    field('birthTime', p.needsBirthTime, true);
+    field('birthPlace', p.needsBirthTime, true);
+    field('gender', p.needsBirthTime, false);
+    field('sessionDate', p.needsAvailability, true);
+    field('preferredTime', p.mode === 'live', false);
+    field('preferredName', p.includesNameReport, false);
+    field('question', true, p.id !== 'name');
+    document.querySelector('#availability-label').textContent = p.mode === 'audio' ? (hi ? 'ऑडियो प्राप्त करने की पसंदीदा तारीख' : 'Preferred audio delivery date') : (hi ? 'पसंदीदा सेशन तारीख' : 'Preferred session date');
+    document.querySelector('#selected-plan-note').textContent = hi ? `चुना हुआ प्लान: ${p.title.hi} · ${money(p.amount)}` : `Selected plan: ${p.title.en} · ${money(p.amount)}`;
+    booking.hidden = false;
+    dateNote();
+  }
+  document.addEventListener('av-language-change', render);
+  render();
+  const reset = () => {handingOff = false; form.querySelector('[type=submit]').disabled = false;};
+  window.addEventListener('pageshow', reset);
+  window.addEventListener('focus', reset);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (handingOff) return;
+    const d = dateNote();
     if (!form.reportValidity()) return;
-    if (form.elements.sessionDate.value < d.min) { form.elements.sessionDate.focus(); return; }
-    const f = Object.fromEntries(new FormData(form));
-    const chosen = plans[plan];
-    const text = [
-      'Radhe Radhe AstroVedansh, I would like to request a booking.', '',
-      `Option: ${chosen.name}`, `Displayed fee: ₹${chosen.fee}`,
-      `Name: ${f.name.trim()}`, `Gender: ${f.gender}`, `Date of birth: ${f.birthDate}`,
-      `Time of birth: ${f.birthTime}`, `Place of birth: ${f.birthPlace.trim()}`,
-      `WhatsApp: ${f.phone}`, `Email: ${f.email}`, `Main question: ${f.question.trim()}`,
-      `${plan === 'audio' ? 'Preferred audio delivery date' : 'Preferred session date'} (India): ${f.sessionDate}`, '',
-      plan === 'audio' ? 'I understand this is a recorded voice note on WhatsApp, not a live call.' : 'Please confirm the session time on WhatsApp.',
-      'Please confirm availability and share payment instructions.'
-    ].join('\n');
-    document.querySelector('#status').textContent = hi()
-      ? 'WhatsApp में जानकारी जाँचकर Send दबाएँ। टीम की पुष्टि के बाद बुकिंग होगी।'
-      : 'Review your details in WhatsApp and press Send. Your booking is confirmed by our team.';
-    // Same-tab handoff also works in Instagram's in-app browser without a popup.
-    window.location.assign('https://wa.me/919045432034?text=' + encodeURIComponent(text));
+    if (form.elements.birthDate.value > d.today) {form.elements.birthDate.focus(); return;}
+    if (selected.needsAvailability && form.elements.sessionDate.value < d.min) {form.elements.sessionDate.focus(); return;}
+    const fields = Object.fromEntries(new FormData(form));
+    const text = model.message(selected.id, fields);
+    const status = document.querySelector('#status');
+    status.textContent = lang() === 'hi' ? 'WhatsApp में विवरण जाँचकर Send दबाएँ। टीम की पुष्टि के बाद ही बुकिंग होगी।' : 'Review your details in WhatsApp and press Send. Our team will confirm the booking.';
+    handingOff = true;
+    form.querySelector('[type=submit]').disabled = true;
+    document.dispatchEvent(new CustomEvent('astrovedansh:booking-request', {detail:{plan_id:selected.id,amount:selected.amount}}));
+    try {window.location.assign('https://wa.me/' + catalog.booking.whatsapp + '?text=' + encodeURIComponent(text));}
+    catch {reset();status.textContent = lang() === 'hi' ? 'WhatsApp नहीं खुला। दोबारा प्रयास करें या +91 90454 32034 पर संपर्क करें।' : 'WhatsApp could not open. Try again or contact +91 90454 32034.';}
   });
 })();

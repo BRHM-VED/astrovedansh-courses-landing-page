@@ -9,11 +9,15 @@
   };
   emit('page_view');
   document.addEventListener('av-language-change', () => emit('language_selection'));
+  document.addEventListener('astrovedansh:plan-filter', event => emit('guidance_category_selection', {group:event.detail.group}));
+  document.addEventListener('astrovedansh:plan-upgrade', event => emit('optional_upgrade_selection', {from_plan:event.detail.from,to_plan:event.detail.to}));
+  document.addEventListener('astrovedansh:booking-request', event => emit('whatsapp_booking_handoff', {plan_id:event.detail.plan_id,amount:event.detail.amount}));
   document.addEventListener('click', event => {
     const a = event.target.closest('a[href]');
     if (!a) return;
     const url = new URL(a.href, location.href);
     const route = url.pathname;
+    if (a.dataset.planId) emit('guidance_plan_selection', {plan_id:a.dataset.planId});
     if (a.dataset.timingPackage) emit('timing_package_selection', {package_id: a.dataset.timingPackage});
     const option = /^\/consultation-(audio|expert|personal|detailed)\.html$/.exec(route);
     if (option) emit('consultation_option_selection', {option_id: option[1]});

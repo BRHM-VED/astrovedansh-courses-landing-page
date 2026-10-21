@@ -2,9 +2,11 @@
 import json,re,sys
 from pathlib import Path
 from html import escape
+from pricing_components import booking_data, overview, pricing_page, bi as plan_bi
 ROOT=Path(__file__).resolve().parents[1]
 catalog=json.loads((ROOT/'config/catalog.json').read_text())
 products=catalog['products'];offers=catalog['offers']
+plans=booking_data(catalog)
 def money(n):return '₹'+format(n,',')
 def bi(tag,en,hi,cls=''):
  return '<'+tag+(f' class="{cls}"' if cls else '')+' data-en="'+escape(en,quote=True)+'" data-hi="'+escape(hi,quote=True)+'">'+escape(hi)+'</'+tag+'>'
@@ -33,14 +35,26 @@ for key,o in offers.items():
   assert o['businessApproved'] and o['checkoutVerified'] and o.get('checkoutUrl'),key+' not ready'
   if key=='detailed_pilot':raise ValueError('Connect the approved pilot booking conditions and analytics before activation')
 outputs={}
+def plan_callout(group):
+ combo=plans['plans']['report_combo'];price=money(combo['amount']);saving=money(combo['saving'])
+ en='Choose standalone services or save with a combo.' if group=='consultation' else f'Astrology + Perfect Name Report together for {price}. Save {saving}.'
+ hi='अलग सेवा चुनें या कॉम्बो के साथ बचत करें।' if group=='consultation' else f'ज्योतिष + Perfect Name रिपोर्ट एक साथ {price} में। {saving} की बचत।'
+ href='/pricing.html' if group=='consultation' else '/pricing.html?guidance=written#plans'
+ return '<aside class="category-plan-link">'+plan_bi('p',en,hi)+'<a class="plan-cta secondary" href="'+href+'">'+plan_bi('span','Compare Plans & Combos →','प्लान और कॉम्बो देखें →')+'</a></aside>'
+astrology_card='<a class="visual-card peach" href="/book-guidance.html?plan=astrology_report"><div class="visual-media"><img alt="AstroVedansh report" src="/assets/report-editorial.webp" width="720" height="480" loading="lazy"></div><div class="visual-body">'+plan_bi('h2','Astrology Report','ज्योतिष रिपोर्ट')+plan_bi('p',products['astrology_report']['description']['en'],products['astrology_report']['description']['hi'],'class="card-description"')+'<div class="price-block"><strong>'+money(products['astrology_report']['amount'])+'</strong>'+plan_bi('small','Personalized written analysis','व्यक्तिगत लिखित विश्लेषण')+'</div><div class="visual-cta">'+plan_bi('span','Get Astrology Report','ज्योतिष रिपोर्ट लें')+'<span aria-hidden="true">→</span></div></div></a>'
 for template in (ROOT/'templates/pricing').glob('*.html'):
- s=template.read_text();s=re.sub(r'\{\{price:([A-Za-z_]+)\}\}',lambda m:money(products[m[1]]['amount']),s).replace('{{timing_offers}}',section())
+ s=template.read_text();s=re.sub(r'\{\{price:([A-Za-z_]+)\}\}',lambda m:money((products|catalog['bundles'])[m[1]]['amount']),s).replace('{{timing_offers}}',section()).replace('{{guidance_overview}}',overview(plans)).replace('{{report_plan_callout}}',plan_callout('reports')).replace('{{consultation_plan_callout}}',plan_callout('consultation')).replace('{{astrology_report_card}}',astrology_card)
  assert '{{price:' not in s and '{{timing_offers}}' not in s
  outputs[ROOT/'public'/template.name]=s
+source=(ROOT/'templates/pricing/reports.html').read_text()
+header=re.search(r'<header.*?</header>',source,re.S)[0]
+footer=re.search(r'<footer.*?</footer>',source,re.S)[0]
+outputs[ROOT/'public/pricing.html']=pricing_page(header,footer,plans)
+outputs[ROOT/'public/booking-catalog.js']='/* Generated from config/catalog.json. Do not edit. */\nwindow.AV_BOOKING = '+json.dumps(plans,ensure_ascii=False,separators=(',',':'))+';\n'
 review='''<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>AstroVedansh — Offer review only</title><link rel="stylesheet" href="/offer-cards.css"><style>body{margin:0;padding:20px;background:#faf8f3;color:#542b39;font:16px/1.6 system-ui,sans-serif}main{max-width:950px;margin:auto}button{min-height:44px}h1{font-size:26px}.review-note{padding:16px;border:1px solid #c29a61;border-radius:12px}</style></head><body><main><h1>Offer review / ऑफर समीक्षा</h1><p class="review-note">Staging only. These proposals are NOT active on the homepage or checkout. / प्रस्ताव सक्रिय नहीं हैं।</p><div><button onclick="setLang('hi')">हिन्दी</button> <button onclick="setLang('en')">EN</button></div>'''+section(True)+bi('h2','60-minute consultation pilot','60 मिनट परामर्श का प्रस्तावित परीक्षण')+bi('p',f'Current: {money(products["detailed"]["amount"])} · Proposed: {money(offers["detailed_pilot"]["amount"])}. Not active.',f'मौजूदा: {money(products["detailed"]["amount"])} · प्रस्तावित: {money(offers["detailed_pilot"]["amount"])}। सक्रिय नहीं।')+bi('p','60 minutes live with Vedansh. Multiple questions and follow-ups within the session.','वेदांश जी के साथ 60 मिनट लाइव। सेशन में कई सवाल और फॉलो-अप।')+'''</main><script>function setLang(l){document.documentElement.lang=l;document.querySelectorAll('[data-en][data-hi]').forEach(e=>e.textContent=e.dataset[l]);}</script></body></html>'''
 outputs[ROOT/'public/offer-review.html']=review
 check='--check' in sys.argv
 for path,s in outputs.items():
  if check:assert path.exists() and path.read_text()==s,str(path)+' is stale; run scripts/build-catalog.py'
  else:path.write_text(s)
-print(('Checked' if check else 'Generated')+f' {len(outputs)} pages; proposed offers inactive.')
+print(('Checked' if check else 'Generated')+f' {len(outputs)} outputs; approved service combos active, unrelated proposals inactive.')
