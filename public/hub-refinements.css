@@ -141,3 +141,31 @@
 .need-shortcuts small{font-size:12px;line-height:1.5;color:#66545c}
 .need-shortcuts a:focus-visible{outline:2px solid #542b39;outline-offset:3px}
 @media(max-width:600px){.need-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.need-shortcuts a{padding:11px;min-height:72px}}
+
+/* Mobile-first usability: comfortable targets, readable labels and safe layouts. */
+@media(max-width:600px){
+ .hub-page{ -webkit-text-size-adjust:100%;text-size-adjust:100% }
+ .hub-page>header .language button{min-width:40px;min-height:44px;padding:7px}
+ .hub-page>header .brand{font-size:17px}
+ .hub-page>header .brand img{width:22px;height:22px}
+ .hub-page .hero h1{font-size:clamp(26px,7vw,30px);line-height:1.22}
+ html[lang=hi] .hub-page .hero h1{font-size:clamp(23px,6.2vw,27px);line-height:1.45}
+ .hub-page .hero-action{min-height:48px;font-size:14px}
+ .hub-page .hero-format-note{font-size:12px;line-height:1.65}
+ .hub-page .need-shortcuts{gap:10px;margin-bottom:20px}
+ .hub-page .need-shortcuts a{padding:10px;gap:4px;min-height:80px}
+ .hub-page .need-shortcuts strong{font-size:13px;line-height:1.45}
+ .hub-page .need-shortcuts small{font-size:12px;line-height:1.45}
+ .hub-page .service-bottom .card-price{font-size:14px;padding-right:0}
+ .hub-page .service-bottom .card-secondary-price{font-size:12px}
+ .hub-page .service-bottom .card-text-cta{font-size:13px;min-height:39px;display:flex;align-items:flex-end}
+ .hub-page .section-title{align-items:center;flex-wrap:wrap;gap:6px 12px}
+ .hub-page .section-title>a{min-height:44px;display:inline-flex;align-items:center;font-size:12px}
+ .hub-page .app-download-cta{flex-wrap:wrap}
+ .hub-page footer{flex-wrap:wrap;font-size:12px;gap:8px 16px;padding-bottom:max(24px,env(safe-area-inset-bottom))}
+ .hub-page .hub-menu nav{max-height:calc(100dvh - 88px);overflow-y:auto;overscroll-behavior:contain}
+ html:has(.hub-page){scroll-padding-top:80px}
+}
+@supports not (grid-template-rows:subgrid){
+ .hub-page .service-card{grid-template-rows:auto 1fr;grid-row:auto}
+}
