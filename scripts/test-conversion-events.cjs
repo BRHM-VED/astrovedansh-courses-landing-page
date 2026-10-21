@@ -1,0 +1,12 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+const handlers={},events=[],window={};
+const document={documentElement:{lang:'hi'},addEventListener:(n,f)=>handlers[n]=f,dispatchEvent:e=>events.push(e.detail)};
+vm.runInNewContext(fs.readFileSync('public/conversion-events.js','utf8'),{window,document,location:{pathname:'/',href:'https://courses.astrovedansh.org/?name=private'},URL,CustomEvent:class{constructor(type,options){this.detail=options.detail}}});
+handlers.click({target:{closest:()=>({href:'https://perfect-timing.astrovedansh.com/?name=private&dob=secret',dataset:{timingPackage:'timing'}})}});
+handlers.click({target:{closest:()=>({href:'https://courses.astrovedansh.org/consultation-expert.html',dataset:{}})}});
+assert(events.some(e=>e.event==='timing_package_selection'));
+assert(events.some(e=>e.event==='consultation_option_selection'));
+assert(!JSON.stringify(events).includes('private'));
+assert(!JSON.stringify(events).includes('secret'));
+assert(!events.some(e=>['purchase','confirmed_booking','begin_checkout'].includes(e.event)));
+console.log('Click events emitted; query strings and personal data excluded; no fabricated conversions.');
