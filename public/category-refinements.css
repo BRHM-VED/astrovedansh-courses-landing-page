@@ -52,3 +52,6 @@ html[lang=hi] .category-refined .visual-intro h1{font-size:34px;line-height:1.4}
 .category-refined > .site-header{position:sticky;top:0;z-index:50;isolation:isolate;background:#faf8f3}
 .category-refined > .site-header::before{content:"";position:absolute;inset:0;background:#faf8f3;box-shadow:0 0 0 100vmax #faf8f3;clip-path:inset(0 -100vmax);z-index:-1;pointer-events:none}
 html{scroll-padding-top:160px}
+
+/* Long price links must fit within the existing two-column mobile cards. */
+.category-refined .price-block .current-price-link{font-size:16px;line-height:1.5;overflow-wrap:normal}
