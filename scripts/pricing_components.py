@@ -4,11 +4,25 @@ from html import escape
 
 SERVICE_IDS = ['astrology_report', 'name', 'audio', 'expert', 'personal', 'detailed']
 
+# Editorial recommendations only; popularity claims need verified sales data.
+SERVICE_BADGES = {
+    'astrology_report': ('Must Try', 'ज़रूर आज़माएँ', 'try'),
+    'audio': ('Must Try', 'ज़रूर आज़माएँ', 'try'),
+    'personal': ('Recommended', 'हमारी सलाह', 'recommended'),
+    'complete_combo': ('Recommended', 'हमारी सलाह', 'recommended'),
+}
+
 def money(amount):
     return '₹' + format(amount, ',')
 
 def bi(tag, en, hi, attrs=''):
     return f'<{tag} {attrs} data-en="{escape(en, quote=True)}" data-hi="{escape(hi, quote=True)}">{escape(hi)}</{tag}>'
+
+def service_badge(key):
+    if key not in SERVICE_BADGES:
+        return ''
+    en, hi, tone = SERVICE_BADGES[key]
+    return bi('span', en, hi, f'class="service-badge service-badge--{tone}"')
 
 def booking_data(catalog):
     products = catalog['products']
@@ -66,11 +80,11 @@ def overview(data):
     return '<section class="hub-section guidance-overview" id="consultations">'+bi('h2','Not sure what to choose?','समझ नहीं आ रहा क्या चुनें?')+bi('p','Tell us how you would like guidance. See only the options that fit.','रिपोर्ट, रिकॉर्डेड ऑडियो या लाइव बातचीत चुनें। आगे सिर्फ उसी के विकल्प देखें।')+'<a class="plan-cta" href="/pricing.html">'+bi('span','Help Me Choose →','मेरे लिए सही विकल्प चुनें →')+'</a></section>'
 
 def funnel_choice(key, title, description, price, href, attr='guidance'):
-    return f'<a class="funnel-choice" data-{attr}="{key}" href="{escape(href,quote=True)}"><span class="funnel-choice-copy">'+bi('strong',*title)+bi('small',*description)+f'</span><span class="funnel-choice-end"><b>{price}</b><span aria-hidden="true">→</span></span></a>'
+    return f'<a class="funnel-choice" data-{attr}="{key}" href="{escape(href,quote=True)}"><span class="funnel-choice-copy">'+service_badge(key)+bi('strong',*title)+bi('small',*description)+f'</span><span class="funnel-choice-end"><b>{price}</b><span aria-hidden="true">→</span></span></a>'
 
 def pricing_page(header, footer, data):
     p=data['plans']
-    out='<!doctype html><html lang="hi" data-default-language="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Choose Your Guidance | AstroVedansh</title><meta name="description" content="Choose a written report, recorded audio answer or live conversation. A simple guide to the right AstroVedansh service for your needs."><link rel="canonical" href="https://courses.astrovedansh.org/pricing.html"><link rel="icon" href="/assets/astrovedansh-logo.webp"><link rel="stylesheet" href="/visual-refresh.css?v=20261019d"><link rel="stylesheet" href="/category-refinements.css?v=20261021"><link rel="stylesheet" href="/hub-refinements.css?v=20261020"><link rel="stylesheet" href="/guidance-plans.css?v=20261021"><link rel="stylesheet" href="/guidance-funnel.css?v=1"></head><body class="category-refined pricing-page funnel-page" data-funnel-stage="start">'+header+'<main class="visual-main"><section class="visual-intro compact">'+bi('p','PERSONAL GUIDANCE, MADE SIMPLE','सही मार्गदर्शन चुनना अब आसान','class="eyebrow"')+bi('h1','How would you like guidance?','आपको किस तरह का मार्गदर्शन चाहिए?')+bi('p','Choose one option. We’ll guide you to the right service.','बस एक विकल्प चुनें। आगे हम सही सेवा चुनने में मदद करेंगे।','class="intro-copy"')+'</section><ol class="funnel-progress" aria-label="Booking steps">'
+    out='<!doctype html><html lang="hi" data-default-language="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Choose Your Guidance | AstroVedansh</title><meta name="description" content="Choose a written report, recorded audio answer or live conversation. A simple guide to the right AstroVedansh service for your needs."><link rel="canonical" href="https://courses.astrovedansh.org/pricing.html"><link rel="icon" href="/assets/astrovedansh-logo.webp"><link rel="stylesheet" href="/visual-refresh.css?v=20261019d"><link rel="stylesheet" href="/category-refinements.css?v=20261021"><link rel="stylesheet" href="/hub-refinements.css?v=20261020"><link rel="stylesheet" href="/guidance-plans.css?v=20261021"><link rel="stylesheet" href="/guidance-funnel.css?v=badges-1"></head><body class="category-refined pricing-page funnel-page" data-funnel-stage="start">'+header+'<main class="visual-main"><section class="visual-intro compact">'+bi('p','PERSONAL GUIDANCE, MADE SIMPLE','सही मार्गदर्शन चुनना अब आसान','class="eyebrow"')+bi('h1','How would you like guidance?','आपको किस तरह का मार्गदर्शन चाहिए?')+bi('p','Choose one option. We’ll guide you to the right service.','बस एक विकल्प चुनें। आगे हम सही सेवा चुनने में मदद करेंगे।','class="intro-copy"')+'</section><ol class="funnel-progress" aria-label="Booking steps">'
     for i,en,hi in [(1,'Your need','आपकी ज़रूरत'),(2,'Your plan','आपका विकल्प'),(3,'Booking','बुकिंग')]:
         out+=f'<li data-step="{i}"'+(' aria-current="step"' if i==1 else '')+f'><span>{i}</span>'+bi('small',en,hi)+'</li>'
     out+='</ol><div class="funnel-shell"><section id="funnel-start" aria-label="Choose guidance format"><div class="funnel-choices">'
@@ -92,7 +106,7 @@ def pricing_page(header, footer, data):
         out+='</div></div>'
     out+='</section><section id="funnel-result" hidden><button class="funnel-back" type="button" data-funnel-back>'+bi('span','← Change selection','← विकल्प बदलें')+'</button>'
     for key,plan in p.items():
-        out+=f'<article class="funnel-result-card" data-plan-summary="{key}" hidden>'+bi('p','YOUR SELECTED SERVICE','आपकी चुनी हुई सेवा','class="eyebrow"')+bi('h2',plan['title']['en'],plan['title']['hi'],'tabindex="-1"')+bi('p',plan['description']['en'],plan['description']['hi'],'class="plan-description"')+f'<strong class="funnel-price">{money(plan["amount"])}</strong>'
+        out+=f'<article class="funnel-result-card" data-plan-summary="{key}" hidden>'+bi('p','YOUR SELECTED SERVICE','आपकी चुनी हुई सेवा','class="eyebrow"')+service_badge(key)+bi('h2',plan['title']['en'],plan['title']['hi'],'tabindex="-1"')+bi('p',plan['description']['en'],plan['description']['hi'],'class="plan-description"')+f'<strong class="funnel-price">{money(plan["amount"])}</strong>'
         if plan['saving']:
             out+='<p class="plan-saving"><s>'+money(plan['individualTotal'])+'</s> · '+bi('span',f'Save {money(plan["saving"])}',f'{money(plan["saving"])} की बचत')+'</p>'
         out+=item_list(plan)+f'<a class="plan-cta" data-plan-id="{key}" href="{escape(plan["url"],quote=True)}">'+bi('span','Continue to Booking →','बुकिंग के लिए आगे बढ़ें →')+'</a>'

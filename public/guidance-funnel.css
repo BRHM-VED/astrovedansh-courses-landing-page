@@ -15,6 +15,10 @@
 .funnel-choice:hover{border-color:#98727f;background:#fdfaf8}
 .funnel-choice:focus-visible,.funnel-back:focus-visible{outline:3px solid #a77c44;outline-offset:4px}
 .funnel-choice-copy{display:grid;gap:7px;min-width:0}
+.service-badge{display:inline-flex;align-items:center;justify-self:start;width:fit-content;max-width:100%;padding:3px 9px;border-radius:999px;font:600 11px/1.5 'DM Sans','Noto Sans Devanagari',sans-serif;letter-spacing:.01em}
+.service-badge--try{color:#684a21;background:#f4ead7;border:1px solid #e6d5b8}
+.service-badge--recommended{color:#542b39;background:#f1e6eb;border:1px solid #dfcbd3}
+.funnel-result-card>.service-badge{margin:0 0 9px}
 .funnel-choice-copy strong{font-size:18px;line-height:1.5;font-weight:700}
 .funnel-choice-copy small{font-size:14px;line-height:1.6;color:#6b5d64}
 .funnel-choice-end{display:grid;gap:8px;justify-items:end;flex-shrink:0}
