@@ -1,0 +1,17 @@
+/* A quiet, on-page introduction at the end of the bio hub. */
+.about-astrovedansh{max-width:820px;margin:32px auto 48px;padding-top:34px;border-top:1px solid #e5ddd5;scroll-margin-top:96px;text-align:center}
+.about-astrovedansh h2{margin:0 0 24px;color:#542b39;font:500 clamp(32px,5vw,52px)/1.15 Georgia,serif;letter-spacing:-.025em}
+.about-video{position:relative;width:100%;aspect-ratio:16/9;min-height:202px;overflow:hidden;border:1px solid #e5ddd5;border-radius:16px;background:#292426;box-shadow:0 14px 32px -22px #542b3970}
+.about-video-launch{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:12px;width:100%;height:100%;padding:16px;border:0;background:#292426;color:#fff;cursor:pointer;font:600 14px/1.5 'DM Sans','Noto Sans Devanagari',sans-serif}
+.about-video-launch img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%;opacity:.78}
+.about-video-launch:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,#29242680)}
+.about-video-play,.about-video-label{position:relative;z-index:1}
+.about-video-play{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#542b39;box-shadow:0 6px 24px #0004;border:1px solid #ffffff80}
+.about-video-play svg{width:24px;height:24px;margin-left:4px;fill:currentColor}
+.about-video-label{padding:5px 12px;border-radius:8px;background:#292426bf}
+.about-video-launch:focus-visible{outline:3px solid #c29a61;outline-offset:-6px}
+.about-video-launch:hover .about-video-play{background:#6b3c4c}
+.about-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.about-video-noscript{position:relative;aspect-ratio:16/9;min-height:200px}
+.about-video-noscript iframe{width:100%;height:100%;min-height:200px;border:0}
+@media(max-width:600px){.about-astrovedansh{margin:24px auto 32px;padding-top:28px}.about-astrovedansh h2{font-size:34px;margin-bottom:20px}.about-video{border-radius:14px}.about-video-play{width:56px;height:56px}}
