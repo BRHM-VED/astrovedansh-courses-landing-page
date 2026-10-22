@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-22",
+  "batch": "c",
+  "lessons": [
+    55,
+    46,
+    45,
+    49
+  ],
+  "method": "Primary classical texts/translations plus NASA for separate astronomical facts. Original Hindi teaching, original hypothetical partial charts and arithmetic. Source summaries brief; no verbatim verse invention, no case histories, no guaranteed future. Source table distinguishes text, commentary and original teaching.",
+  "sources": [
+    {
+      "id": "phaladeepika-10",
+      "title": "Phaladeepika, V. Subrahmanya Sastri translation, chapter 10, verses 12–14",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621582.html",
+      "web_source_refs": [
+        "turn14search0",
+        "turn24view0"
+      ],
+      "supported_claims": [
+        "Verse 13 treats dasha periods of planets occupying, aspecting or owning the seventh in marriage timing.",
+        "Verses 12 and 14 also discuss transit conditions; verse 14 includes strength and rasi/navamsa references."
+      ],
+      "lessons": [
+        55
+      ],
+      "verification": "Read chapter text at verse 12–14. OCR caveat retained. Did not adopt deterministic historical predictions elsewhere in the chapter."
+    },
+    {
+      "id": "phaladeepika-20",
+      "title": "Phaladeepika, chapter 20, verse 1 and chapter context",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621592.html",
+      "web_source_refs": [
+        "turn22view6",
+        "turn24view7"
+      ],
+      "supported_claims": [
+        "Chapter introduction distinguishes results of strong and weak bhava lords and the timing of their results."
+      ],
+      "lessons": [
+        55
+      ],
+      "verification": "Read chapter introduction. Original workflow is identified as teaching synthesis, not a verbatim classical rule."
+    },
+    {
+      "id": "brihat-jataka-2-13",
+      "title": "Brihat Jataka 2.13, Sanskrit and Michael D Neely translation",
+      "url": "https://www.wisdomlib.org/hinduism/book/brihat-jataka-by-varahamihira-sanskrit-english/d/doc1501596.html",
+      "web_source_refs": [
+        "turn19search0",
+        "turn22view1"
+      ],
+      "supported_claims": [
+        "Verse provides increasing quarter aspects and special aspect roles for Saturn, Jupiter and Mars.",
+        "The lesson uses the standard introductory full-aspect convention: all seven seventh; Mars fourth/eighth, Jupiter fifth/ninth, Saturn third/tenth in addition."
+      ],
+      "lessons": [
+        46
+      ],
+      "verification": "Read displayed Sanskrit, translation and grammar breakdown; no Sanskrit verse was invented or reproduced."
+    },
+    {
+      "id": "phaladeepika-15",
+      "title": "Phaladeepika chapter 15, verses 1–2",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621587.html",
+      "web_source_refs": [
+        "turn22view4",
+        "turn24view2"
+      ],
+      "supported_claims": [
+        "Bhava assessment distinguishes own-lord influence and different planet associations or aspects.",
+        "Mixed support and affliction lead to mixed consideration rather than a one-factor judgment."
+      ],
+      "lessons": [
+        46,
+        45
+      ],
+      "verification": "Read verses 1–2; concise source summary shared between two articles. Detailed worked charts and interpretive questions are original."
+    },
+    {
+      "id": "phaladeepika-18",
+      "title": "Phaladeepika chapter 18, verses 1–5",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621590.html",
+      "web_source_refs": [
+        "turn22view5",
+        "turn24view1",
+        "turn24view6"
+      ],
+      "supported_claims": [
+        "The chapter describes conjunctions by planetary pairs.",
+        "The closing direction at verse 5 extends pairwise consideration to more than two planets."
+      ],
+      "lessons": [
+        45
+      ],
+      "verification": "Read verses 1–5. Harsh character stereotypes, deterministic social judgments and close paraphrase of specific pair predictions were excluded."
+    },
+    {
+      "id": "phaladeepika-4",
+      "title": "Phaladeepika chapter 4, verses 4, 7 and 9",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621576.html",
+      "web_source_refs": [
+        "turn28view1",
+        "turn29view1"
+      ],
+      "supported_claims": [
+        "Verses 4 and 7 discuss loss of strength when rays are overpowered by the Sun, within a broader chapter on multiple kinds of strength.",
+        "Verse 9 discusses seventh-aspect importance and acknowledges a view that the special aspects are fully effective."
+      ],
+      "lessons": [
+        49,
+        46
+      ],
+      "verification": "Read displayed text for exact cited verses; source summaries remain short, while examples are original. No claim that entire total strength becomes mathematically zero solely from combustion."
+    },
+    {
+      "id": "nasa-space-flight-1",
+      "title": "NASA Basics of Space Flight chapter 1, Inferior and Superior Planets and conjunction definitions",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter1-2/",
+      "web_source_refs": [
+        "turn19search8",
+        "turn22view2",
+        "turn24view8"
+      ],
+      "supported_claims": [
+        "Mercury and Venus appear near the Sun from Earth, owing to their inner orbits.",
+        "Elongation concerns the apparent angle from the Sun.",
+        "Mercury and Venus can have inferior and superior conjunctions; apparent solar conjunction is not physical collision or destruction."
+      ],
+      "lessons": [
+        45,
+        49
+      ],
+      "verification": "Read relevant section at lines 370–378. Used only for astronomy; not cited as empirical support for astrology."
+    },
+    {
+      "id": "saravali-santhanam-v2-p677",
+      "title": "Saravali, R. Santhanam translation/commentary, Volume II, chapter 36 commentary, printed pages 676–677",
+      "url": "https://static1.squarespace.com/static/5e5b12e392faf542399f9528/t/6444ef629f4e0f16c88ff327/1682239414314/Saravali%2B-%2BR%2BSanthanam%2B-%2BVol-2.pdf#page=316",
+      "web_source_refs": [
+        "turn28search30"
+      ],
+      "supported_claims": [
+        "Commentary table on printed p.677 lists Mercury combustion area 14 degrees direct, 12 degrees retrograde.",
+        "Same table lists Venus 10 degrees direct, 8 degrees retrograde.",
+        "Note specifies plus or minus with respect to Sun longitude.",
+        "Printed pp.676–677 exempt Venus and Saturn from combustion-related reduction within the particular ray calculation context; this is not a universal exemption from consideration."
+      ],
+      "lessons": [
+        49
+      ],
+      "verification": "Search service retrieved the PDF result but opening failed because size exceeded service limit. Downloaded the identified 11,749,495-byte, 485-page PDF via Python; rendered local PDF pages 315 and 316 and visually read the original page images, which show printed pp.676–677. Used only Mercury/Venus threshold rows. Clearly labeled these as translator commentary, not a numbered original Sanskrit verse. No quotations copied.",
+      "local_verification_images": [
+        "/tmp/saravali-v2-p315.png",
+        "/tmp/saravali-v2-p316.png"
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "number": 55,
+      "body_words": 1465,
+      "h2_count": 8,
+      "prediction_note_count": 4,
+      "chart_whole_sign_consistent": true
+    },
+    {
+      "number": 46,
+      "body_words": 1481,
+      "h2_count": 8,
+      "prediction_note_count": 4,
+      "chart_whole_sign_consistent": true
+    },
+    {
+      "number": 45,
+      "body_words": 1581,
+      "h2_count": 9,
+      "prediction_note_count": 4,
+      "chart_whole_sign_consistent": true
+    },
+    {
+      "number": 49,
+      "body_words": 1595,
+      "h2_count": 8,
+      "prediction_note_count": 4,
+      "chart_whole_sign_consistent": true
+    }
+  ],
+  "example_constraints": [
+    "55: Four-planet partial Taurus chart; Venus–Mars and Saturn–Mars dasha combinations explicitly assumed for exercises, never calculated without Moon data. No calendar year or real transit claim.",
+    "46: Three outer-planet partial Aries chart, aspect direction and inclusive counts checked.",
+    "45: Only Mercury and Venus positions assigned in Virgo; no Sun longitude assumed, hence no combustion verdict. Degree comparison exercises preserve physical possibility.",
+    "49: Virgo Sun 20°, Mercury 13°, Leo Venus 28°; shortest longitude differences 7° and 22°, plausible inner-planet elongations; both planets explicitly assumed direct. Threshold classification uses only visually verified Mercury/Venus rows.",
+    "All charts: whole-sign houses match sign and lagna; examples are not actual birth epochs."
+  ]
+}

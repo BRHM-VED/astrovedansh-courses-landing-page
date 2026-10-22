@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-22",
+  "batch": "b",
+  "method": "Browsed stronger search coverage and accessible classical translation/practitioner documents; kept classical attribution separate from later applications. No copied paragraphs, invented verses, outcome guarantees or named-person anecdotes. Examples and workflows are original.",
+  "sources": [
+    {
+      "id": "b-bphs",
+      "url": "https://vedic-astro.s3.amazonaws.com/books/bhrihat_parasara_hora_shastra.pdf",
+      "retrieval_refs": [
+        "turn15view0",
+        "turn21view2",
+        "turn21view3",
+        "turn21view4",
+        "turn23view0"
+      ],
+      "work": "Brihat Parashara Hora Shastra, available English text PDF; translator/edition not securely established from this file",
+      "locations": [
+        "Chapter 6.9, PDF page index 8",
+        "Chapter 6.13–14, PDF page index 8",
+        "Chapter 7.1–8, PDF page index 10"
+      ],
+      "supports": [
+        "D4 uses four quarters mapped through the four kendras of the source sign.",
+        "D10 uses ten 3-degree parts, starting at the source sign when odd and its ninth when even.",
+        "D4 is assigned fortunes; D10 power and position. The article distinguishes later property/career applications."
+      ],
+      "limitations": "The accessible electronic text contains editorial/transcription errors elsewhere. No invented Sanskrit verse or verbatim passage is reproduced. Only the specified checked rules are used. The separate horasad PDF search result returned 404 and was not used."
+    },
+    {
+      "id": "b-pvr1",
+      "url": "https://www.vedicastrologer.org/classes/book1-for-CD.pdf",
+      "retrieval_refs": [
+        "turn15view1",
+        "turn18view4",
+        "turn21view5",
+        "turn23view1"
+      ],
+      "work": "P. V. R. Narasimha Rao, Lessons on Vedic Astrology, Volume I, student compilation, 2005",
+      "locations": [
+        "PDF page index 21 (printed pages 27–28)",
+        "PDF page index 77–78 (lesson 32)"
+      ],
+      "supports": [
+        "Documented practitioner teaching of D10 calculation and comparison with rasi."
+      ],
+      "limitations": "Student summaries, not a classical primary text. The lesson does not reproduce practitioner anecdotes or charts and does not use the stronger deterministic claims found elsewhere in the compilation."
+    },
+    {
+      "id": "b-pvr2",
+      "url": "https://vedicastrologer.org/classes/book2-for-CD.pdf",
+      "retrieval_refs": [
+        "turn15view2",
+        "turn18view3",
+        "turn21view0",
+        "turn23view2"
+      ],
+      "work": "P. V. R. Narasimha Rao, Lessons on Vedic Astrology, Volume II, student compilation, 2007",
+      "locations": [
+        "Lesson 73, Chaturthamsa, PDF page index 118"
+      ],
+      "supports": [
+        "Documents D4 as a property-focused practitioner method and distinguishes comfort from property-related expenditure."
+      ],
+      "limitations": "Used to attribute modern/practitioner property application, rather than claiming all detailed rules occur in BPHS. Existing individual examples and their claimed outcomes are not reused."
+    },
+    {
+      "id": "b-jh",
+      "url": "https://www.vedicastrologer.org/jh/features.htm",
+      "retrieval_refs": [
+        "turn12search1",
+        "turn15view3"
+      ],
+      "work": "Jagannatha Hora official feature documentation",
+      "locations": [
+        "Divisional Charts section",
+        "Transits section"
+      ],
+      "supports": [
+        "Documents more than one D4 variation, supporting a settings check.",
+        "Documents separate transit calculations from natal Moon and lagna and searches near natal longitudes."
+      ],
+      "limitations": "Software capability is evidence for available calculations, not scientific validation of predicted outcomes."
+    },
+    {
+      "id": "b-phaladeepika26",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621598.html",
+      "retrieval_refs": [
+        "turn10search0",
+        "turn12view1",
+        "turn18view5",
+        "turn21view1"
+      ],
+      "work": "Mantreswara, Phaladeepika, chapter 26, V. Subrahmanya Sastri translation, 1950",
+      "locations": [
+        "Opening verse 1: natal Moon reference",
+        "Verse 2: general favorable positions",
+        "Following verses: vedha qualification"
+      ],
+      "supports": [
+        "Moon-centered transit rules must retain their stated reference.",
+        "Jupiter in second/ninth from natal Moon appears in the general favorable list; the full qualification is not reduced to one placement.",
+        "The chapter includes vedha qualifications; a chart missing other transit planets cannot be described as fully checked."
+      ],
+      "limitations": "Wisdomlib warns that text OCR is not proofread. No original Sanskrit transcription is used; no purported verbatim quote. Lagna-based life-area workflow is explicitly the article teaching approach, not attributed to opening verse."
+    }
+  ],
+  "articles": [
+    {
+      "number": 67,
+      "mode": "upgrade",
+      "url": "journal/lesson-067.html",
+      "source_ids": [
+        "b-bphs",
+        "b-pvr1"
+      ],
+      "nonduplication": "Expands existing short lesson 67 with correct D10 construction, partial D1 foundation, derived D10 table and career-question limits.",
+      "chart_checks": [
+        "D1 Aries: Sun and Mercury Capricorn = house 10; Saturn Aquarius = house 11.",
+        "D10 Aries 14°20′ -> Leo; Capricorn Sun 12°10′ -> Capricorn (Leo house 6); Capricorn Mercury 18°20′ -> Pisces (Leo house 8); Aquarius Saturn 12°40′ -> Gemini (Leo house 11).",
+        "D10 tenth Taurus lord Venus is intentionally unknown, so no full career claim.",
+        "Practice Taurus 8°10′ -> Pisces D10 ascendant."
+      ],
+      "body_words": 1557,
+      "h2_count": 10,
+      "sutra_count": 4
+    },
+    {
+      "number": 127,
+      "mode": "new",
+      "url": "journal/chaturthamsha-d4-property-analysis.html",
+      "source_ids": [
+        "b-bphs",
+        "b-pvr2",
+        "b-jh"
+      ],
+      "nonduplication": "New D4-specific construction and property interpretation tutorial; differs from lesson 34 general fourth-house introduction.",
+      "chart_checks": [
+        "D1 Aries: Moon Cancer = house 4; Mars Taurus = house 2; Venus Gemini = house 3.",
+        "D4 Aries 10° -> Cancer; Cancer Moon 12° -> Libra (Cancer house 4); Taurus Mars 20° -> Scorpio (Cancer house 5); Gemini Venus 5° -> Gemini (Cancer house 12).",
+        "Practice Cancer near 22°30′ boundary: preceding third quarter -> Capricorn; fourth quarter -> Aries. Their fourth signs and lords differ."
+      ],
+      "body_words": 1554,
+      "h2_count": 9,
+      "sutra_count": 4
+    },
+    {
+      "number": 54,
+      "mode": "upgrade",
+      "url": "journal/lesson-054.html",
+      "source_ids": [
+        "b-phaladeepika26",
+        "b-jh"
+      ],
+      "nonduplication": "Expands existing short lesson 54 with three clearly separated reference systems; not a current forecast or a duplicate of lesson 55 general dasha-gochara combination.",
+      "chart_checks": [
+        "D1 Aries: Moon Taurus = house 2; Sun Capricorn = house 10; Saturn Aquarius = house 11.",
+        "Hypothetical transit Jupiter Gemini = third from Aries, second from Taurus; transit Saturn Pisces = twelfth from Aries, eleventh from Taurus.",
+        "Practice Leo ascendant, Scorpio natal Moon, Jupiter Cancer: twelfth from lagna and ninth from Moon.",
+        "All transit signs are explicitly undated hypothetical values; no claim about October 2026 sky."
+      ],
+      "body_words": 1618,
+      "h2_count": 10,
+      "sutra_count": 4
+    }
+  ],
+  "validation": {
+    "body_word_counter": "HTML tags replaced by spaces, HTML entities decoded, then whitespace split.",
+    "whole_sign_chart_houses": "All validated arithmetically. Diagram objects intentionally remain partial D1; D4/D10 derived values are separately labeled in prose and tables.",
+    "artifact_scope": "Only the requested lesson JSON and research JSON were written. Existing cover art is reused by parent publishing workflow."
+  }
+}

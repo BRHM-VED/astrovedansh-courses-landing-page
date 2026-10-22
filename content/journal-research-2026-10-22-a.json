@@ -1,0 +1,133 @@
+{
+  "checked_on": "2026-10-22",
+  "edition": "Phaladeepika: V. Subrahmanya Sastri English translation, 1950, online OCR; Brihat Parashara Hora Shastra: Sanskrit and English transcription hosted by siva.sh, edition/translator not established by the displayed pages.",
+  "method": "Retrieved chapter and verse texts with web search/open. Compared the proportional subperiod rule across two primary-text transcriptions. Exact anchors below are short locating excerpts, not a transcription of complete passages. No manuscript-critical edition or scan-image proofreading claim. Most lesson length consists of original conditional teaching, arithmetic, deliberately partial chart examples and exercises.",
+  "passages": [
+    {
+      "source_id": "turn20view0",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621573.html",
+      "passage": "Phaladeepika I.6, lines 65–66",
+      "exact_anchor": "respectively declared the lords of the signs",
+      "supported": "Seven classical grahas own the twelve signs in the stated sequence; standard own/exaltation sign information. Used for sign-to-house arithmetic, not a full strength claim.",
+      "lesson_numbers": [
+        126,
+        128
+      ]
+    },
+    {
+      "source_id": "turn16view0",
+      "url": "https://www.siva.sh/brihat-parashara-hora-shastra/34/16",
+      "passage": "BPHS 34.16, lines 23–27",
+      "exact_anchor": "यद्भावेशयुतौ वापि यद्यद्भावसमागतौ",
+      "supported": "Nodes give effects according to conjunction with a bhava lord and the occupied bhava. Does not itself establish an unlimited dispositor chain; the lesson states that limitation explicitly.",
+      "lesson_numbers": [
+        126
+      ]
+    },
+    {
+      "source_id": "turn17view1",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621587.html",
+      "passage": "Phaladeepika XV.18 and XV.25, lines 86–87 and 100",
+      "exact_anchor": "When any Bhava, its lord and its Karaka are all strong",
+      "supported": "Sign condition matters; bhava, its lord and karaka considered jointly. Used as a short general foundation, with the chain described as original teaching organization.",
+      "lesson_numbers": [
+        126
+      ]
+    },
+    {
+      "source_id": "turn26view0",
+      "url": "https://www.siva.sh/brihat-parashara-hora-shastra/47/36-40",
+      "passage": "BPHS 47.36, lines 23–27",
+      "exact_anchor": "Some sages have expressed the view",
+      "supported": "Displayed text records more than one view of Rahu/Ketu own signs. Lesson therefore declares use of seven-graha sign rulership and does not silently mix nodal schemes.",
+      "lesson_numbers": [
+        126
+      ]
+    },
+    {
+      "source_id": "turn26view1",
+      "url": "https://www.siva.sh/brihat-parashara-hora-shastra/47/1-5",
+      "passage": "BPHS 47.2–3, lines 42–46 and 61–65",
+      "exact_anchor": "साधारणं विशिष्टञ्च दशानां द्विविधं फलम्",
+      "supported": "General effects versus distinctive placement-based effects; strength conditions dasha interpretation. Original two-person comparison illustrates this distinction.",
+      "lesson_numbers": [
+        128
+      ]
+    },
+    {
+      "source_id": "turn9view1",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621592.html",
+      "passage": "Phaladeepika XX.1, line 52",
+      "exact_anchor": "which is strong and which owns a certain Bhava",
+      "supported": "Chapter explicitly contrasts strength/weakness of house-owning planet in dasha interpretation. No deterministic promises drawn from later outcome lists.",
+      "lesson_numbers": [
+        128
+      ]
+    },
+    {
+      "source_id": "turn9view0",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621591.html",
+      "passage": "Phaladeepika XIX.2–4, lines 53–58",
+      "exact_anchor": "their respective years are 6, 10, 7, 18, 16, 19, 17, 7 and 20",
+      "supported": "Vimshottari years/order, first-period balance, and year convention. Lesson uses elapsed dasha-years rather than invented calendar dates; quarter-balance example is original arithmetic.",
+      "lesson_numbers": [
+        52
+      ]
+    },
+    {
+      "source_id": "turn9view2",
+      "url": "https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621593.html",
+      "passage": "Phaladeepika XXI.2, lines 53–54",
+      "exact_anchor": "Divide the product by 120",
+      "supported": "Mahadasha years times antardasha-lord years divided by 120; subperiod order begins with main lord. Full Jupiter timeline independently calculated.",
+      "lesson_numbers": [
+        52
+      ]
+    },
+    {
+      "source_id": "turn25view2",
+      "url": "https://www.siva.sh/brihat-parashara-hora-shastra/51/1-5",
+      "passage": "BPHS 51.1, lines 23–26",
+      "exact_anchor": "दशाब्दाः स्वस्वमानघ्नाः सर्वायुर्योगभाजिताः",
+      "supported": "Independent primary-text matching of the proportional subperiod formula.",
+      "lesson_numbers": [
+        52
+      ]
+    }
+  ],
+  "search_intent": {
+    "method": "Searched primary-text keywords for Rahu association/dispositor, distinct dasha results, and bhukti calculation. These establish source relevance, not popularity, traffic, or search-volume claims.",
+    "distinct_from_existing": [
+      {
+        "number": 126,
+        "existing": [
+          28,
+          44
+        ],
+        "difference": "Applied dispositor-chain calculation and stop rules, not introductory node disagreements or memorizing sign lords."
+      },
+      {
+        "number": 128,
+        "existing": [
+          51,
+          123
+        ],
+        "difference": "Controlled two-person lagna comparison, not only basic dasha definitions or a single yogakaraka case."
+      },
+      {
+        "number": 52,
+        "action": "upgrade existing URL",
+        "difference": "Expands original short contrast to a full subperiod timeline, balance-at-birth distinction, arithmetic and worked chart exercise."
+      }
+    ]
+  },
+  "editorial_checks": [
+    "Three body lengths are 1200–1800 whitespace-separated rendered-text words.",
+    "Each has at least nine h2 sections and four prediction-note asides.",
+    "All placements validated against whole-sign counting; nodes in lesson 126 are opposite.",
+    "No real-client anecdote, exact event promise, income guarantee or fear-based remedy.",
+    "No unsupported natal dasha dates or unprovided divisional chart details.",
+    "Jupiter subperiod fractions total exactly 16; display decimals are rounded.",
+    "Only the two assigned content assets were changed; no deployment performed."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Asia/Calcutta",
+  "purpose": "Idempotent publication batch; retry these same URLs, never allocate another ten.",
+  "content_state": "validated-source",
+  "source_files": [
+    "content/lessons-2026-10-22-a.json",
+    "content/lessons-2026-10-22-b.json",
+    "content/lessons-2026-10-22-c.json"
+  ],
+  "items": [
+    {
+      "number": 45,
+      "title": "एक राशि में दो ग्रह: युति में डिग्री, स्वामित्व और दूरी की भूमिका",
+      "url": "journal/lesson-045.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1681,
+      "editorial_sha256": "c5d70ee58885564bb0a11942731f29646d51cc1da358523e7cb966995980be2e",
+      "search_intent": "एक राशि में दो ग्रह होने का फल और निकट डिग्री का अंतर समझना; बुध शुक्र युति को अंश, स्वामित्व और राशि स्वामी से पढ़ना।"
+    },
+    {
+      "number": 46,
+      "title": "ग्रह दृष्टि: कौन किस भाव को देखता है और फल कैसे बदलता है",
+      "url": "journal/lesson-046.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1568,
+      "editorial_sha256": "e9c2968d4eb0454a6da2cda4ffaeadcdadf7fac04b55e8a009c127eda0b0e77c",
+      "search_intent": "मंगल की चौथी दृष्टि, गुरु की नौवीं दृष्टि और शनि की दसवीं दृष्टि किस भाव पर पड़ती है—गिनती और फलित का अलग अभ्यास।"
+    },
+    {
+      "number": 49,
+      "title": "अस्त ग्रह: सूर्य की दूरी, परंपरागत सीमा और फल की शर्तें",
+      "url": "journal/lesson-049.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1702,
+      "editorial_sha256": "bb7bc2f4814ad90ec122c815431fbb1d576943f89075b1b9fc39ad002323cfa3",
+      "search_intent": "अस्त ग्रह कैसे निकालें, अस्त बुध के अंश, शुक्र अस्त की सीमा और सूर्य से अलग राशि में अस्तता—स्रोत सहित गणना तथा शर्तों वाला शुरुआती पाठ।"
+    },
+    {
+      "number": 52,
+      "title": "महादशा और अंतरदशा—एक समयरेखा में दोनों को कैसे पढ़ें",
+      "url": "journal/lesson-052.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1796,
+      "editorial_sha256": "6fee2d9435a38dadc523bfdf22aa758281b057b4a5dccda9ee0a88b9525cc0c2",
+      "search_intent": "महादशा और अंतरदशा में अंतर, उनका समयक्रम तथा अवधि कैसे निकालें; पुराने पाठ ५२ का मूल पता रखते हुए विस्तृत गणना और व्याख्या।"
+    },
+    {
+      "number": 54,
+      "title": "गोचर को लग्न, चंद्रमा और जन्म कुंडली से अलग-अलग कैसे पढ़ें",
+      "url": "journal/lesson-054.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1707,
+      "editorial_sha256": "0c30dd287c411d31eafd3a022729fdfcc3caafdb24e05c6eb0cdc367036d115a",
+      "search_intent": "गोचर लग्न से देखें या चंद्रमा से, और जन्म कुंडली से इसका संबंध क्या है; पुराने पाठ ५४ का गणना और संदर्भ आधारित विस्तार, सामान्य दैनिक राशिफल नहीं।"
+    },
+    {
+      "number": 55,
+      "title": "विवाह का समय: दशा और गोचर के संकेत कैसे मिलाएँ",
+      "url": "journal/lesson-055.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1576,
+      "editorial_sha256": "7f0284d2e1e970a3e13c2b04a8ffc66f5ab4cf5ca4ad83bb36b0ce39665bfa7e",
+      "search_intent": "विवाह कब होगा पूछने वाले विद्यार्थियों के लिए दशा और गोचर का संयुक्त, सशर्त विश्लेषण; किसी वास्तविक व्यक्ति या वर्तमान गोचर की भविष्यवाणी नहीं।"
+    },
+    {
+      "number": 67,
+      "title": "D10 से करियर की संभावनाएँ कैसे जाँचें",
+      "url": "journal/lesson-067.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-22",
+      "body_words": 1639,
+      "editorial_sha256": "b98003fce31d1646ca740bd7e84c5af37a3232d8feff4d465f037a4eafbe8e83",
+      "search_intent": "दशमांश से करियर कैसे पढ़ें और D1 बनाम D10 के अलग संकेतों को कैसे समझें; पुराने पाठ ६७ का गहन विस्तार, अलग नया पेशा-भविष्यफल नहीं।"
+    },
+    {
+      "number": 126,
+      "title": "राहु का फल समझने में राशि स्वामी की भूमिका",
+      "url": "journal/rahu-dispositor-chain.html",
+      "operation": "new",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "body_words": 1764,
+      "editorial_sha256": "b67ae2094ed8118063bcb802a0528c92813a009decaf1fd7e5b87d2347b4a646",
+      "search_intent": "राहु का राशि स्वामी कैसे देखें और डिस्पोजिटर श्रृंखला कहाँ रोकें; मौजूदा पाठ २८ के मतांतर परिचय तथा पाठ ४४ के स्वामी याद करने के अभ्यास से अलग अनुप्रयोग।"
+    },
+    {
+      "number": 127,
+      "title": "D4 से संपत्ति के संकेत कैसे पढ़ें",
+      "url": "journal/chaturthamsha-d4-property-analysis.html",
+      "operation": "new",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "body_words": 1632,
+      "editorial_sha256": "7deb9ad37bd221ab714627f96973cb7c2d11a6e2e6e62fc0eb83b2f62fb43b96",
+      "search_intent": "चतुर्थांश D4 से संपत्ति के संकेत समझना; चौथे भाव के मौजूदा छोटे पाठ से अलग गणना, जन्म समय संवेदनशीलता और निवास बनाम स्वामित्व की विशिष्ट पड़ताल।"
+    },
+    {
+      "number": 128,
+      "title": "एक ही ग्रह की महादशा दो लोगों को अलग फल क्यों देती है?",
+      "url": "journal/same-mahadasha-different-results.html",
+      "operation": "new",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "body_words": 1876,
+      "editorial_sha256": "dc35d33facc28b9fe498ff56f7cb927b4cb485d08797b31bc0a3fa0fef8a693f",
+      "search_intent": "एक ही ग्रह की महादशा में अलग लोगों को अलग अनुभव क्यों होते हैं; सामान्य दशा परिचय और योगकारक की एक-कुंडली शर्तों से अलग नियंत्रित लग्न तुलना।"
+    }
+  ],
+  "images": {
+    "source": "public/assets/journal/provenance.json",
+    "method": "Reuse original AI-generated covers, encode responsive WebP versions without creative changes.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  }
+}

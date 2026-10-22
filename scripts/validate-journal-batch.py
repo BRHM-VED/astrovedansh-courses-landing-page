@@ -56,7 +56,8 @@ for item in batch['items']:
         if u.fragment and target.suffix == '.html':
             target_doc = html.parse(str(target)).getroot()
             if target.name in ['index.html','english.html'] and u.fragment in ['enrol','courses','about']:
-                assert target_doc.xpath('//script[@src="/course-legacy-links.js"]')
+                assert any(node.get('src', '').split('?')[0] == '/course-legacy-links.js'
+                           for node in target_doc.xpath('//script[@src]'))
                 destination = public / ('courses-english.html' if target.name == 'english.html' else 'courses.html')
                 assert html.parse(str(destination)).xpath('//*[@id=$id]', id=u.fragment)
             else:

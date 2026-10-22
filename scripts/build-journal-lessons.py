@@ -23,7 +23,7 @@ PUBLIC = ROOT / 'public'
 ORIGIN = 'https://courses.astrovedansh.org'
 ESC = stdhtml.escape
 SIGNS = ['मेष','वृषभ','मिथुन','कर्क','सिंह','कन्या','तुला','वृश्चिक','धनु','मकर','कुंभ','मीन']
-UPGRADES = {18, 37, 47, 63, 65}
+# Preserve the first batch's published ordering when replaying its source files.
 ORDER = [18, 47, 121, 37, 122, 63, 123, 65, 124, 125]
 HI_MONTHS = ['जनवरी','फ़रवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर']
 EN_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December']
@@ -269,12 +269,15 @@ def main():
     # reach the retained course pages without changing first-visit language.
     for home_name in ['index.html', 'english.html']:
         home = html.parse(str(PUBLIC/home_name)).getroot()
-        if not home.xpath('//script[@src="/course-legacy-links.js"]'):
+        if not any(node.get('src', '').split('?')[0] == '/course-legacy-links.js'
+                   for node in home.xpath('//script[@src]')):
             home.xpath('//head')[0].append(html.Element('script', src='/course-legacy-links.js'))
             write_doc(home, PUBLIC/home_name)
     persist_verified_dates(manifest)
     known_rows = {row['url']:row for row in manifest}
     saved_rows = {row['url']:row for row in existing['items']} if existing else {}
+    operations = {r['url']: saved_rows.get(r['url'], {}).get('operation',
+        'upgrade' if r['url'] in known_rows else 'new') for r in lessons}
     template=(PUBLIC/'journal/lesson-018.html').read_text()
     covers()
     for idx,r in enumerate(lessons):
@@ -292,7 +295,7 @@ def main():
         # embedded in the older HTML template used to build its shell.
         r['datePublished'] = saved.get('datePublished') or known.get('datePublished') or date
         r['dateModified'] = saved.get('dateModified') or date
-        if r['number'] in UPGRADES:
+        if operations[r['url']] == 'upgrade':
             assert known.get('datePublished'), ('Cannot invent original publication date', r['url'])
         r['published']=render_lesson(r,date,template)
         row={'number':r['number'],'title':r['title'],'category':r['category'],'url':r['url'],'lang':'hi','words':r['words'],'image':r['image'],'description':r['description'],'dateModified':r['dateModified'],'datePublished':r['published'],'type':r['type'],'longform':True}
@@ -339,8 +342,8 @@ def main():
         if last is None: last=etree.SubElement(node,'{'+ns['s']+'}lastmod')
         last.text=date
     sitemap.write(str(PUBLIC/'sitemap.xml'),encoding='utf-8',xml_declaration=True)
-    record={'date':date,'timezone':'Asia/Calcutta','purpose':'Idempotent publication batch; retry these same URLs, never allocate another ten.','content_state':'validated-source','source_files':sources,'items':[{'number':r['number'],'title':r['title'],'url':r['url'],'operation':'upgrade' if r['number'] in UPGRADES else 'new','datePublished':r['datePublished'],'dateModified':r['dateModified'],'body_words':r['words'],'editorial_sha256':hashlib.sha256(r['body_html'].encode()).hexdigest(),'search_intent':r.get('search_intent','')} for r in lessons],'images':{'source':'public/assets/journal/provenance.json','method':'Reuse original AI-generated covers, encode responsive WebP versions without creative changes.','widths':[480,960,1536]}}
+    record={'date':date,'timezone':'Asia/Calcutta','purpose':'Idempotent publication batch; retry these same URLs, never allocate another ten.','content_state':'validated-source','source_files':sources,'items':[{'number':r['number'],'title':r['title'],'url':r['url'],'operation':operations[r['url']],'datePublished':r['datePublished'],'dateModified':r['dateModified'],'body_words':r['words'],'editorial_sha256':hashlib.sha256(r['body_html'].encode()).hexdigest(),'search_intent':r.get('search_intent','')} for r in lessons],'images':{'source':'public/assets/journal/provenance.json','method':'Reuse original AI-generated covers, encode responsive WebP versions without creative changes.','widths':[480,960,1536]}}
     batch_path.parent.mkdir(parents=True,exist_ok=True); batch_path.write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'batch':date,'lessons':len(lessons),'new':sum(x['number'] not in UPGRADES for x in lessons),'upgraded':sum(x['number'] in UPGRADES for x in lessons),'words':{r['number']:r['words'] for r in lessons}},ensure_ascii=False))
+    print(json.dumps({'batch':date,'lessons':len(lessons),'new':sum(operations[x['url']]=='new' for x in lessons),'upgraded':sum(operations[x['url']]=='upgrade' for x in lessons),'words':{r['number']:r['words'] for r in lessons}},ensure_ascii=False))
 
 if __name__=='__main__': main()
