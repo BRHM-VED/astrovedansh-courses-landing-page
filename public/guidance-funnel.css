@@ -1,57 +1,90 @@
-/* A single decision per screen, within the existing brand. */
-.funnel-page .visual-main{max-width:720px}
-.funnel-page .visual-intro{padding-bottom:18px}
-.funnel-page .visual-intro h1{max-width:650px}
-.funnel-page .visual-intro .intro-copy{max-width:600px}
-.funnel-progress{display:flex;justify-content:space-between;gap:10px;list-style:none;padding:0 0 20px;margin:0;color:#7b7075;border-bottom:1px solid #e4d9d4}
-.funnel-progress li{display:flex;align-items:center;gap:7px;font-size:12px}
-.funnel-progress li>span{display:grid;place-items:center;width:26px;height:26px;border:1px solid #d4c6cb;border-radius:50%;font-size:12px}
-.funnel-progress small{font-size:13px}
-.funnel-progress [aria-current=step]{color:#542b39;font-weight:700}
-.funnel-progress [aria-current=step]>span{background:#542b39;border-color:#542b39;color:#fff}
-.funnel-shell{padding:22px 0 0;min-width:0}
+/* The same three-choice flow on the homepage and the plans page. */
+.guidance-chooser{max-width:820px;margin:0 auto;scroll-margin-top:16px;color:#542b39}
+.guidance-chooser [hidden]{display:none!important}
+.guidance-chooser .chooser-title{font-size:24px;line-height:1.4;margin:0 0 7px;font-weight:700}
+.chooser-intro,.funnel-group-description{font-size:14px;line-height:1.65;color:#70646a;margin:0 0 18px}
+.funnel-progress{display:flex;justify-content:space-between;gap:8px;list-style:none;padding:0 0 18px;margin:20px 0 18px;border-bottom:1px solid #e5ddd5;color:#77676f}
+.funnel-progress li{display:flex;align-items:center;gap:6px;min-width:0}
+.funnel-progress li>span{display:grid;place-items:center;width:25px;height:25px;flex-shrink:0;border:1px solid #d9cbd0;border-radius:50%;font-size:12px}
+.funnel-progress small{font-size:12px;line-height:1.5}
+.funnel-progress [aria-current=step]{font-weight:700;color:#542b39}
+.funnel-progress [aria-current=step]>span{background:#542b39;color:#fff;border-color:#542b39}
 .funnel-choices{display:grid;gap:12px}
-.funnel-choice{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px;background:#fff;color:#542b39;border:1px solid #e1d5cf;border-radius:14px;box-shadow:0 8px 20px -18px #542b3970;text-decoration:none}
-.funnel-choice:hover{border-color:#98727f;background:#fdfaf8}
-.funnel-choice:focus-visible,.funnel-back:focus-visible{outline:3px solid #a77c44;outline-offset:4px}
-.funnel-choice-copy{display:grid;gap:7px;min-width:0}
-.service-badge{display:inline-flex;align-items:center;justify-self:start;width:fit-content;max-width:100%;padding:3px 9px;border-radius:999px;font:600 11px/1.5 'DM Sans','Noto Sans Devanagari',sans-serif;letter-spacing:.01em}
-.service-badge--try{color:#684a21;background:#f4ead7;border:1px solid #e6d5b8}
-.service-badge--recommended{color:#542b39;background:#f1e6eb;border:1px solid #dfcbd3}
-.funnel-result-card>.service-badge{margin:0 0 9px}
-.funnel-choice-copy strong{font-size:18px;line-height:1.5;font-weight:700}
-.funnel-choice-copy small{font-size:14px;line-height:1.6;color:#6b5d64}
-.funnel-choice-end{display:grid;gap:8px;justify-items:end;flex-shrink:0}
-.funnel-choice-end b{font-size:19px;white-space:nowrap}
+.funnel-choice{display:flex;align-items:center;gap:16px;padding:18px;background:#fffdf9;color:#542b39;border:1px solid #e5ddd5;border-radius:15px;box-shadow:0 9px 25px -19px #542b3966;text-decoration:none;min-width:0}
+.funnel-choice:hover{border-color:#ae9097;background:#fffaf5}
+.funnel-choice>img{width:60px;height:60px;object-fit:cover;object-position:center 30%;border-radius:10px;flex-shrink:0}
+.funnel-choice-copy{display:grid;gap:4px;min-width:0;flex:1}
+.funnel-choice-copy strong{font-size:19px;font-weight:700;line-height:1.45}
+.funnel-choice-copy small{color:#70646a;font-size:14px;line-height:1.5}
+.funnel-choice-end{display:grid;gap:7px;justify-items:end;flex-shrink:0}
+.funnel-choice-end b{font-size:16px;white-space:nowrap}
+.funnel-choice-end small{font-size:11px;line-height:1.5;color:#70646a;white-space:nowrap}
 .funnel-choice-end>span{font-size:21px}
-.funnel-back{display:inline-flex;align-items:center;min-height:44px;border:0;background:transparent;color:#542b39;padding:0 0 10px;font-family:inherit;font-size:14px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.funnel-page h2{font-size:25px;line-height:1.45;margin:3px 0 18px}
-.funnel-result-card{background:#fff;border:1px solid #e0d2cc;border-radius:16px;padding:26px}
-.funnel-result-card .eyebrow{font-size:11px}
-.funnel-result-card h2{font-family:Georgia,serif;font-size:29px}
-html[lang=hi] .funnel-result-card h2{font-family:'Noto Sans Devanagari',sans-serif;font-size:26px;line-height:1.5}
-.funnel-price{display:block;font-size:32px;color:#542b39;line-height:1.4;margin:16px 0}
-.funnel-result-card .plan-cta{width:100%}
-.funnel-result-card .plan-inclusions{margin:12px 0 22px}
-.funnel-result-card .plan-saving s{color:#75646d;font-weight:400}
-.funnel-note{font-size:13px;line-height:1.7;color:#6b5d64;margin:17px 0 0}
-.funnel-footer{font-size:13px;text-align:center;color:#6b5d64;margin:28px 0 22px;line-height:1.8}
-.funnel-footer p{margin:0 0 12px}
-.funnel-footer a{display:inline-flex;align-items:center;min-height:44px;color:#542b39;text-decoration:underline;text-underline-offset:3px}
-.funnel-page:not([data-funnel-stage=start]) .visual-intro .intro-copy{display:none}
+.funnel-back{min-height:44px;background:none;border:0;padding:0 0 12px;color:#542b39;font-family:inherit;font-size:14px;font-weight:600;line-height:1.5;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.funnel-group{margin:0;padding:0}
+.funnel-group h2{font-size:25px;line-height:1.45;margin:0 0 8px}
+.selection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.selection-card{min-width:0;display:flex;flex-direction:column;padding:22px;background:#fffdf9;border:1px solid #e2d6cf;border-radius:16px;box-shadow:0 12px 26px -21px #542b3966;scroll-margin-top:100px}
+.selection-card--recommended{border-color:#98717f;background:#fcf6f5}
+.selection-card-label{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:7px;margin-bottom:12px}
+.selection-card-label>small{font-size:12px;font-weight:600;color:#77616b;line-height:1.5}
+.service-badge{display:inline-flex;width:fit-content;max-width:100%;border:1px solid #e2d0b3;border-radius:99px;padding:3px 9px;background:#f4ead7;color:#684a21;font:600 11px/1.5 'DM Sans','Noto Sans Devanagari',sans-serif}
+.service-badge--recommended{background:#efe2e7;color:#542b39;border-color:#d9c1cc}
+.selection-card h3{font-family:Georgia,serif;font-size:25px;line-height:1.3;font-weight:600;margin:0 0 9px;overflow-wrap:normal;word-break:normal}
+html[lang=hi] .selection-card h3{font-family:'Noto Sans Devanagari',sans-serif;font-size:22px;line-height:1.5}
+.selection-description{font-size:14px;line-height:1.7;color:#70646a;margin:0 0 14px}
+.selection-inclusions{list-style:none;padding:0;margin:0 0 20px;color:#4c4146;font-size:13px;line-height:1.65}
+.selection-inclusions li{position:relative;padding-left:21px;margin:5px 0}
+.selection-inclusions li:before{content:'✓';position:absolute;left:0;color:#907240;font-weight:700}
+.selection-action{margin-top:auto}
+.selection-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.selection-price strong{font-size:30px;line-height:1.35;font-weight:700;color:#542b39}
+.selection-price s{font-size:14px;color:#82727a}
+.selection-price small{font-size:12px;font-weight:600;color:#705329}
+.selection-cta{display:flex;align-items:center;justify-content:center;min-height:48px;padding:11px 15px;border:1px solid #542b39;border-radius:10px;background:#542b39;color:#fff!important;font-size:14px;font-weight:600;text-align:center;text-decoration:none;line-height:1.6}
+.selection-cta:hover{background:#6b3c4c}
+.funnel-choice:focus-visible,.funnel-back:focus-visible,.selection-cta:focus-visible,.question-reports a:focus-visible{outline:3px solid #b38a4e;outline-offset:4px}
+.funnel-note{font-size:12px;color:#70646a;line-height:1.8;margin:20px 0 0}
+.question-reports{margin-top:30px}
+.question-reports h3{font-size:18px;margin:0 0 9px;line-height:1.5}
+.question-reports a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid #e5ddd5;min-height:60px;text-decoration:none;color:#542b39}
+.question-reports a>span:first-child{display:grid;gap:4px}
+.question-reports strong{font-size:14px;line-height:1.5}
+.question-reports small{font-size:12px;color:#70646a;line-height:1.5}
+.question-report-price{display:grid;justify-items:end;gap:5px;flex:0 0 88px;text-align:right}
+.question-report-price b{font-size:16px}
+.hub-page .secondary-services{max-width:820px;margin:40px auto 0;padding-top:26px;border-top:1px solid #e5ddd5}
+.hub-page .secondary-services .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hub-page .secondary-services .service-art{aspect-ratio:2/1}
+.hub-page .secondary-services .service-bottom{padding:16px}
+.funnel-page .visual-main{max-width:820px}
+.funnel-page .visual-intro{padding:24px 0}
+.funnel-page .visual-intro h1{font-size:34px;line-height:1.35;margin:8px 0 12px}
+.funnel-page .visual-intro .intro-copy{font-size:14px;line-height:1.7}
+.funnel-group:not([hidden])~.funnel-group{margin-top:32px}
 @media(max-width:650px){
- .funnel-page .visual-intro h1{font-size:28px;line-height:1.3}
- html[lang=hi] .funnel-page .visual-intro h1{font-size:25px;line-height:1.45}
- .funnel-progress{gap:6px;padding-bottom:16px}
- .funnel-progress small{font-size:12px}
+ .hub-page .hero{padding:24px 0 28px}
+ .hub-page .hero h1{font-size:30px;line-height:1.25}
+ html[lang=hi] .hub-page .hero h1{font-size:27px;line-height:1.5}
+ .hub-page .hero-description{font-size:14px;line-height:1.7}
+ .hub-page .brand-promise{font-size:12px;margin-top:12px}
+ .guidance-chooser .chooser-title,.funnel-group h2{font-size:22px}
+ .funnel-progress{gap:6px;margin-top:17px}
+ .funnel-progress small{font-size:11px}
  .funnel-progress li{gap:5px}
- .funnel-progress li>span{width:23px;height:23px}
- .funnel-shell{padding-top:18px}
- .funnel-choice{padding:18px 15px;gap:12px}
- .funnel-choice-copy strong{font-size:16px}
- .funnel-choice-copy small{font-size:13px}
- .funnel-choice-end b{font-size:17px}
- .funnel-page h2{font-size:21px}
- .funnel-result-card{padding:22px 18px}
- .funnel-result-card h2,html[lang=hi] .funnel-result-card h2{font-size:24px}
+ .funnel-progress li>span{width:22px;height:22px;font-size:11px}
+ .funnel-choice{padding:15px 12px;gap:11px}
+ .funnel-choice>img{width:46px;height:54px;border-radius:8px}
+ .funnel-choice-copy strong{font-size:17px}
+ .funnel-choice-copy small{font-size:12px;line-height:1.55}
+ .funnel-choice-end b{font-size:14px}
+ .selection-grid{grid-template-columns:1fr;gap:16px}
+ .selection-card{padding:20px}
+ .selection-card h3{font-size:25px}
+ html[lang=hi] .selection-card h3{font-size:21px}
+ .selection-inclusions{margin-bottom:16px}
+ .selection-price strong{font-size:30px}
+ .funnel-page .visual-intro h1{font-size:27px}
+ .funnel-page .visual-intro{padding:20px 0}
+ .hub-page .secondary-services .service-art{aspect-ratio:4/3}
 }

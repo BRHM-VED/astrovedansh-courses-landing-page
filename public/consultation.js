@@ -50,9 +50,16 @@
     const hi = lang() === 'hi', p = selected;
     form.elements.plan.value = p.id;
     summary.replaceChildren();
-    summary.append(node('p', hi ? 'आपका चुना हुआ प्लान' : 'YOUR SELECTED PLAN', 'eyebrow'));
+    summary.append(node('p', hi ? 'चरण 3 · विवरण भरें' : 'STEP 3 · YOUR DETAILS', 'eyebrow'));
     const h1 = node('h1', p.title[lang()]); h1.tabIndex = -1; summary.append(h1);
-    summary.append(node('p', p.description[lang()]));
+    const mode = p.mode === 'audio' ? (hi ? 'रिकॉर्डेड वॉइस नोट · लाइव कॉल नहीं' : 'Recorded voice note · not a live call') : p.mode === 'live' ? (hi ? 'लाइव बातचीत' : 'Live conversation') : (hi ? 'व्यक्तिगत लिखित विश्लेषण' : 'Personalized written analysis');
+    summary.append(node('p', mode + (p.minutes ? ` · ${p.minutes} ${hi ? 'मिनट' : 'min'}` : ''), 'booking-meta'));
+    const back = document.querySelector('.booking-back');
+    if (back) {
+      back.href = '/pricing.html?guidance=' + (p.items.length > 1 ? 'combos' : p.mode === 'written' ? 'reports' : 'consultation') + '#premium';
+      back.textContent = hi ? '← प्लान बदलें' : '← Change plan';
+      back.dataset.en = '← Change plan'; back.dataset.hi = '← प्लान बदलें';
+    }
     const prices = node('div', '', 'plan-price');
     prices.append(node('strong', money(p.amount)));
     if (p.saving) {
@@ -67,15 +74,18 @@
     if (p.mode === 'audio') list.append(node('li', hi ? 'WhatsApp पर रिकॉर्डेड वॉइस नोट · लाइव कॉल नहीं' : 'Recorded voice note on WhatsApp · not a live call'));
     if (p.mode === 'live') list.append(node('li', hi ? 'लाइव सेशन के समय में फॉलो-अप सवाल पूछें' : 'Follow-up questions within the live session'));
     if (p.items.some(id => ['name','astrology_report'].includes(id))) list.append(node('li', catalog.booking.reportDelivery[lang()]));
-    summary.append(list);
+    const inclusions = node('details', '', 'booking-inclusions');
+    inclusions.append(node('summary', hi ? 'इस प्लान में क्या मिलेगा?' : 'What is included?'), list);
+    summary.append(inclusions);
     const upgradeBox = document.querySelector('#plan-upgrade');
     upgradeBox.replaceChildren();
     upgradeBox.hidden = !p.upgrade;
     if (p.upgrade) {
       const upgrade = model.resolve(p.upgrade), extra = upgrade.amount - p.amount;
       const added = upgrade.lineItems.filter(item => !p.items.includes(item.id));
-      upgradeBox.append(node('h2', hi ? 'रिपोर्ट भी जोड़ना चाहेंगे?' : 'Would you like to add reports?'));
-      upgradeBox.append(node('p', added.map(item => item.title[lang()]).join(' + ') + (hi ? ` · नई कुल कीमत ${money(upgrade.amount)}` : ` · New total ${money(upgrade.amount)}`)));
+      const optional = node('details');
+      optional.append(node('summary', hi ? `कॉम्बो का विकल्प देखें · +${money(extra)} (वैकल्पिक)` : `See combo upgrade · +${money(extra)} (optional)`));
+      optional.append(node('p', added.map(item => item.title[lang()]).join(' + ') + (hi ? ` · नई कुल कीमत ${money(upgrade.amount)}` : ` · New total ${money(upgrade.amount)}`)));
       const button = node('button', hi ? `${added.length > 1 ? 'दोनों रिपोर्ट जोड़ें' : 'रिपोर्ट जोड़ें'} · +${money(extra)} →` : `Add ${added.length > 1 ? 'both reports' : 'report'} · +${money(extra)} →`, 'plan-cta secondary');
       button.type = 'button';
       button.addEventListener('click', () => {
@@ -83,7 +93,8 @@
         document.dispatchEvent(new CustomEvent('astrovedansh:plan-upgrade', {detail:{from:p.id,to:upgrade.id}}));
         render(); summary.querySelector('h1').focus({preventScroll:true});
       });
-      upgradeBox.append(button, node('p', hi ? 'इसे चुनना ज़रूरी नहीं है। नीचे मौजूदा प्लान के साथ आगे बढ़ें।' : 'This is optional. Continue below with your current plan.', 'plans-note'));
+      optional.append(button, node('p', hi ? 'इसे चुनना ज़रूरी नहीं है। नीचे मौजूदा प्लान के साथ आगे बढ़ें।' : 'This is optional. Continue below with your current plan.', 'plans-note'));
+      upgradeBox.append(optional);
     }
     if (p.id !== original.id) {
       const undo = node('button', hi ? `${original.title.hi} — ${money(original.amount)} पर वापस जाएँ` : `Keep ${original.title.en} — ${money(original.amount)}`, 'back-to-original');

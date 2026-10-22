@@ -27,3 +27,21 @@ for key,(price,total,saving) in bundles.items():
 assert c['products']['timing']['amount']==349 and c['products']['milan']['amount']==2999
 assert c['products']['freeCourse']['amount']==999 and c['products']['foundation']['amount']==10000
 print('All six standalone prices and four bundle totals/savings verified; unrelated products preserved.')
+from html.parser import HTMLParser
+class FunnelLinks(HTMLParser):
+ def __init__(self):super().__init__();self.plans={};self.categories=[];self.recommended=[]
+ def handle_starttag(self,tag,attrs):
+  a=dict(attrs)
+  if tag=='a' and 'data-plan-id' in a:
+   key=a['data-plan-id'];assert key not in self.plans,'Duplicate plan link: '+key;self.plans[key]=a.get('href')
+  if 'data-guidance' in a:self.categories.append(a['data-guidance'])
+  if 'selection-card--recommended' in a.get('class','').split():self.recommended.append(a.get('id'))
+for name in ['index.html','english.html','pricing.html']:
+ page=(root/'public'/name).read_text();parser=FunnelLinks();parser.feed(page)
+ assert parser.categories==['reports','consultation','combos'],name
+ assert set(parser.plans)==set(expected)|set(bundles),name
+ for key,href in parser.plans.items():assert href==(c['products']|c['bundles'])[key]['url'],(name,key)
+ assert parser.recommended==['plan-detailed'],name
+ assert 'id="funnel-result"' not in page,name
+ assert '/reports.html?report=milan#report-request' in page,name
+print('All ten plans reachable directly from three categories; ₹3,199 recommendation and Milan form verified.')

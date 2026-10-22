@@ -1,69 +1,65 @@
-/* Progressive guidance: format -> relevant service -> existing booking flow. */
+/* Service category -> plan's existing booking page. No intermediate summary. */
 (() => {
   'use strict';
-  const groups = {
-    written: ['astrology_report', 'name', 'report_combo'],
-    audio: ['audio', 'audio_combo'],
-    live: ['expert', 'personal', 'detailed', 'personal_combo', 'complete_combo']
-  };
-  const starts = document.querySelector('#funnel-start');
-  if (!starts) return;
-  const options = document.querySelector('#funnel-options');
-  const result = document.querySelector('#funnel-result');
-  const summaries = [...document.querySelectorAll('[data-plan-summary]')];
-  const validPlans = new Set(summaries.map(e => e.dataset.planSummary));
-  const groupFor = plan => Object.keys(groups).find(group => groups[group].includes(plan));
-  let state = {group:null, plan:null};
+  const root = document.querySelector('[data-guidance-chooser]');
+  if (!root) return;
+  const start = root.querySelector('#funnel-start');
+  const options = root.querySelector('#funnel-options');
+  const back = root.querySelector('[data-funnel-back]');
+  const sections = [...root.querySelectorAll('[data-option-group]')];
+  const groups = new Set(sections.map(e => e.dataset.optionGroup));
+  const links = [...root.querySelectorAll('[data-plan-id]')];
+  const aliases = {written:'reports', audio:'consultation', live:'consultation', expert:'consultation', vedansh:'consultation', combo:'combos'};
+  let group = null;
   function readUrl() {
     const params = new URLSearchParams(location.search);
     const requested = params.get('plan') || location.hash.slice(1);
-    if (validPlans.has(requested)) return {group:groupFor(requested),plan:requested};
-    let group = params.get('guidance');
-    if (group === 'expert' || group === 'vedansh') group = 'live';
-    if (!Object.hasOwn(groups, group)) group = null;
-    return {group,plan:group === 'audio' ? 'audio' : null};
+    const plan = links.find(e => e.dataset.planId === requested);
+    if (plan) return plan.closest('[data-option-group]').dataset.optionGroup;
+    const legacyAnchors = {'personal-reports':'reports', 'timing-offers':'reports', consultations:'consultation'};
+    const value = params.get('guidance');
+    const resolved = groups.has(value) ? value : aliases[value] || legacyAnchors[location.hash.slice(1)];
+    return groups.has(resolved) ? resolved : null;
   }
   function render(focus = false) {
-    starts.hidden = Boolean(state.group);
-    options.hidden = !state.group || Boolean(state.plan);
-    result.hidden = !state.plan;
-    document.querySelectorAll('[data-option-group]').forEach(section => section.hidden = section.dataset.optionGroup !== state.group);
-    summaries.forEach(card => card.hidden = card.dataset.planSummary !== state.plan);
-    document.querySelectorAll('[data-step]').forEach(step => {
-      if (step.dataset.step === (state.group ? '2' : '1')) step.setAttribute('aria-current','step');
+    start.hidden = !!group;
+    options.hidden = !group;
+    back.hidden = !group;
+    sections.forEach(section => {section.hidden = section.dataset.optionGroup !== group;});
+    root.querySelectorAll('[data-guidance]').forEach(link => link.setAttribute('aria-expanded',String(link.dataset.guidance === group)));
+    root.querySelectorAll('[data-step]').forEach(step => {
+      if (step.dataset.step === (group ? '2' : '1')) step.setAttribute('aria-current','step');
       else step.removeAttribute('aria-current');
     });
-    document.body.dataset.funnelStage = state.plan ? 'result' : state.group ? 'options' : 'start';
+    root.dataset.stage = group ? 'plans' : 'service';
+    root.querySelector('.chooser-title').hidden = !!group;
+    root.querySelector('.chooser-intro').hidden = !!group;
     if (focus) {
-      const target = state.plan ? result.querySelector('[data-plan-summary]:not([hidden]) h2') : state.group ? options.querySelector('[data-option-group]:not([hidden]) h2') : document.querySelector('h1');
-      if (target) {target.setAttribute('tabindex','-1');target.focus({preventScroll:true});target.scrollIntoView({block:'nearest',behavior:'auto'});}
+      const target = group ? sections.find(section => !section.hidden).querySelector('h2') : root.querySelector('.chooser-title');
+      target.focus({preventScroll:true});
+      root.scrollIntoView({block:'start',behavior:'instant'});
     }
   }
-  function select(next) {
-    state = next;
+  function select(value) {
+    group = value;
     const url = new URL(location.href);
-    url.searchParams.delete('guidance');url.searchParams.delete('plan');url.hash = '';
-    if (state.group) url.searchParams.set('guidance',state.group);
-    if (state.plan) url.searchParams.set('plan',state.plan);
-    history.pushState(null,'',url.pathname + url.search);
+    url.searchParams.delete('plan');
+    url.searchParams.delete('guidance');
+    url.hash = 'premium';
+    if (group) url.searchParams.set('guidance',group);
+    history.pushState(null,'',url.pathname + url.search + url.hash);
     render(true);
   }
-  document.querySelectorAll('[data-guidance]').forEach(choice => choice.addEventListener('click', event => {
+  root.querySelectorAll('[data-guidance]').forEach(choice => choice.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const next = choice.dataset.guidance;
+    if (!groups.has(next)) return;
     event.preventDefault();
-    const group = choice.dataset.guidance;
-    if (!Object.hasOwn(groups,group)) return;
-    select({group,plan:group === 'audio' ? 'audio' : null});
-    document.dispatchEvent(new CustomEvent('astrovedansh:plan-filter',{detail:{group}}));
+    select(next);
+    document.dispatchEvent(new CustomEvent('astrovedansh:plan-filter',{detail:{group:next}}));
   }));
-  document.querySelectorAll('[data-pick-plan]').forEach(choice => choice.addEventListener('click', event => {
-    event.preventDefault();
-    const plan = choice.dataset.pickPlan;
-    if (validPlans.has(plan)) select({group:groupFor(plan),plan});
-  }));
-  document.querySelectorAll('[data-funnel-back]').forEach(button => button.addEventListener('click', () => {
-    select(state.plan && state.group !== 'audio' ? {group:state.group,plan:null} : {group:null,plan:null});
-  }));
-  window.addEventListener('popstate', () => {state=readUrl();render(true);});
-  window.addEventListener('hashchange', () => {state=readUrl();render(true);});
-  state = readUrl();render();
+  back.addEventListener('click',() => select(null));
+  window.addEventListener('popstate',() => {group=readUrl();render(true);});
+  window.addEventListener('hashchange',() => {group=readUrl();render();});
+  group=readUrl();render();
 })();

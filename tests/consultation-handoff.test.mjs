@@ -9,7 +9,7 @@ class Element {
  addEventListener(name,fn){this.handlers[name]=fn;}
  closest(){return this.label;}
  focus(){}
- querySelector(tag){return this.children.find(x=>x.tag===tag);}
+ querySelector(tag){return this.children.find(x=>x.tag===tag) || this.children.map(x=>x.querySelector?.(tag)).find(Boolean);}
 }
 function setup(plan, valid=true){
  const values={plan,name:' QA Test ',gender:'Other',birthDate:'2000-01-01',birthTime:'12:00',birthPlace:' Test City ',phone:'+910000000000',email:'',question:' Test question & follow-up? ',sessionDate:'2099-01-01',preferredTime:'2–5 PM IST',preferredName:' Test Name '};
@@ -38,12 +38,12 @@ for(const [plan,[fee,items]] of Object.entries(expected)){
 }
 test('original service remains selected until an upgrade is actively chosen; form details survive undo',()=>{
  const s=setup('personal');assert.equal(s.fields.plan.value,'personal');
- s.nodes['#plan-upgrade'].children.find(x=>x.tag==='button').handlers.click();
+ s.nodes['#plan-upgrade'].querySelector('button').handlers.click();
  assert.equal(s.fields.plan.value,'personal_combo');assert.equal(s.fields.name.value,' QA Test ');
  s.nodes['.booking-summary'].children.find(x=>x.className==='back-to-original').handlers.click();
  assert.equal(s.fields.plan.value,'personal');s.submit();assert.ok(new URL(s.handoffs[0]).searchParams.get('text').includes('Package fee: ₹1799'));
 });
-test('selected audio combo sends both items and keeps recorded format',()=>{const s=setup('audio');s.nodes['#plan-upgrade'].children.find(x=>x.tag==='button').handlers.click();s.submit();const text=new URL(s.handoffs[0]).searchParams.get('text');assert.ok(text.includes('₹899'));assert.ok(text.includes('[astrology_report] × 1'));assert.ok(text.includes('not a live call'));});
+test('selected audio combo sends both items and keeps recorded format',()=>{const s=setup('audio');s.nodes['#plan-upgrade'].querySelector('button').handlers.click();s.submit();const text=new URL(s.handoffs[0]).searchParams.get('text');assert.ok(text.includes('₹899'));assert.ok(text.includes('[astrology_report] × 1'));assert.ok(text.includes('not a live call'));});
 test('invalid form never opens WhatsApp',()=>{const s=setup('expert',false);s.submit();assert.equal(s.handoffs.length,0);});
 test('early booking date never opens WhatsApp',()=>{const s=setup('expert');s.fields.sessionDate.value='2001-01-01';s.submit();assert.equal(s.handoffs.length,0);});
 test('future birth date never opens WhatsApp',()=>{const s=setup('name');s.fields.birthDate.value='2099-01-01';s.submit();assert.equal(s.handoffs.length,0);});

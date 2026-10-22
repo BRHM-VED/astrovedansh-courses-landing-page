@@ -14,4 +14,13 @@ html[lang=hi] .booking-summary h1{font-family:'Noto Sans Devanagari',sans-serif;
 .booking-page .primary{background:#542b39;min-height:48px}
 .booking-page .payment-note,.booking-page .form-note{font-size:12px;line-height:1.7}
 .booking-page label{font-size:14px}
+.booking-page .booking-summary .plan-price{margin:12px 0}
+.booking-page .booking-summary .plan-price strong{font-size:30px}
+.booking-page .booking-inclusions{margin-top:12px}
+.booking-page .booking-inclusions summary,.booking-page .plan-upgrade summary{min-height:44px;display:flex;align-items:center;gap:8px;font-size:13px;line-height:1.6;color:#542b39;cursor:pointer;list-style:none}
+.booking-page .booking-inclusions summary:after,.booking-page .plan-upgrade summary:after{content:'+';margin-left:auto;font-size:20px}
+.booking-page details[open]>summary:after{content:'−'}
+.booking-page .plan-upgrade{padding:2px 14px;margin:14px 0 0;border-radius:10px}
+.booking-page .plan-upgrade details[open]{padding-bottom:12px}
+.booking-page .plan-upgrade summary:focus-visible,.booking-page .booking-inclusions summary:focus-visible{outline:2px solid #a77c44;outline-offset:3px}
 @media(max-width:700px){.booking-page .booking-summary h1,html[lang=hi] .booking-page .booking-summary h1{font-size:27px}.booking-page .booking-summary{padding-top:10px}.booking-page input,.booking-page select,.booking-page textarea{font-size:16px}.booking-page .booking form{padding:20px 16px}.booking-page .fields{grid-template-columns:1fr}}

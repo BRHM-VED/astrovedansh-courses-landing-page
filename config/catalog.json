@@ -37,7 +37,7 @@
     },
     "milan": {
       "amount": 2999,
-      "url": "/reports.html#report-request",
+      "url": "/reports.html?report=milan#report-request",
       "checkout": "whatsapp_request",
       "status": "existing"
     },
