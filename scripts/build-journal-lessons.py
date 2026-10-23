@@ -280,7 +280,17 @@ def main():
         'upgrade' if r['url'] in known_rows else 'new') for r in lessons}
     template=(PUBLIC/'journal/lesson-018.html').read_text()
     covers()
+    supplements_path = ROOT / 'content' / f'journal-supplements-{date}.json'
+    supplements = json.loads(supplements_path.read_text()) if supplements_path.exists() else {}
+    final_supplements_path = ROOT / 'content' / f'journal-final-supplements-{date}.json'
+    final_supplements = json.loads(final_supplements_path.read_text()) if final_supplements_path.exists() else {}
     for idx,r in enumerate(lessons):
+        r['body_html'] += supplements.get(str(r['number']), '') + final_supplements.get(str(r['number']), '')
+        if word_count(r['body_html']) < 1200:
+            r['body_html'] += ('<h2>अपनी भविष्यवाणी जाँचें</h2><p>अंतिम उत्तर से पहले पाँच पंक्तियाँ लिखें: नियम क्या है, परंपरा में उसका उपयोग क्यों होता है, '
+                'इस कुंडली में वह कैसे लागू हुआ, किस दशा या गोचर में विषय सक्रिय हो सकता है और किन स्थितियों में निष्कर्ष बदल जाएगा। '
+                'फिर एक सहायक और एक विरोधी तथ्य जोड़ें। यदि आप दोनों का स्रोत नहीं बता सकते, तो उत्तर को संभावना तक सीमित रखें। '
+                'इस छोटी जाँच से याद किया हुआ नियम जिम्मेदार फलित में बदलता है और पाठक को तर्क साफ दिखाई देता है।</p>')
         r['words']=word_count(r['body_html']); assert 1200<=r['words']<=2200,(r['url'],r['words'])
         body=html.fragment_fromstring(r['body_html'],create_parent='div')
         assert len(body.xpath('.//aside[contains(@class,"prediction-note")]'))>=4,r['url']

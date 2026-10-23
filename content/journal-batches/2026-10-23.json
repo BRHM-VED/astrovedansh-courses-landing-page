@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Calcutta",
+  "purpose": "Idempotent publication batch; retry these same URLs, never allocate another ten.",
+  "content_state": "validated-source",
+  "source_files": [
+    "content/lessons-2026-10-23-a.json",
+    "content/lessons-2026-10-23-b.json",
+    "content/lessons-2026-10-23-c.json"
+  ],
+  "items": [
+    {
+      "number": 29,
+      "title": "प्राकृतिक शुभ ग्रह भी कठिन फल क्यों देता है? कार्यात्मक स्वामित्व की विधि",
+      "url": "journal/lesson-029.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1407,
+      "editorial_sha256": "0ead76b2ca2347f96b75d6343237b2951e28f80873a9870bdaebd0172e657e85",
+      "search_intent": {
+        "queries": [
+          "प्राकृतिक शुभ ग्रह कठिन फल",
+          "functional benefic malefic hindi",
+          "गुरु अशुभ फल क्यों"
+        ],
+        "intent": "natural nature versus functional lordship clearly teach करना"
+      }
+    },
+    {
+      "number": 38,
+      "title": "आठवाँ भाव: संकट, परिवर्तन, साझा धन और आयु को जिम्मेदारी से कैसे पढ़ें?",
+      "url": "journal/lesson-038.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1368,
+      "editorial_sha256": "c4d090d7c99800bfecee3dfff869169338ef88bcdeecb559e747c165ac2a9f1d",
+      "search_intent": {
+        "queries": [
+          "आठवां भाव डर संकट",
+          "8th house transformation hindi",
+          "आठवां भाव साझा धन"
+        ],
+        "intent": "fear-free, responsible eighth-house method"
+      }
+    },
+    {
+      "number": 48,
+      "title": "वक्री ग्रह: बल बढ़ता है, फल उलटता है या विषय दोहराता है?",
+      "url": "journal/lesson-048.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1454,
+      "editorial_sha256": "651b181986e76daf8ce41dac47c3e98fab336d4950a61a9cc6c44272763abbfa",
+      "search_intent": {
+        "queries": [
+          "वक्री ग्रह का फल",
+          "retrograde planet vedic astrology hindi",
+          "वक्री शनि अच्छा या बुरा"
+        ],
+        "intent": "वक्री ग्रह को एकल शुभ-अशुभ निर्णय बनाने की जगह चरणबद्ध पारंपरिक विश्लेषण सिखाना"
+      }
+    },
+    {
+      "number": 50,
+      "title": "मित्र राशि में ग्रह हमेशा शुभ? ग्रह मैत्री, स्वामित्व और बल की संयुक्त जाँच",
+      "url": "journal/lesson-050.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1389,
+      "editorial_sha256": "751e207ab8ec12483879fd2d9942a721cc4eeb8d41cbb7d37530f6136b0dc81b",
+      "search_intent": {
+        "queries": [
+          "ग्रह मैत्री तालिका",
+          "मित्र राशि में ग्रह फल",
+          "functional benefic hindi"
+        ],
+        "intent": "मैत्री तालिका को अकेले फलादेश बनाने की गलती सुधारना"
+      }
+    },
+    {
+      "number": 61,
+      "title": "योग दिखा तो फल मान लें? निर्माण, बल, दशा और बाधा की चार जाँच",
+      "url": "journal/lesson-061.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1334,
+      "editorial_sha256": "dd73fc3452b41af20ae24e46dba5beff767e52aff93b5fdb5dcba97d615fa08d",
+      "search_intent": {
+        "queries": [
+          "कुंडली में राजयोग कैसे देखें",
+          "योग फलित कब होता है",
+          "astrology yoga conditions hindi"
+        ],
+        "intent": "योग के नाम से आगे वास्तविक prediction workflow सिखाना"
+      }
+    },
+    {
+      "number": 64,
+      "title": "शुभ और कठिन संकेत साथ हों तो भविष्यवाणी का वजन कैसे तय करें?",
+      "url": "journal/lesson-064.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1403,
+      "editorial_sha256": "606bec382cfe3ab06fd39c18e7ecdb2f7c2cab73f36b391e68ed1b99afed9d41",
+      "search_intent": {
+        "queries": [
+          "कुंडली में मिश्रित फल कैसे देखें",
+          "शुभ अशुभ ग्रह साथ",
+          "astrology conflicting indications"
+        ],
+        "intent": "विरोधी संकेतों के लिए evidence weighting सिखाना"
+      }
+    },
+    {
+      "number": 66,
+      "title": "D9 में विवाह अच्छा, D1 में कठिन: नवांश से निर्णय कैसे संतुलित करें?",
+      "url": "journal/lesson-066.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1405,
+      "editorial_sha256": "d082eb835d9787dee1d8cea0aa97fd4d87e9548ba7326053b920dc098c79e441",
+      "search_intent": {
+        "queries": [
+          "D1 D9 विवाह विरोध",
+          "नवांश से विवाह कैसे देखें",
+          "D9 good D1 bad marriage"
+        ],
+        "intent": "D1-D9 विरोध में संतुलित विवाह विश्लेषण"
+      }
+    },
+    {
+      "number": 68,
+      "title": "कौन-सी वर्ग कुंडली कब देखें? D1 से D60 तक सही अध्ययन क्रम",
+      "url": "journal/lesson-068.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1411,
+      "editorial_sha256": "79d97795bf889a88a111d2e8fea2825d62931d03388856f477b10e1cfa411c05",
+      "search_intent": {
+        "queries": [
+          "वर्ग कुंडली कौन सी देखें",
+          "D1 D9 D10 D60 order",
+          "divisional charts hindi"
+        ],
+        "intent": "वर्गों की भीड़ से बचाकर प्रश्न-आधारित अध्ययन क्रम सिखाना"
+      }
+    },
+    {
+      "number": 91,
+      "title": "ग्यारहवाँ भाव: आय, लाभ, इच्छा और नेटवर्क को अलग कैसे पढ़ें?",
+      "url": "journal/lesson-091.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1386,
+      "editorial_sha256": "a0dbc57f4a71b268e390ce5f02bd3b1efb6776158a326d7e1fd64d50ff855451",
+      "search_intent": {
+        "queries": [
+          "ग्यारहवां भाव धन लाभ",
+          "11th house income network hindi",
+          "लाभ और आय कुंडली"
+        ],
+        "intent": "ग्यारहवें भाव के चार अलग अर्थ और स्रोत-संचय संबंध सिखाना"
+      }
+    },
+    {
+      "number": 92,
+      "title": "बारहवाँ भाव: खर्च, निवेश, विदेश और हानि में अंतर कैसे करें?",
+      "url": "journal/lesson-092.html",
+      "operation": "upgrade",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-23",
+      "body_words": 1380,
+      "editorial_sha256": "288d410abc2c185ffb90be2a14076d5a2388596195340cefb12d1fb220ac3c5f",
+      "search_intent": {
+        "queries": [
+          "बारहवां भाव खर्च हानि विदेश",
+          "12th house investment loss hindi",
+          "व्यय भाव का फल"
+        ],
+        "intent": "व्यय, निवेश, विदेश और हानि के बीच practical distinction"
+      }
+    }
+  ],
+  "images": {
+    "source": "public/assets/journal/provenance.json",
+    "method": "Reuse original AI-generated covers, encode responsive WebP versions without creative changes.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  }
+}
